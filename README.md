@@ -6,7 +6,7 @@
 
 1. 修改 `data/plan.json` 中的行程内容；版式和交互分别在 `templates/` 与页面生成器中维护。
 2. 在本地构建并检查，或向 `master` 提交 Pull Request，让 Actions 检查。
-3. 修改推送或合并到 `master` 后，GitHub Actions 自动重新生成网站并部署 GitHub Pages。
+3. 修改推送或合并到 `master` 后，GitHub Actions 自动重新生成并保存私有构建产物。
 
 自动更新指根据已提交的行程和路线缓存重新生成网页，不会自行改动景点、票务、营业时间或在线原稿。需要调整这些资料时，先更新并核实源数据。
 
@@ -23,7 +23,7 @@ python scripts/build_pages.py
 | 位置 | 用途 |
 | --- | --- |
 | `web/current/index.html` | 原有本地入口，继续保留 |
-| `dist/index.html` | GitHub Pages 发布入口，部署时直接作为网站根目录 |
+| `dist/index.html` | 静态站点入口，后续可交给带访问控制的托管服务 |
 | `dist/review-plan.html` | 同行计划总表 |
 | `dist/paris-companion-plan.html` | 完整单文件，可下载转发，包含每日详情和专题 |
 
@@ -40,36 +40,42 @@ python scripts/validate_site.py dist --check-js
 
 地图街道底图和外部官网需要联网；每日点位、路线、卢浮宫馆图和文字说明包含在构建结果中。待办勾选状态保存在各自浏览器中，不会同步到仓库或其他同行者。
 
-## GitHub Pages 首次设置
+## 私有仓库与访问范围
 
-项目尚未绑定远程仓库。选择目标 GitHub 仓库后：
+远程仓库：[aetherrootr/paris-trip-plan](https://github.com/aetherrootr/paris-trip-plan)，保持私有。**网站本身也必须私有**。
 
-1. 将此项目推送到该仓库的 `master` 分支，建议同时将 `master` 设为默认分支。
-2. 打开仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。
-3. 在 **Actions** 中运行 **Build and deploy GitHub Pages**，或向 `master` 再推送一次修改。
-4. 成功后，在工作流的部署记录或仓库 Pages 设置中打开网站地址。
+GitHub 仓库的私有状态不会自动保护 Pages 网站。GitHub 原生的私有 Pages 访问控制适用于 GitHub Enterprise Cloud 组织下的项目；当前个人账户仓库不按公开 Pages 方式发布。
 
-不需要手工提交生成的 HTML，也不需要维护 `gh-pages` 分支或另外保存部署 token。工作流使用 GitHub 提供的 `GITHUB_TOKEN` 和 Pages OIDC 权限。
+因此，当前工作流只在私有仓库中构建和保存产物，**不调用 Pages 部署、不申请 Pages 写入权限、不开放网站地址**。带登录保护的在线网站托管需要另行配置。
+
+### 获取自动更新的私有版本
+
+1. 修改推送或合并到 `master`，或在 **Actions** 手动运行 **Build private trip site**。
+2. 在成功的工作流运行页面下方找到 **Artifacts**。
+3. 下载 `paris-trip-offline`：解压后用浏览器打开完整单文件 HTML。
+4. 需要全部独立页面时，下载 `paris-trip-site`。
+
+产物保留 30 天，下载需要登录并拥有此仓库的读取权限。只想转发行程时也可自行分发已下载的单文件；该文件本身没有额外的登录保护。
 
 网站兼容 `https://用户名.github.io/仓库名/` 这类项目路径，所有站内页面及资源均使用相对链接；不需要为仓库名修改页面地址。
 
-### 自动部署流程
+### 自动构建流程
 
-配置文件：`.github/workflows/pages.yml`。
+配置文件：`.github/workflows/build.yml`。
 
 | 触发方式 | 行为 |
 | --- | --- |
-| Push 到 `master` | 测试 → 构建 → 检查 → 上传 `dist/` → 部署 |
+| Push 到 `master` | 测试 → 构建 → 检查 → 保存私有网站和单文件产物 |
 | 面向 `master` 的 Pull Request | 测试、构建和检查，不部署 |
-| Actions 中手动运行 | 检查选定分支；只有 `master` 可以部署 |
+| Actions 中手动运行 | 检查选定分支；只有 `master` 保存分发产物 |
 
-构建任务只有代码读取权限；仅部署任务获得 `pages: write` 和 `id-token: write`。部署使用 `github-pages` 环境。同一分支的发布串行执行，避免同时覆盖线上内容。
+工作流只有 `contents: read` 权限。没有网站部署任务；同一分支的新构建会取消尚未完成的旧构建。
 
 发布目录只包含生成的网页及其资源，不包含本地备份、导出历史、源码目录或完整的行程数据快照。`revision.json` 记录相对入口、版本及可用的提交号，不包含构建机器的绝对目录。
 
-遇到首次部署失败，先确认 Pages 的 Source 已选择 GitHub Actions、Actions 已启用，且 `github-pages` 环境允许 `master` 部署。其余构建或链接错误可在工作流日志中查看；检查不通过时不会开始部署。
+遇到首次构建失败，先在工作流日志中查看失败的检查或构建步骤；检查不通过时不会上传分发产物。仓库需要启用 Actions。
 
-官方参考：[使用自定义工作流部署 GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
+官方参考：[Pages 私有访问控制](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)、[下载工作流产物的权限](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts)。
 
 ## 项目结构
 
