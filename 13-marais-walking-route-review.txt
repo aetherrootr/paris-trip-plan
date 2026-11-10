@@ -1,0 +1,40 @@
+D04｜步行绕行修正
+核对日：2026-11-09
+
+结论
+用户指出的第6→7站折线确实绕远。参观顺序保持：卡纳瓦莱→毕加索→国家档案馆→狩猎自然馆→布列塔尼街。
+国家档案馆出60 rue des Francs-Bourgeois入口，接Rue des Archives向北，至62 rue des Archives狩猎馆。无需向东绕经老圣殿街，也不以穿越院墙的直线作路线。
+
+原数据与交叉核对
+原IGN BD TOPO／OSRM pedestrian shortest：614.2米，10.20分钟，向东绕行。
+同一出发／到达馆址，IGN BD TOPO／Valhalla pedestrian shortest：230.195米，3.47分钟。
+独立OSM／FOSSGIS步行服务：233.8米，约3.12分钟，亦沿档案街。
+两个短路结果基本一致。旧模型异常不能被解释为实际街道封闭；不同引擎的道路连接和吸附存在差异，未断言其服务内部原因。
+页面采用IGN Valhalla结果；点位、其他路段和参观时段未改变。
+模型起终点会吸附到附近路网，街道距离不是从展厅门到展厅门的精确距离，院内出入与安检另外留余量。
+
+顺序比较
+为避免混用引擎比较，使用同一OSM/FOSSGIS步行模型，固定卡纳瓦莱和布列塔尼街代表点，枚举下午三馆6种顺序；街道步行边按对称距离比较。
+卡纳瓦莱→毕加索→档案馆→狩猎→街区：1625.9米（当前，最短）。
+卡纳瓦莱→档案馆→狩猎→毕加索→街区：1681.5米。
+卡纳瓦莱→毕加索→狩猎→档案馆→街区：1726.7米。
+卡纳瓦莱→档案馆→毕加索→狩猎→街区：1944.0米。
+卡纳瓦莱→狩猎→档案馆→毕加索→街区：1967.6米。
+卡纳瓦莱→狩猎→毕加索→档案馆→街区：2330.9米。
+这只是上述固定端点与点位下的模型比较，不宣称全天所有景点排列或2027实际临时封路均已优化。
+
+当前网页的距离变化
+仅替换档案馆→狩猎馆这段，其余路段维持原IGN数据：
+主线3040.7→2656.695米，即约3.04→2.66公里，减少384.005米。
+模型总时长50.50→43.77分钟，约节省6.7分钟。
+各馆入场时间不动；15:45–16:05仍留20分钟，用于档案馆出馆、沿街步行、狩猎馆安检或短休。无需为省下的几分钟重排整天。
+不含酒店往返、馆内步行、餐厅绕行与额外街区散步。
+
+来源与保存
+档案馆官方入口说明：https://www.archives-nationales.culture.gouv.fr/le-musee-des-archives-nationales-lhotel-de-soubise-informations-pratiques
+狩猎馆官方地址：https://www.chassenature.org/acces-horaires
+IGN引擎与请求参数：https://github.com/IGNF/cartes.gouv.fr-documentation/blob/main/content/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/calcul-itineraire.md
+OSM/FOSSGIS步行服务：https://routing.openstreetmap.de/ （© OpenStreetMap contributors）
+data/marais-walk-verification-20261109.json 保存原结果、新结果、请求URL及顺序比较。
+data/routes.json 6→7与反向缓存均改为复核后的IGN Valhalla短路；网页由统一数据重新生成。
+原Google文档、原KMZ、旧网页版本与其他日期未修改。

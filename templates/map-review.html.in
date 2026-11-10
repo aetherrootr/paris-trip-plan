@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>巴黎与凡尔赛｜15天日程与距离 review</title>
+<style>
+:root{color-scheme:light dark;--bg:#f7f8fa;--fg:#182333;--paper:#fff;--muted:#566476;--line:#d6dce4;--blue:#2164a5;--orange:#ac581b;--green:#24765e;--route:#366d9e}
+@media(prefers-color-scheme:dark){:root{--bg:#151c25;--fg:#edf1f6;--paper:#202a36;--muted:#b5c1d1;--line:#465364;--blue:#7cbaff;--orange:#f3ba78;--green:#80cdb0;--route:#7cbaff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}
+main{max-width:1200px;margin:auto;padding:26px 22px 40px}h1{font-size:26px;line-height:1.35;margin:0 0 8px}h2{font-size:20px;margin:22px 0 8px}p{margin:6px 0 12px}.muted{color:var(--muted)}
+a{color:var(--blue)}.toolbar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:18px 0 12px}select,button{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--fg)}label{display:flex;gap:8px;align-items:center}button{cursor:pointer}input{width:18px;height:18px}
+.map-frame{position:relative;border:1px solid var(--line);background:var(--paper)}#leaflet-map{height:520px;display:none}#coordinate-map{width:100%;height:auto;min-height:300px;display:block}#map-status{font-size:14px;color:var(--muted);margin:5px 0 14px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;margin:8px 0}.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px;vertical-align:middle}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{white-space:nowrap}td.num{white-space:nowrap;font-variant-numeric:tabular-nums}.day-index{font-weight:600}.choice{color:var(--muted)}ul{margin-top:4px}.notice{border-left:3px solid var(--blue);padding:4px 14px;margin:15px 0}.footer{font-size:14px;margin-top:24px;color:var(--muted)}
+.leaflet-container{font-family:inherit}.leaflet-popup-content{font-size:14px}.leaflet-tooltip{font-family:inherit;color:#172333;background:#fff}
+@media(max-width:620px){main{padding:18px 12px}h1{font-size:22px}.toolbar{gap:10px}#leaflet-map{height:430px}th,td{padding:8px}table{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<h1>巴黎与凡尔赛｜15天日程草稿 v2</h1>
+<p class="muted">按原稿旅行密度 · 2027年2月或3月，日期待定 · 含北京往返 · 本次不去圣米歇尔山</p>
+<div class="toolbar">
+ <label for="day-select">查看范围 <select id="day-select"><option value="city">巴黎市区总览</option><option value="all">巴黎＋凡尔赛总览</option></select></label>
+ <label><input id="optional-toggle" type="checkbox">显示原稿可选与顺路项目</label>
+ <button id="map-mode" type="button" disabled>街道底图加载中</button>
+</div>
+<div class="legend"><span><i style="background:var(--blue)"></i>拟安排，原稿优先</span><span><i style="background:var(--paper);border:2px solid var(--orange)"></i>原稿可选／顺路</span><span>连线：IGN步行路网参考，长段可乘车</span></div>
+<div class="map-frame">
+ <div id="leaflet-map" aria-label="巴黎景点及步行路线街道地图"></div>
+ <svg id="coordinate-map" viewBox="0 0 960 600" role="img" aria-label="按真实经纬度绘制的景点与步行路线图"></svg>
+</div>
+<p id="map-status">离线坐标路线图可直接查看；联网后尝试加载法国IGN官方街道底图。</p>
+<section id="day-summary" aria-live="polite"></section>
+<div class="notice">距离是场馆点位之间的步行路网，不含酒店往返、馆内步行、安检、等灯及休息。园区入口和通道可能改变走法。科学城至爱乐厅的算法线路有明显绕行，须再核对园区步道。</div>
+<h2 id="distance-title">路线与距离</h2>
+<div class="table-wrap"><table><thead><tr><th>日程</th><th>区间</th><th>步行路网</th><th>直线</th><th>人工核对</th></tr></thead><tbody id="distance-body"></tbody></table></div>
+<h2>15天总览</h2>
+<p class="muted">先按D1抵达巴黎、D14离开巴黎、D15抵达北京计算。下面的“第几天”不代表星期几；真实日期确定后按闭馆日交换整天。</p>
+<div class="table-wrap"><table><thead><tr><th>天数</th><th>拟安排</th><th>原稿可选与排期说明</th></tr></thead><tbody id="schedule-body"></tbody></table></div>
+<h2>原稿保留与顺路调整</h2>
+<ol>
+ <li>恢复西岱岛与拉丁区的完整组合，中世纪馆与自然历史均保留在行程中。</li>
+ <li>玛黑区恢复毕加索、狩猎自然及工艺；皮诺有夜场可能，也在Day13确定落位，只参观一次。</li>
+ <li>橘园、装饰艺术、海军府、大小皇宫与凯旋门恢复原组；大皇宫沿用外观安排。</li>
+ <li>现代艺术、东京宫、迪奥均保留；夏乐宫其他馆与下水道在Day12相邻区域完成。</li>
+</ol>
+<p>先以原稿密度核对位置与参观窗口；不要求先接受二选一或预留固定半天空白。歌剧院与拱廊单独标注为新增近邻建议，由你review。</p>
+<p>可直接人工修改 <a href="01-itinerary-draft.txt">逐日草稿</a> 和 <a href="02-place-review.txt">景点检查表</a>。地图及KML需在你确认后重新生成，不会自动读取txt的手工修改。</p>
+<p>本地文件：<a href="03-distance-review.txt">路线距离核对</a> · <a href="04-sources-and-limits.txt">来源与局限</a> · <a href="paris-15-days-review.kml">可手动导入My Maps的KML</a></p>
+<p class="footer">路线：法国IGN BD TOPO（查询2026-11-08；路网版本2026-11-07／08）。点位主要来自你的KMZ；小特里亚农已在派生稿纠偏。街道底图 © IGN – Plan IGN。原Google Doc、在线地图和原KMZ未修改。</p>
+</main>
+<script>
+'use strict';
+const PLAN=__PLAN_DATA__;
+const P=PLAN.places,D=PLAN.days,R=PLAN.routes;
+const select=document.getElementById('day-select'),optional=document.getElementById('optional-toggle');
+const svg=document.getElementById('coordinate-map'),modeButton=document.getElementById('map-mode');
+let streetMap=null,streetLayer=null,streetReady=false,useStreet=false,tileErrors=0;
+let cssReady=false,libraryReady=false,baseTilesReady=false,preferStreet=true;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const names=ids=>ids.map(id=>P[id].name).join('、');
+const km=m=>(m/1000).toFixed(2)+' km';
+const gmaps=(a,b)=>{let x=P[a].coordinates,y=P[b].coordinates;if(!x||!y)return null;return 'https://www.google.com/maps/dir/?'+new URLSearchParams({api:'1',origin:x[1]+','+x[0],destination:y[1]+','+y[0],travelmode:'walking'});};
+const displayDay=p=>/^\d+$/.test(select.value)?Number(select.value):p.day;
+const corePoint=id=>/^\d+$/.test(select.value)?D.find(d=>d.day===Number(select.value)).core.includes(id):P[id].status==='建议主线';
+for(const d of D.filter(d=>d.core.length)){let o=document.createElement('option');o.value=String(d.day);o.textContent='Day '+d.day+' · '+d.title;select.append(o);}
+document.getElementById('schedule-body').innerHTML=D.map(d=>'<tr><td class="day-index">Day '+d.day+'</td><td>'+esc(d.title)+(d.core.length?'<br>'+esc(names(d.core)):'')+'</td><td class="choice">'+esc(d.optional.length?'可选／顺路：'+names(d.optional):'')+(d.alternative.length?'<br>附近建议：'+esc(names(d.alternative)):'')+'<br>'+esc(d.review)+'</td></tr>').join('');
+function selected(){
+ const v=select.value, ds=/^\d+$/.test(v)?D.filter(d=>d.day===Number(v)):D.filter(d=>d.core.length&&(v==='all'||d.day!==8));
+ let ids=[...new Set(ds.flatMap(d=>d.core.concat(optional.checked?d.optional.concat(d.alternative):[])))];
+ ids=ids.filter(k=>P[k].coordinates);
+ const pairs=[];
+ for(const d of ds){
+  for(let i=1;i<d.core.length;i++)if(P[d.core[i-1]].coordinates&&P[d.core[i]].coordinates)pairs.push({a:d.core[i-1],b:d.core[i],day:d.day,kind:'core'});
+  if(optional.checked){
+   const active=new Set(d.core.concat(d.optional,d.alternative));
+   for(const r of Object.values(R))if(active.has(r.a)&&active.has(r.b)&&!pairs.some(p=>p.a===r.a&&p.b===r.b))pairs.push({a:r.a,b:r.b,day:d.day,kind:'optional'});
+  }
+ }
+ return {ds,ids,pairs};
+}
+function pointLink(p){const c=p.coordinates;return 'https://www.google.com/maps/search/?api=1&query='+c[1]+','+c[0];}
+function project(c){return [(c[0]-2.33)*73150,(48.86-c[1])*111200];}
+function renderCoordinates(ids,pairs){
+ const shapePoints=ids.map(k=>P[k].coordinates);
+ for(const p of pairs){const r=R[p.a+'__'+p.b];if(r?.status==='ok')shapePoints.push(...r.geometry.coordinates);}
+ if(!shapePoints.length)return;
+ const points=shapePoints.map(project);let xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
+ const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),cx=(x0+x1)/2,cy=(y0+y1)/2;
+ const scale=Math.min(830/Math.max(x1-x0,1200),470/Math.max(y1-y0,850));
+ const xy=c=>{let p=project(c);return [480+(p[0]-cx)*scale,300+(p[1]-cy)*scale];};
+ let out='<title>巴黎与凡尔赛地点及步行路网</title><desc>按真实经纬度等比例投影。圆点为建议主线，空心点为可选。此离线图没有街道底图。</desc>';
+ const grid=Math.max(500,Math.pow(10,Math.floor(Math.log10(Math.max(x1-x0,y1-y0))))/2);
+ for(let x=Math.floor(x0/grid)*grid;x<=x1+grid;x+=grid){let px=480+(x-cx)*scale;out+='<line x1="'+px+'" x2="'+px+'" y1="30" y2="560" stroke="var(--line)" stroke-width="1"/>';}
+ for(let y=Math.floor(y0/grid)*grid;y<=y1+grid;y+=grid){let py=300+(y-cy)*scale;out+='<line x1="35" x2="925" y1="'+py+'" y2="'+py+'" stroke="var(--line)" stroke-width="1"/>';}
+ for(const pair of pairs){const r=R[pair.a+'__'+pair.b];if(r?.status!=='ok')continue;const pts=r.geometry.coordinates.map(c=>xy(c).map(n=>n.toFixed(1)).join(',')).join(' ');out+='<polyline points="'+pts+'" fill="none" stroke="'+(pair.kind==='core'?'var(--route)':'var(--orange)')+'" stroke-width="'+(pair.kind==='core'?2.7:1.8)+'" '+(pair.kind==='optional'?'stroke-dasharray="6 5"':'')+'><title>'+esc(P[pair.a].name+' → '+P[pair.b].name+' '+km(r.distance_m))+'</title></polyline>';}
+ ids.forEach((key,i)=>{let p=P[key],q=xy(p.coordinates),core=corePoint(key),n=displayDay(p);out+='<a href="'+esc(pointLink(p))+'" target="_blank" rel="noopener"><circle cx="'+q[0]+'" cy="'+q[1]+'" r="10" fill="'+(core?'var(--blue)':'var(--paper)')+'" stroke="'+(core?'var(--blue)':'var(--orange)')+'" stroke-width="2"><title>'+esc('Day '+n+' '+p.name+'｜'+p.status)+'</title></circle><text x="'+q[0]+'" y="'+(q[1]+4)+'" text-anchor="middle" font-size="11" fill="'+(core?'var(--paper)':'var(--fg)')+'">'+(n||'?')+'</text></a>';});
+ const candidates=[100,200,500,1000,2000,5000,10000];let metres=candidates.filter(m=>m*scale<=150).pop()||100;
+ out+='<line x1="45" x2="'+(45+metres*scale)+'" y1="568" y2="568" stroke="var(--fg)" stroke-width="3"/><text x="45" y="590" font-size="14" fill="var(--fg)">'+(metres>=1000?metres/1000+' km':metres+' m')+'</text><text x="905" y="42" font-size="17" fill="var(--fg)">北 ↑</text><text x="45" y="30" font-size="14" fill="var(--muted)">数字为Day编号 · 点击点位打开地图核对</text>';
+ svg.innerHTML=out;
+}
+function renderStreet(ids,pairs){
+ if(!streetReady)return;streetLayer.clearLayers();
+ for(const pair of pairs){const r=R[pair.a+'__'+pair.b];if(r?.status!=='ok')continue;L.geoJSON({type:'Feature',properties:{},geometry:r.geometry},{style:{color:pair.kind==='core'?'#2164a5':'#ac581b',weight:pair.kind==='core'?4:3,dashArray:pair.kind==='core'?null:'6 6',opacity:.85}}).bindTooltip(esc(P[pair.a].name+' → '+P[pair.b].name+' '+km(r.distance_m))).addTo(streetLayer);}
+ for(const id of ids){let p=P[id],c=p.coordinates,core=corePoint(id),n=displayDay(p);L.circleMarker([c[1],c[0]],{radius:8,color:core?'#2164a5':'#ac581b',fillColor:core?'#2164a5':'#ffffff',fillOpacity:1,weight:2}).bindTooltip(esc('Day '+n+' '+p.name)).bindPopup('<strong>'+esc(p.name)+'</strong><br>'+esc(p.status)+(n?' · Day '+n:'')+'<br>'+esc(p.coordinate_source)+'<br><a target="_blank" rel="noopener" href="'+esc(pointLink(p))+'">打开Google Maps核对</a>').addTo(streetLayer);}
+ if(ids.length){const bounds=L.latLngBounds(ids.map(k=>{let c=P[k].coordinates;return [c[1],c[0]];}));streetMap.fitBounds(bounds.pad(.16),{maxZoom:16,animate:false});}
+}
+function render(){
+ const {ds,ids,pairs}=selected();renderCoordinates(ids,pairs);renderStreet(ids,pairs);
+ const one=ds.length===1?ds[0]:null;
+ document.getElementById('day-summary').innerHTML=one?'<h2>Day '+one.day+' · '+esc(one.title)+'</h2><p>'+esc(one.intro)+'</p><p><strong>拟安排：</strong>'+esc(names(one.core))+'</p><p class="muted">'+esc(one.duration)+'。'+esc(one.review)+'</p>':'<p>以原稿旅行密度恢复完整主题日，尽可能保留既有景点。共12个完整游览日；按实际距离、开放窗口与预约调整先后，必要时在邻近区域平移项目。</p>';
+ document.getElementById('distance-body').innerHTML=pairs.map(p=>{const r=R[p.a+'__'+p.b];return '<tr><td>Day '+p.day+(p.kind==='optional'?'<br>可选':'')+'</td><td>'+esc(P[p.a].name+' → '+P[p.b].name)+'</td><td class="num">'+(r?.status==='ok'?km(r.distance_m)+'<br>模型约'+Math.ceil(r.duration_min/5)*5+'分钟':'待核对')+'</td><td class="num">'+(r?km(r.straight_m):'—')+'</td><td><a target="_blank" rel="noopener" href="'+esc(gmaps(p.a,p.b))+'">Google Maps</a></td></tr>';}).join('')||'<tr><td colspan="5">本日为单一主场馆，没有固定的馆间步行段。</td></tr>';
+}
+select.addEventListener('change',render);optional.addEventListener('change',render);
+function showMapMode(street){
+ useStreet=Boolean(street&&baseTilesReady);preferStreet=useStreet;
+ const div=document.getElementById('leaflet-map');
+ div.style.display=useStreet?'block':'none';div.style.position='relative';div.style.inset='';div.style.height='';div.style.opacity='1';div.style.pointerEvents='auto';
+ svg.style.display=useStreet?'none':'block';
+ modeButton.disabled=!baseTilesReady;modeButton.textContent=useStreet?'切换离线坐标图':baseTilesReady?'切换街道底图':'当前为离线坐标图';
+ if(useStreet){streetMap.invalidateSize();render();}
+ document.getElementById('map-status').textContent=useStreet?'街道底图 © IGN – Plan IGN；连线为IGN步行路网参考。':'离线坐标路线图：地点、路线和距离已包含在此文件中，无需联网加载。';
+}
+function failStreet(message){showMapMode(false);document.getElementById('map-status').textContent=message+'；地点、步行路线和距离仍可离线查看。';}
+modeButton.addEventListener('click',()=>{if(baseTilesReady)showMapMode(!useStreet);});
+render();
+const streetTimer=setTimeout(()=>{if(!baseTilesReady)failStreet('街道底图加载超时，已保留离线坐标图');},8000);
+function initStreet(){
+ if(!cssReady||!libraryReady||!window.L||streetReady)return;
+ try{
+  const div=document.getElementById('leaflet-map');
+  // Keep the usable offline map visible while the external base tiles load.
+  Object.assign(div.style,{display:'block',position:'absolute',inset:'0',height:'100%',opacity:'0',pointerEvents:'none'});
+  streetMap=L.map(div,{scrollWheelZoom:true}).setView([48.859,2.337],12);
+  streetLayer=L.layerGroup().addTo(streetMap);streetReady=true;
+  const tiles=L.tileLayer('https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&STYLE=normal&FORMAT=image/png&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}',{maxZoom:19,attribution:'&copy; <a href="https://cartes.gouv.fr/">IGN – Plan IGN</a>'});
+  tiles.on('tileload',()=>{if(baseTilesReady)return;baseTilesReady=true;clearTimeout(streetTimer);const wanted=preferStreet;showMapMode(wanted);});
+  tiles.on('tileerror',()=>{tileErrors++;if(tileErrors>=3){clearTimeout(streetTimer);failStreet('街道底图图片未能完整加载，已保留离线坐标图');}});
+  render();tiles.addTo(streetMap);
+ }catch(error){clearTimeout(streetTimer);failStreet('街道底图初始化失败，已保留离线坐标图');}
+}
+const css=document.createElement('link');css.rel='stylesheet';css.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';css.onload=()=>{cssReady=true;initStreet();};css.onerror=()=>{clearTimeout(streetTimer);failStreet('街道底图样式无法加载');};document.head.append(css);
+const lib=document.createElement('script');lib.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';lib.onload=()=>{libraryReady=true;initStreet();};lib.onerror=()=>{clearTimeout(streetTimer);failStreet('街道底图库无法加载');};document.head.append(lib);
+</script>
+</body>
+</html>

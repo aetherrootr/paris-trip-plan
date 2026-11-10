@@ -1,0 +1,1114 @@
+[
+  {
+    "a": "bacchus",
+    "b": "mere",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306185%2C48.857428&end=2.306353%2C48.857099&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 38.636,
+    "duration_min": 0.5795333333333333,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30608,
+          48.85741
+        ],
+        [
+          2.30625,
+          48.85708
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "cantin",
+    "b": "jeusselin",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.305605%2C48.856458&end=2.3064%2C48.857008&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 112.204,
+    "duration_min": 1.6830500000000002,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30564,
+          48.8564
+        ],
+        [
+          2.30588,
+          48.85645
+        ],
+        [
+          2.3065,
+          48.8566
+        ],
+        [
+          2.3063,
+          48.85699
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "cantin",
+    "b": "mere",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.305605%2C48.856458&end=2.306353%2C48.857099&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 122.903,
+    "duration_min": 1.84355,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30564,
+          48.8564
+        ],
+        [
+          2.30588,
+          48.85645
+        ],
+        [
+          2.3065,
+          48.8566
+        ],
+        [
+          2.30625,
+          48.85708
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "eiffel",
+    "b": "grenelle",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.294481%2C48.85837&end=2.294356%2C48.850415&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 1044.075,
+    "duration_min": 15.727783333333333,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.29529,
+          48.85786
+        ],
+        [
+          2.295,
+          48.85766
+        ],
+        [
+          2.29497,
+          48.85753
+        ],
+        [
+          2.29495,
+          48.85745
+        ],
+        [
+          2.29493,
+          48.85734
+        ],
+        [
+          2.29493,
+          48.85724
+        ],
+        [
+          2.29494,
+          48.8572
+        ],
+        [
+          2.29494,
+          48.85704
+        ],
+        [
+          2.29494,
+          48.85697
+        ],
+        [
+          2.29496,
+          48.8569
+        ],
+        [
+          2.29502,
+          48.85675
+        ],
+        [
+          2.29506,
+          48.85669
+        ],
+        [
+          2.29511,
+          48.85663
+        ],
+        [
+          2.29517,
+          48.85656
+        ],
+        [
+          2.29521,
+          48.85652
+        ],
+        [
+          2.29532,
+          48.85645
+        ],
+        [
+          2.29517,
+          48.85634
+        ],
+        [
+          2.29594,
+          48.85582
+        ],
+        [
+          2.29588,
+          48.85573
+        ],
+        [
+          2.29576,
+          48.85527
+        ],
+        [
+          2.29567,
+          48.85486
+        ],
+        [
+          2.29567,
+          48.85476
+        ],
+        [
+          2.2955,
+          48.85464
+        ],
+        [
+          2.29579,
+          48.85446
+        ],
+        [
+          2.29664,
+          48.85391
+        ],
+        [
+          2.29696,
+          48.8537
+        ],
+        [
+          2.29738,
+          48.85342
+        ],
+        [
+          2.29728,
+          48.85328
+        ],
+        [
+          2.29708,
+          48.85301
+        ],
+        [
+          2.29679,
+          48.8526
+        ],
+        [
+          2.29662,
+          48.85238
+        ],
+        [
+          2.29648,
+          48.85219
+        ],
+        [
+          2.29638,
+          48.85201
+        ],
+        [
+          2.29634,
+          48.85197
+        ],
+        [
+          2.2963,
+          48.85194
+        ],
+        [
+          2.29598,
+          48.85172
+        ],
+        [
+          2.29588,
+          48.85165
+        ],
+        [
+          2.29551,
+          48.85141
+        ],
+        [
+          2.29533,
+          48.85129
+        ],
+        [
+          2.29497,
+          48.85105
+        ],
+        [
+          2.29402,
+          48.85043
+        ],
+        [
+          2.2943,
+          48.85034
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "grenelle",
+    "b": "maritime",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.294356%2C48.850415&end=2.28734%2C48.86182&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 1648.567,
+    "duration_min": 24.91185,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.2943,
+          48.85034
+        ],
+        [
+          2.29402,
+          48.85043
+        ],
+        [
+          2.29292,
+          48.85078
+        ],
+        [
+          2.29281,
+          48.85082
+        ],
+        [
+          2.2927,
+          48.85087
+        ],
+        [
+          2.29259,
+          48.85092
+        ],
+        [
+          2.29254,
+          48.851
+        ],
+        [
+          2.29224,
+          48.85131
+        ],
+        [
+          2.29219,
+          48.85133
+        ],
+        [
+          2.29203,
+          48.85149
+        ],
+        [
+          2.29197,
+          48.8515
+        ],
+        [
+          2.29169,
+          48.85178
+        ],
+        [
+          2.29168,
+          48.85187
+        ],
+        [
+          2.29149,
+          48.85206
+        ],
+        [
+          2.29144,
+          48.85208
+        ],
+        [
+          2.29127,
+          48.85226
+        ],
+        [
+          2.29077,
+          48.85277
+        ],
+        [
+          2.29008,
+          48.85346
+        ],
+        [
+          2.28979,
+          48.85376
+        ],
+        [
+          2.28945,
+          48.8541
+        ],
+        [
+          2.28908,
+          48.85447
+        ],
+        [
+          2.28885,
+          48.85458
+        ],
+        [
+          2.28872,
+          48.85471
+        ],
+        [
+          2.28856,
+          48.85485
+        ],
+        [
+          2.28852,
+          48.85489
+        ],
+        [
+          2.28772,
+          48.85568
+        ],
+        [
+          2.28688,
+          48.85652
+        ],
+        [
+          2.28678,
+          48.85659
+        ],
+        [
+          2.28673,
+          48.85661
+        ],
+        [
+          2.28669,
+          48.85662
+        ],
+        [
+          2.28665,
+          48.85662
+        ],
+        [
+          2.28664,
+          48.85671
+        ],
+        [
+          2.28651,
+          48.85685
+        ],
+        [
+          2.28666,
+          48.85697
+        ],
+        [
+          2.28734,
+          48.85747
+        ],
+        [
+          2.28763,
+          48.85769
+        ],
+        [
+          2.28793,
+          48.85792
+        ],
+        [
+          2.28768,
+          48.85814
+        ],
+        [
+          2.28733,
+          48.85844
+        ],
+        [
+          2.28783,
+          48.85883
+        ],
+        [
+          2.28837,
+          48.85921
+        ],
+        [
+          2.28841,
+          48.85926
+        ],
+        [
+          2.28856,
+          48.85941
+        ],
+        [
+          2.28835,
+          48.8595
+        ],
+        [
+          2.28828,
+          48.85955
+        ],
+        [
+          2.2882,
+          48.85962
+        ],
+        [
+          2.28817,
+          48.85966
+        ],
+        [
+          2.28809,
+          48.85975
+        ],
+        [
+          2.28824,
+          48.85978
+        ],
+        [
+          2.28809,
+          48.85988
+        ],
+        [
+          2.28806,
+          48.8599
+        ],
+        [
+          2.28772,
+          48.86011
+        ],
+        [
+          2.28755,
+          48.86022
+        ],
+        [
+          2.28744,
+          48.86029
+        ],
+        [
+          2.2874,
+          48.86032
+        ],
+        [
+          2.28737,
+          48.86037
+        ],
+        [
+          2.28737,
+          48.86037
+        ],
+        [
+          2.28737,
+          48.8604
+        ],
+        [
+          2.2874,
+          48.86043
+        ],
+        [
+          2.28746,
+          48.86049
+        ],
+        [
+          2.28754,
+          48.86054
+        ],
+        [
+          2.28726,
+          48.86069
+        ],
+        [
+          2.28717,
+          48.86076
+        ],
+        [
+          2.28709,
+          48.86083
+        ],
+        [
+          2.28705,
+          48.86091
+        ],
+        [
+          2.28704,
+          48.86099
+        ],
+        [
+          2.28706,
+          48.86108
+        ],
+        [
+          2.2871,
+          48.86115
+        ],
+        [
+          2.2872,
+          48.86134
+        ],
+        [
+          2.28727,
+          48.86144
+        ],
+        [
+          2.28746,
+          48.86162
+        ],
+        [
+          2.28756,
+          48.86168
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "jeusselin",
+    "b": "lambert",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3064%2C48.857008&end=2.306437%2C48.856937&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 8.355,
+    "duration_min": 0.12533333333333332,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.3063,
+          48.85699
+        ],
+        [
+          2.30633,
+          48.85691
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "jeusselin",
+    "b": "mere",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3064%2C48.857008&end=2.306353%2C48.857099&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 10.699,
+    "duration_min": 0.16048333333333334,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.3063,
+          48.85699
+        ],
+        [
+          2.30625,
+          48.85708
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "lambert",
+    "b": "cantin",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306437%2C48.856937&end=2.305605%2C48.856458&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 103.849,
+    "duration_min": 1.5577333333333334,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30633,
+          48.85691
+        ],
+        [
+          2.3065,
+          48.8566
+        ],
+        [
+          2.30588,
+          48.85645
+        ],
+        [
+          2.30564,
+          48.8564
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "mere",
+    "b": "jeusselin",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306353%2C48.857099&end=2.3064%2C48.857008&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 10.699,
+    "duration_min": 0.16048333333333334,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30625,
+          48.85708
+        ],
+        [
+          2.3063,
+          48.85699
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "mere",
+    "b": "lambert",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306353%2C48.857099&end=2.306437%2C48.856937&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 19.054,
+    "duration_min": 0.28581666666666666,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30625,
+          48.85708
+        ],
+        [
+          2.30633,
+          48.85691
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "rodin",
+    "b": "saxe",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.315835%2C48.855307&end=2.3099428467304537%2C48.848359309981504&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 1320.79,
+    "duration_min": 19.878516666666666,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.31586,
+          48.85544
+        ],
+        [
+          2.31588,
+          48.85544
+        ],
+        [
+          2.316,
+          48.85592
+        ],
+        [
+          2.31521,
+          48.85611
+        ],
+        [
+          2.31503,
+          48.85614
+        ],
+        [
+          2.315,
+          48.85593
+        ],
+        [
+          2.31487,
+          48.85485
+        ],
+        [
+          2.31485,
+          48.85468
+        ],
+        [
+          2.31475,
+          48.85388
+        ],
+        [
+          2.31473,
+          48.8537
+        ],
+        [
+          2.31472,
+          48.85356
+        ],
+        [
+          2.31472,
+          48.85354
+        ],
+        [
+          2.31452,
+          48.85193
+        ],
+        [
+          2.31452,
+          48.85181
+        ],
+        [
+          2.31447,
+          48.85143
+        ],
+        [
+          2.31415,
+          48.85123
+        ],
+        [
+          2.31392,
+          48.85115
+        ],
+        [
+          2.31378,
+          48.85109
+        ],
+        [
+          2.3125,
+          48.85049
+        ],
+        [
+          2.3124,
+          48.85045
+        ],
+        [
+          2.31235,
+          48.85027
+        ],
+        [
+          2.31229,
+          48.84973
+        ],
+        [
+          2.31226,
+          48.84944
+        ],
+        [
+          2.31219,
+          48.84879
+        ],
+        [
+          2.31206,
+          48.8488
+        ],
+        [
+          2.31155,
+          48.84882
+        ],
+        [
+          2.31142,
+          48.84883
+        ],
+        [
+          2.31136,
+          48.8483
+        ],
+        [
+          2.3113,
+          48.84783
+        ],
+        [
+          2.31125,
+          48.8478
+        ],
+        [
+          2.31121,
+          48.84778
+        ],
+        [
+          2.31114,
+          48.84777
+        ],
+        [
+          2.31026,
+          48.84833
+        ],
+        [
+          2.31008,
+          48.84845
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "saxe",
+    "b": "invalides",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3099428467304537%2C48.848359309981504&end=2.3125934%2C48.8557933&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 1248.653,
+    "duration_min": 18.813116666666666,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.31008,
+          48.84845
+        ],
+        [
+          2.30931,
+          48.84895
+        ],
+        [
+          2.30879,
+          48.84927
+        ],
+        [
+          2.30817,
+          48.84968
+        ],
+        [
+          2.30802,
+          48.84974
+        ],
+        [
+          2.30813,
+          48.84985
+        ],
+        [
+          2.30912,
+          48.85082
+        ],
+        [
+          2.30943,
+          48.85112
+        ],
+        [
+          2.30961,
+          48.85131
+        ],
+        [
+          2.30985,
+          48.85155
+        ],
+        [
+          2.30997,
+          48.85166
+        ],
+        [
+          2.31006,
+          48.85175
+        ],
+        [
+          2.31018,
+          48.85186
+        ],
+        [
+          2.31024,
+          48.85193
+        ],
+        [
+          2.31013,
+          48.85202
+        ],
+        [
+          2.31013,
+          48.85205
+        ],
+        [
+          2.31016,
+          48.85208
+        ],
+        [
+          2.31041,
+          48.85234
+        ],
+        [
+          2.31039,
+          48.85238
+        ],
+        [
+          2.30988,
+          48.85333
+        ],
+        [
+          2.30982,
+          48.85342
+        ],
+        [
+          2.30972,
+          48.85349
+        ],
+        [
+          2.30957,
+          48.8534
+        ],
+        [
+          2.30954,
+          48.85348
+        ],
+        [
+          2.30953,
+          48.85354
+        ],
+        [
+          2.30952,
+          48.85366
+        ],
+        [
+          2.30953,
+          48.85385
+        ],
+        [
+          2.30953,
+          48.85386
+        ],
+        [
+          2.30953,
+          48.85396
+        ],
+        [
+          2.30954,
+          48.85403
+        ],
+        [
+          2.30955,
+          48.85411
+        ],
+        [
+          2.30966,
+          48.85497
+        ],
+        [
+          2.30979,
+          48.856
+        ],
+        [
+          2.30983,
+          48.85634
+        ],
+        [
+          2.30986,
+          48.85663
+        ],
+        [
+          2.31004,
+          48.85662
+        ],
+        [
+          2.31013,
+          48.85661
+        ],
+        [
+          2.31018,
+          48.85661
+        ],
+        [
+          2.31091,
+          48.85657
+        ],
+        [
+          2.3112,
+          48.85655
+        ],
+        [
+          2.31115,
+          48.8565
+        ],
+        [
+          2.31109,
+          48.85586
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "start",
+    "b": "bacchus",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306088%2C48.857616&end=2.306185%2C48.857428&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 22.101,
+    "duration_min": 0.3315166666666666,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30599,
+          48.85759
+        ],
+        [
+          2.30608,
+          48.85741
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "start",
+    "b": "cantin",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306088%2C48.857616&end=2.305605%2C48.856458&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 183.64,
+    "duration_min": 2.7546000000000004,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30599,
+          48.85759
+        ],
+        [
+          2.3065,
+          48.8566
+        ],
+        [
+          2.30588,
+          48.85645
+        ],
+        [
+          2.30564,
+          48.8564
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "start",
+    "b": "jeusselin",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306088%2C48.857616&end=2.3064%2C48.857008&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 71.436,
+    "duration_min": 1.0715333333333334,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30599,
+          48.85759
+        ],
+        [
+          2.3063,
+          48.85699
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  },
+  {
+    "a": "start",
+    "b": "mere",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.306088%2C48.857616&end=2.306353%2C48.857099&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 60.737,
+    "duration_min": 0.9110499999999999,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.30599,
+          48.85759
+        ],
+        [
+          2.30625,
+          48.85708
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "status": "ok"
+  }
+]

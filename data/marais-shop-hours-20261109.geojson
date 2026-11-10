@@ -1,0 +1,787 @@
+{
+  "type": "FeatureCollection",
+  "attribution": "© OpenStreetMap contributors",
+  "checked_date": "2026-11-09",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3621533,
+          48.8629397
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "713882555",
+        "name": "Jouannault - Cheese Shop",
+        "shop": "cheese",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 12.0,
+        "source_url": "https://www.openstreetmap.org/node/713882555",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362098,
+          48.8629626
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "1430808026",
+        "name": "Comme un Roman",
+        "shop": "books",
+        "opening_hours_osm": "Tu-Sa 10:00-19:45; Su 10:00-13:30",
+        "distance_to_route_m": 12.3,
+        "source_url": "https://www.openstreetmap.org/node/1430808026",
+        "review": {
+          "name": "Comme un Roman",
+          "osm_id": "1430808026",
+          "coordinates": [
+            2.362098,
+            48.8629626
+          ],
+          "distance_to_route_m": 12.3,
+          "opening_hours_osm": "Tu-Sa 10:00-19:45; Su 10:00-13:30",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/1430808026",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "地图标示周二至周六10:00–19:45、周日10:00–13:30；书店官网未能读取，周日时段不能计入。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3622966,
+          48.8631338
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "2431491789",
+        "name": "Le Repaire de Bacchus",
+        "shop": "alcohol",
+        "opening_hours_osm": "Mo 16:00-21:00; Tu-Sa 10:30-21:00; Su 10:00-20:00",
+        "distance_to_route_m": 11.7,
+        "source_url": "https://www.openstreetmap.org/node/2431491789",
+        "review": {
+          "name": "Le Repaire de Bacchus",
+          "osm_id": "2431491789",
+          "coordinates": [
+            2.3622966,
+            48.8631338
+          ],
+          "distance_to_route_m": 11.7,
+          "opening_hours_osm": "Mo 16:00-21:00; Tu-Sa 10:30-21:00; Su 10:00-20:00",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/2431491789",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": true
+          },
+          "details": "地图标示周二至周六10:30–21:00、周日10:00–20:00。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3623707,
+          48.8628236
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "2432407606",
+        "name": "Jouannault",
+        "shop": "cheese",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 25.1,
+        "source_url": "https://www.openstreetmap.org/node/2432407606",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3625023,
+          48.8630399
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "2926458773",
+        "name": "Scoop me a Cookie",
+        "shop": "confectionery",
+        "opening_hours_osm": "Mo-Su 10:00-20:00",
+        "distance_to_route_m": 19.3,
+        "source_url": "https://www.openstreetmap.org/node/2926458773",
+        "review": {
+          "name": "Scoop me a Cookie",
+          "osm_id": "2926458773",
+          "coordinates": [
+            2.3625023,
+            48.8630399
+          ],
+          "distance_to_route_m": 19.3,
+          "opening_hours_osm": "Mo-Su 10:00-20:00",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/2926458773",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": true
+          },
+          "details": "地图标示每天10:00–20:00。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3619382,
+          48.8630594
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3204545981",
+        "name": "Jean-Paul Hévin",
+        "shop": "chocolate",
+        "opening_hours_osm": "Tu-Sa 10:00-19:30; PH,Su,Mo off",
+        "distance_to_route_m": 10.3,
+        "source_url": "https://www.openstreetmap.org/node/3204545981",
+        "review": {
+          "name": "Jean-Paul Hévin",
+          "osm_id": "3204545981",
+          "coordinates": [
+            2.3619382,
+            48.8630594
+          ],
+          "distance_to_route_m": 10.3,
+          "opening_hours_osm": "Tu-Sa 10:00-19:30; PH,Su,Mo off",
+          "source_kind": "商家官网",
+          "source_url": "https://www.jeanpaulhevin.com/fr/nos-boutiques?boutique=MARAIS&ville=paris",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "41 rue de Bretagne：官网周二至周六10:00–19:30，周日、周一和节假日关闭；火灾后另有街面店正常营业公告。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3622624,
+          48.8627174
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3226121580",
+        "name": "BiBoViNo",
+        "shop": "alcohol",
+        "opening_hours_osm": "Tu-Th 11:00-14:30, 16:00-20:00; Fr-Sa 11:00-20:00; Su 10:30-18:30",
+        "distance_to_route_m": 35.0,
+        "source_url": "https://www.openstreetmap.org/node/3226121580",
+        "review": {
+          "name": "BiBoViNo",
+          "osm_id": "3226121580",
+          "coordinates": [
+            2.3622624,
+            48.8627174
+          ],
+          "distance_to_route_m": 35.0,
+          "opening_hours_osm": "Tu-Th 11:00-14:30, 16:00-20:00; Fr-Sa 11:00-20:00; Su 10:30-18:30",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/3226121580",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": true
+          },
+          "details": "地图标示周二至周四11:00–14:30、16:00–20:00，周五六11:00–20:00，周日10:30–18:30。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3618556,
+          48.8630984
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3226135958",
+        "name": "Le Jardin des Délices",
+        "shop": "greengrocer",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 10.3,
+        "source_url": "https://www.openstreetmap.org/node/3226135958",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3612452,
+          48.8634302
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3226216061",
+        "name": "Franprix",
+        "shop": "convenience",
+        "opening_hours_osm": "Mo-Sa 07:30-21:00; Su 08:30-12:50",
+        "distance_to_route_m": 32.7,
+        "source_url": "https://www.openstreetmap.org/node/3226216061",
+        "review": {
+          "name": "Franprix",
+          "osm_id": "3226216061",
+          "coordinates": [
+            2.3612452,
+            48.8634302
+          ],
+          "distance_to_route_m": 32.7,
+          "opening_hours_osm": "Mo-Sa 07:30-21:00; Su 08:30-12:50",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/3226216061",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "地图标示周一至周六07:30–21:00、周日08:30–12:50。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3616287,
+          48.8632151
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3361195557",
+        "name": "Comptoirs Richard",
+        "shop": "coffee",
+        "opening_hours_osm": "Tu-Sa 09:30-19:00; Su, Mo, PH closed",
+        "distance_to_route_m": 4.1,
+        "source_url": "https://www.openstreetmap.org/node/3361195557",
+        "review": {
+          "name": "Comptoirs Richard",
+          "osm_id": "3361195557",
+          "coordinates": [
+            2.3616287,
+            48.8632151
+          ],
+          "distance_to_route_m": 4.1,
+          "opening_hours_osm": "Tu-Sa 09:30-19:00; Su, Mo, PH closed",
+          "source_kind": "商家官网",
+          "source_url": "https://www.comptoirsrichard.fr/content/75-nos-boutiques",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "45 rue de Bretagne：官网周二至周六09:30–19:00；未列周日营业，不计入周日覆盖。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3598639,
+          48.862754
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3396907065",
+        "name": "Maison Lesaint et Lê",
+        "shop": "bakery",
+        "opening_hours_osm": "Mo-Fr 07:00-19:30",
+        "distance_to_route_m": 17.6,
+        "source_url": "https://www.openstreetmap.org/node/3396907065",
+        "review": {
+          "name": "Maison Lesaint et Lê",
+          "osm_id": "3396907065",
+          "coordinates": [
+            2.3598639,
+            48.862754
+          ],
+          "distance_to_route_m": 17.6,
+          "opening_hours_osm": "Mo-Fr 07:00-19:30",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/3396907065",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": false,
+            "Su": false
+          },
+          "details": "地图仅列周一至周五07:00–19:30；周末未列，不计覆盖，不能据此断言实际一定闭店。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3599632,
+          48.8628498
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3396907067",
+        "name": "Supérette des Archives",
+        "shop": "convenience",
+        "opening_hours_osm": "Mo-Su 08:30-00:30",
+        "distance_to_route_m": 30.3,
+        "source_url": "https://www.openstreetmap.org/node/3396907067",
+        "review": {
+          "name": "Supérette des Archives",
+          "osm_id": "3396907067",
+          "coordinates": [
+            2.3599632,
+            48.8628498
+          ],
+          "distance_to_route_m": 30.3,
+          "opening_hours_osm": "Mo-Su 08:30-00:30",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/3396907067",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": true
+          },
+          "details": "地图标示每天08:30–次日00:30。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3626799,
+          48.8630658
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3661408804",
+        "name": "Maison Barthouil",
+        "shop": "deli",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 32.5,
+        "source_url": "https://www.openstreetmap.org/node/3661408804",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3596046,
+          48.8627806
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "3680774432",
+        "name": "Ewa Lipinska",
+        "shop": "clothes",
+        "opening_hours_osm": "Mo-Sa 11:00-19:30",
+        "distance_to_route_m": 23.2,
+        "source_url": "https://www.openstreetmap.org/node/3680774432",
+        "review": {
+          "name": "Ewa Lipinska",
+          "osm_id": "3680774432",
+          "coordinates": [
+            2.3596046,
+            48.8627806
+          ],
+          "distance_to_route_m": 23.2,
+          "opening_hours_osm": "Mo-Sa 11:00-19:30",
+          "source_kind": "OSM营业标签，非逐店实时确认",
+          "source_url": "https://www.openstreetmap.org/node/3680774432",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "地图标示周一至周六11:00–19:30，周日未列，不计覆盖。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3622026,
+          48.8629135
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "4800815222",
+        "name": "Cave D'affinage Paroles De Fromagers",
+        "shop": "supermarket",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 13.4,
+        "source_url": "https://www.openstreetmap.org/node/4800815222",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359784,
+          48.8626974
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "5324631718",
+        "name": "État Libre d’Orange",
+        "shop": "perfumery",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 10.2,
+        "source_url": "https://www.openstreetmap.org/node/5324631718",
+        "review": {
+          "name": "État Libre d’Orange",
+          "osm_id": "5324631718",
+          "coordinates": [
+            2.359784,
+            48.8626974
+          ],
+          "distance_to_route_m": 10.2,
+          "opening_hours_osm": null,
+          "source_kind": "商家官网",
+          "source_url": "https://www.etatlibredorange.com/pages/location",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "69 rue des Archives：官网周一至周六11:00–14:30及15:30–19:00；未列周日营业，不计覆盖。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362292,
+          48.8627487
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "7078311742",
+        "name": "Vintage Photographie",
+        "shop": "photo",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 31.7,
+        "source_url": "https://www.openstreetmap.org/node/7078311742",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3621555,
+          48.8629543
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "7537901213",
+        "name": "Les Quatre Saisons",
+        "shop": "greengrocer",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 10.6,
+        "source_url": "https://www.openstreetmap.org/node/7537901213",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3624383,
+          48.8630661
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "8256992394",
+        "name": "Maison Vérot",
+        "shop": "butcher",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 15.1,
+        "source_url": "https://www.openstreetmap.org/node/8256992394",
+        "review": {
+          "name": "Maison Vérot",
+          "osm_id": "8256992394",
+          "coordinates": [
+            2.3624383,
+            48.8630661
+          ],
+          "distance_to_route_m": 15.1,
+          "opening_hours_osm": null,
+          "source_kind": "商家官网",
+          "source_url": "https://www.maisonverot.fr/pages/boutiques",
+          "checked_date": "2026-11-09",
+          "covers_entire_1745_1820": {
+            "We": true,
+            "Th": true,
+            "Fr": true,
+            "Sa": true,
+            "Su": false
+          },
+          "details": "38 rue de Bretagne：官网周二至周五09:30–20:00、周六09:30–19:30、周日10:00–13:30。"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3606556,
+          48.8620271
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "8950382694",
+        "name": "Seefan",
+        "shop": "clothes",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 28.7,
+        "source_url": "https://www.openstreetmap.org/node/8950382694",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3586378,
+          48.8620067
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "10313025741",
+        "name": "Hair Dresser Studio",
+        "shop": "hairdresser",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 27.3,
+        "source_url": "https://www.openstreetmap.org/node/10313025741",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3585907,
+          48.8613676
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "11197420838",
+        "name": "musée de la chasse et de la nature",
+        "shop": "books",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 15.5,
+        "source_url": "https://www.openstreetmap.org/node/11197420838",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3594683,
+          48.8628452
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "11444143238",
+        "name": "Paul Smith",
+        "shop": "clothes",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 35.0,
+        "source_url": "https://www.openstreetmap.org/node/11444143238",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3595149,
+          48.8628213
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "11444143239",
+        "name": "Comptoir horloger du Marais",
+        "shop": "clock",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 30.8,
+        "source_url": "https://www.openstreetmap.org/node/11444143239",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3604362,
+          48.8623192
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "12909355596",
+        "name": "Gaâla",
+        "shop": "clothes",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 5.7,
+        "source_url": "https://www.openstreetmap.org/node/12909355596",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3581559,
+          48.8613679
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "13154007675",
+        "name": "Senteurs de fée",
+        "shop": "cosmetics",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 30.3,
+        "source_url": "https://www.openstreetmap.org/node/13154007675",
+        "review": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3607248,
+          48.8619943
+        ]
+      },
+      "properties": {
+        "osm_type": "node",
+        "osm_id": "13382390303",
+        "name": "Michèle B.",
+        "shop": "optician",
+        "opening_hours_osm": null,
+        "distance_to_route_m": 34.5,
+        "source_url": "https://www.openstreetmap.org/node/13382390303",
+        "review": null
+      }
+    }
+  ]
+}

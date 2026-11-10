@@ -1,0 +1,24 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+
+# Local backups and distributable exports; keep files on disk
+/archive/
+/exports/
+
+# Generated pages and build metadata (python build_daily.py)
+/web/
+/index.html
+/itinerary.html
+/map-review.html
+/map-template.html
+/data/web-current.json
+
+# Local secrets
+.env
+.env.*
+!.env.example

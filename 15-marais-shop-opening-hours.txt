@@ -1,0 +1,60 @@
+D04｜档案街—布列塔尼街17:45–18:20商铺营业核对
+核对日2026-11-09；出行为2027年2–3月、实际日期未定。
+
+结论
+周三至周六，这一时段适合街面短逛，已查样本多数覆盖全时段；周日不宜以“大部分店都开”为安排前提。未改五馆、街区、晚餐的时间。
+不能宣称全街多数店铺已逐一确认：地图的营业资料覆盖有限，样本也不是随机抽样。
+移除档案馆耗时旁“〔由25分钟延长〕”，当前只显示“45分钟自主参观”。
+
+地图范围与方法
+使用当前hunt__maraiswalk约417米连接线及39 rue de Bretagne代表点，取距折线40米以内的商铺POI；另保留周边咖啡馆、餐饮标签供区分，不用这些晚间餐饮提升零售店开门比例。
+Overpass两次查询失败，改用OpenStreetMap官方公开/map接口获取区域，再在本地按坐标距路线筛选。
+原始范围包含27条shop记录，其中只有10条opening_hours；另有20条餐饮／咖啡馆／酒吧类记录。
+27是POI条目，含馆内书店、服务类和可能的同店多点，不等于27家独立街面零售商铺。
+对2条没有营业标签的商铺（Maison Vérot、État Libre d’Orange）补查官网，并对Jean-Paul Hévin、Comptoirs Richard的地图时刻交叉确认。
+共12个可评估样本：周三至周五12条、周六11条、周日4条规则覆盖17:45–18:20全部时段。
+仅4家用商家官网交叉确认；其余为OSM标签，不是逐店实时确认。未列某星期、标签缺失不等于实际一定关门，false只表示当前资料不覆盖全时段。
+12个样本不能推广为全街开门率，亦不是2027营业保证。街区35分钟含抵达步行，适合少量门店短停，不是逛完所有店。
+
+官网核对
+État Libre d’Orange，69 rue des Archives：周一至周六11–14:30／15:30–19，周日未列营业。
+Jean-Paul Hévin，41 rue de Bretagne：周二至周六10–19:30；周日、周一、节假日关闭。官网明确火灾后街面店仍按常规时间开门。
+Comptoirs Richard，45 rue de Bretagne：周二至周六09:30–19；周日未列营业，不计周日覆盖。
+Maison Vérot，38 rue de Bretagne：周二至周五09:30–20，周六09:30–19:30，周日10–13:30。
+
+地图标签补充
+Comme un Roman，39 rue de Bretagne：周二至周六10–19:45，周日10–13:30；书店官网本次读取超时，此项按地图资料处理。
+Le Repaire de Bacchus：周二至周六10:30–21，周日10–20。
+Scoop me a Cookie：每天10–20。
+BiBoViNo：周二至周四11–14:30／16–20，周五六11–20，周日10:30–18:30。
+Franprix（corridor内这条POI）：周一至周六07:30–21，周日08:30–12:50。
+Maison Lesaint et Lê：仅列周一至周五07–19:30；周末不计覆盖，仍需核实。
+Supérette des Archives：每天08:30–次日00:30。
+Ewa Lipinska：周一至周六11–19:30，周日未列，不计覆盖。
+这些地图记录的具体修改时间、门店临时变化、出行季节营业均需再核，不能替代商家当天确认。
+
+不适合套用常规地图时刻的情况
+1. 红孩儿市场：巴黎市政府及消防部门证实2026-10-12火灾，市场内部屋顶、木构、摊位受损，街面商铺被保留下来。所查官方信息未给出2027恢复开放承诺。不把旧市场8:30–20:30等时刻当作当前可入内证据，临时摊位也需独立确认。
+2. Gaâla，10 rue Pastourelle：官网为2026限定日期快闪安排，未确认2027常设营业，不计入12样本。
+3. 现有39号地图点是街面代表点，附近有独立书店和市场入口，不能仅凭该点位就推断市场内正常营业。
+
+行程处理
+保留17:45–18:20街巷散步；购物优先选周三至周六，周日以街景和已确认营业的店铺为主。
+五馆的开放安排仍可兼容周日，故没有将周日改为硬性避开日；具体星期和目标店另列待办。
+晚餐18:30起仍在上玛黑／布列塔尼街附近，选择独立街面餐厅，不依赖市场内部餐饮重开。
+未新增必去商店或改变地图编号。商铺点位及营业资料保存为单独JSON、GeoJSON，主路线仍8个景点点位。
+
+证据文件
+ data/marais-shop-hours-20261109.json：查询范围、样本、来源、覆盖统计、限制、27个地图记录。
+ data/marais-shop-hours-20261109.geojson：上述商铺坐标、营业标签与复核结果（© OpenStreetMap contributors）。
+
+来源
+https://api.openstreetmap.org/api/0.6/map?bbox=2.3578,48.8612,2.3652,48.8641
+https://www.openstreetmap.org/copyright
+https://www.etatlibredorange.com/pages/location
+https://www.jeanpaulhevin.com/fr/nos-boutiques?boutique=MARAIS&ville=paris
+https://www.comptoirsrichard.fr/content/75-nos-boutiques
+https://www.maisonverot.fr/pages/boutiques
+https://www.paris.fr/pages/incendie-du-marche-des-enfants-rouges-les-recommandations-de-l-agence-regionale-de-sante-36826
+https://www.terre.defense.gouv.fr/pompiers-paris/actualites/violent-incendie-au-marche-enfants-rouges-paris-3e
+https://gaala.com/fr/pages/gaala-boutique-paris

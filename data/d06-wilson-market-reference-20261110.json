@@ -1,0 +1,49 @@
+{
+  "url": "https://data.geopf.fr/geocodage/search?q=13+Avenue+du+Pr%C3%A9sident+Wilson+75116+Paris&limit=1",
+  "response": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.293534,
+            48.864383
+          ]
+        },
+        "properties": {
+          "label": "Avenue du Président Wilson 75116 Paris",
+          "score": 0.8235781818181818,
+          "id": "75116_7804",
+          "banId": "49ee82d4-96ba-4f4c-abe6-b94e7922a67f",
+          "name": "Avenue du Président Wilson",
+          "postcode": "75116",
+          "citycode": "75116",
+          "x": 648172.38,
+          "y": 6862937.57,
+          "city": "Paris",
+          "district": "Paris 16e Arrondissement",
+          "context": "75, Paris, Île-de-France",
+          "type": "street",
+          "importance": 0.73436,
+          "depcode": "75",
+          "street": "Avenue du Président Wilson",
+          "_type": "address"
+        }
+      }
+    ],
+    "query": "13 Avenue du Président Wilson 75116 Paris"
+  },
+  "selected_reference": {
+    "coordinates": [
+      2.3002513,
+      48.8652359
+    ],
+    "coordinate_source": "巴黎市市场页所链接Géovélo目的地坐标；市场路段参考点，非固定摊位或入口",
+    "url": "https://geovelo.fr/fr/route?bike-type=own&c=2.3002513%2C48.8652359&e-bike=false&to=2.3002513%2C48.8652359&z=15.00",
+    "source_page": "https://www.paris.fr/lieux/marche-president-wilson-5510",
+    "checked_date": "2026-11-10",
+    "note": "使用市政府链接的市场目的地；BAN仅返回街道代表点，不采用为市场入口。"
+  }
+}

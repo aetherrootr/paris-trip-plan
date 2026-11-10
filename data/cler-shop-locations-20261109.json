@@ -1,0 +1,310 @@
+{
+  "cantin": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=12+rue+du+Champ+de+Mars+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.305605,
+              48.856458
+            ]
+          },
+          "properties": {
+            "label": "12 Rue du Champ de Mars 75007 Paris",
+            "score": 0.9695072727272726,
+            "housenumber": "12",
+            "id": "75107_1717_00012",
+            "banId": "b7cf6317-722e-414a-8433-9cf7087041a9",
+            "name": "12 Rue du Champ de Mars",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649050.16,
+            "y": 6862048.53,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.66458,
+            "depcode": "75",
+            "street": "Rue du Champ de Mars",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "12 rue du Champ de Mars 75007 Paris"
+    },
+    "coordinates": [
+      2.305605,
+      48.856458
+    ],
+    "label": "12 Rue du Champ de Mars 75007 Paris"
+  },
+  "jeusselin": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=37+rue+Cler+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.3064,
+              48.857008
+            ]
+          },
+          "properties": {
+            "label": "37 Rue Cler 75007 Paris",
+            "score": 0.9718536363636363,
+            "housenumber": "37",
+            "id": "75107_2106_00037",
+            "banId": "1c12bb1a-c5e4-4581-93f5-3b156e87a0ba",
+            "name": "37 Rue Cler",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649109.03,
+            "y": 6862109.17,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69039,
+            "depcode": "75",
+            "street": "Rue Cler",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "37 rue Cler 75007 Paris"
+    },
+    "coordinates": [
+      2.3064,
+      48.857008
+    ],
+    "label": "37 Rue Cler 75007 Paris"
+  },
+  "mere": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=35+rue+Cler+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.306353,
+              48.857099
+            ]
+          },
+          "properties": {
+            "label": "35 Rue Cler 75007 Paris",
+            "score": 0.9718536363636363,
+            "housenumber": "35",
+            "id": "75107_2106_00035",
+            "banId": "37df8b3f-b5aa-4813-b988-83228d917374",
+            "name": "35 Rue Cler",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649105.67,
+            "y": 6862119.32,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69039,
+            "depcode": "75",
+            "street": "Rue Cler",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "35 rue Cler 75007 Paris"
+    },
+    "coordinates": [
+      2.306353,
+      48.857099
+    ],
+    "label": "35 Rue Cler 75007 Paris"
+  },
+  "bacchus": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=29+rue+Cler+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.306185,
+              48.857428
+            ]
+          },
+          "properties": {
+            "label": "29 Rue Cler 75007 Paris",
+            "score": 0.9718536363636363,
+            "housenumber": "29",
+            "id": "75107_2106_00029",
+            "banId": "2c86eba5-50e4-4a2f-be66-6e4c482d07a7",
+            "name": "29 Rue Cler",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649093.66,
+            "y": 6862156.01,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69039,
+            "depcode": "75",
+            "street": "Rue Cler",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "29 rue Cler 75007 Paris"
+    },
+    "coordinates": [
+      2.306185,
+      48.857428
+    ],
+    "label": "29 Rue Cler 75007 Paris"
+  },
+  "sablaise": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=28+rue+Cler+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.306043,
+              48.857286
+            ]
+          },
+          "properties": {
+            "label": "28 Rue Cler 75007 Paris",
+            "score": 0.9718536363636363,
+            "housenumber": "28",
+            "id": "75107_2106_00028",
+            "banId": "e525ac8b-2839-441d-b377-40308cd44f40",
+            "name": "28 Rue Cler",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649083.1,
+            "y": 6862140.31,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69039,
+            "depcode": "75",
+            "street": "Rue Cler",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "28 rue Cler 75007 Paris"
+    },
+    "coordinates": [
+      2.306043,
+      48.857286
+    ],
+    "label": "28 Rue Cler 75007 Paris"
+  },
+  "lambert": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=39+rue+Cler+75007+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.306437,
+              48.856937
+            ]
+          },
+          "properties": {
+            "label": "39 Rue Cler 75007 Paris",
+            "score": 0.9718536363636363,
+            "housenumber": "39",
+            "id": "75107_2106_00039",
+            "banId": "1442a210-5e97-47e5-8b6a-8163d57d029c",
+            "name": "39 Rue Cler",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 649111.67,
+            "y": 6862101.25,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69039,
+            "depcode": "75",
+            "street": "Rue Cler",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "39 rue Cler 75007 Paris"
+    },
+    "coordinates": [
+      2.306437,
+      48.856937
+    ],
+    "label": "39 Rue Cler 75007 Paris"
+  },
+  "grenelle": {
+    "request_url": "https://data.geopf.fr/geocodage/search?q=75+boulevard+de+Grenelle+75015+Paris&limit=1",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.294356,
+              48.850415
+            ]
+          },
+          "properties": {
+            "label": "75 Boulevard de Grenelle 75015 Paris",
+            "score": 0.9830145454545454,
+            "housenumber": "75",
+            "id": "75115_4310_00075",
+            "banId": "31f74b3f-0235-49f9-8d8f-34bebf50fb31",
+            "name": "75 Boulevard de Grenelle",
+            "postcode": "75015",
+            "citycode": "75115",
+            "x": 648218.8,
+            "y": 6861383.92,
+            "city": "Paris",
+            "district": "Paris 15e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.81316,
+            "depcode": "75",
+            "street": "Boulevard de Grenelle",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "75 boulevard de Grenelle 75015 Paris"
+    },
+    "coordinates": [
+      2.294356,
+      48.850415
+    ],
+    "label": "75 Boulevard de Grenelle 75015 Paris"
+  }
+}

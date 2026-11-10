@@ -1,0 +1,486 @@
+{
+  "checked_date": "2026-11-09",
+  "note": "比较固定卡纳瓦莱和最后布列塔尼街代表点，枚举下午三馆顺序；使用同一OSM/FOSSGIS步行模型比较距离。双向步行边按对称距离计算，非2027实际封路承诺。当前网页仅采用IGN Valhalla的6→7短路，其余路段保留原IGN数据。",
+  "old_route": {
+    "a": "archives",
+    "b": "hunt",
+    "status": "ok",
+    "straight_m": 191,
+    "checked_date": "2026-11-09",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-osrm&start=2.357272%2C48.859963&end=2.3587005%2C48.8614056&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&getBbox=true&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 614.2,
+    "duration_min": 10.201666666666666,
+    "geometry": {
+      "coordinates": [
+        [
+          2.357331,
+          48.860005
+        ],
+        [
+          2.357401,
+          48.859963
+        ],
+        [
+          2.357477,
+          48.859948
+        ],
+        [
+          2.357531,
+          48.85995
+        ],
+        [
+          2.357566,
+          48.859954
+        ],
+        [
+          2.357599,
+          48.859969
+        ],
+        [
+          2.357656,
+          48.86002
+        ],
+        [
+          2.357952,
+          48.860286
+        ],
+        [
+          2.358637,
+          48.859903
+        ],
+        [
+          2.359106,
+          48.859641
+        ],
+        [
+          2.359168,
+          48.859607
+        ],
+        [
+          2.359703,
+          48.859311
+        ],
+        [
+          2.35976,
+          48.85935
+        ],
+        [
+          2.360014,
+          48.859518
+        ],
+        [
+          2.360359,
+          48.859724
+        ],
+        [
+          2.360775,
+          48.859949
+        ],
+        [
+          2.359979,
+          48.860329
+        ],
+        [
+          2.359715,
+          48.860456
+        ],
+        [
+          2.359319,
+          48.860647
+        ],
+        [
+          2.358205,
+          48.861232
+        ],
+        [
+          2.358519,
+          48.861499
+        ]
+      ],
+      "type": "LineString"
+    },
+    "resource": "bdtopo-osrm",
+    "resourceVersion": "2026-11-07",
+    "raw": {
+      "resource": "bdtopo-osrm",
+      "resourceVersion": "2026-11-07",
+      "start": "2.357331,48.860005",
+      "end": "2.358519,48.861499",
+      "profile": "pedestrian",
+      "optimization": "shortest",
+      "geometry": {
+        "coordinates": [
+          [
+            2.357331,
+            48.860005
+          ],
+          [
+            2.357401,
+            48.859963
+          ],
+          [
+            2.357477,
+            48.859948
+          ],
+          [
+            2.357531,
+            48.85995
+          ],
+          [
+            2.357566,
+            48.859954
+          ],
+          [
+            2.357599,
+            48.859969
+          ],
+          [
+            2.357656,
+            48.86002
+          ],
+          [
+            2.357952,
+            48.860286
+          ],
+          [
+            2.358637,
+            48.859903
+          ],
+          [
+            2.359106,
+            48.859641
+          ],
+          [
+            2.359168,
+            48.859607
+          ],
+          [
+            2.359703,
+            48.859311
+          ],
+          [
+            2.35976,
+            48.85935
+          ],
+          [
+            2.360014,
+            48.859518
+          ],
+          [
+            2.360359,
+            48.859724
+          ],
+          [
+            2.360775,
+            48.859949
+          ],
+          [
+            2.359979,
+            48.860329
+          ],
+          [
+            2.359715,
+            48.860456
+          ],
+          [
+            2.359319,
+            48.860647
+          ],
+          [
+            2.358205,
+            48.861232
+          ],
+          [
+            2.358519,
+            48.861499
+          ]
+        ],
+        "type": "LineString"
+      },
+      "crs": "EPSG:4326",
+      "distanceUnit": "meter",
+      "timeUnit": "minute",
+      "bbox": [
+        2.357331,
+        48.859311,
+        2.360775,
+        48.861499
+      ],
+      "distance": 614.2,
+      "duration": 10.201666666666666,
+      "constraints": [],
+      "portions": [
+        {
+          "start": "2.357331,48.860005",
+          "end": "2.358519,48.861499",
+          "distance": 614.2,
+          "duration": 10.201666666666666,
+          "bbox": [
+            2.357331,
+            48.859311,
+            2.360775,
+            48.861499
+          ],
+          "steps": []
+        }
+      ]
+    }
+  },
+  "new_route": {
+    "a": "archives",
+    "b": "hunt",
+    "status": "ok",
+    "straight_m": 191,
+    "checked_date": "2026-11-09",
+    "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.357272%2C48.859963&end=2.3587005%2C48.8614056&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=true&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+    "distance_m": 230.195,
+    "duration_min": 3.4696,
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          2.35716,
+          48.8599
+        ],
+        [
+          2.35702,
+          48.86001
+        ],
+        [
+          2.35686,
+          48.86008
+        ],
+        [
+          2.35743,
+          48.86058
+        ],
+        [
+          2.35821,
+          48.86123
+        ],
+        [
+          2.35852,
+          48.8615
+        ]
+      ]
+    },
+    "resource": "bdtopo-valhalla",
+    "resourceVersion": "2026-11-07",
+    "raw": {
+      "resource": "bdtopo-valhalla",
+      "resourceVersion": "2026-11-07",
+      "start": "2.357164,48.859898",
+      "end": "2.358519,48.861498",
+      "profile": "pedestrian",
+      "optimization": "shortest",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.35716,
+            48.8599
+          ],
+          [
+            2.35702,
+            48.86001
+          ],
+          [
+            2.35686,
+            48.86008
+          ],
+          [
+            2.35743,
+            48.86058
+          ],
+          [
+            2.35821,
+            48.86123
+          ],
+          [
+            2.35852,
+            48.8615
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "distanceUnit": "meter",
+      "timeUnit": "minute",
+      "bbox": [
+        2.35686,
+        48.8599,
+        2.35852,
+        48.8615
+      ],
+      "distance": 230.195,
+      "duration": 3.4696,
+      "constraints": [],
+      "portions": [
+        {
+          "start": "2.357164,48.859898",
+          "end": "2.358519,48.861498",
+          "distance": 230.195,
+          "duration": 3.4696,
+          "bbox": [
+            2.35686,
+            48.8599,
+            2.35852,
+            48.8615
+          ],
+          "steps": [
+            {
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    2.35716,
+                    48.8599
+                  ],
+                  [
+                    2.35702,
+                    48.86001
+                  ],
+                  [
+                    2.35686,
+                    48.86008
+                  ]
+                ]
+              },
+              "attributes": {
+                "name": "restriction_de_poids_par_essieu\": \"\", \"urbain\": \"t\", \"cleabs\": \"TRONROUT0000000000550378\", \"cpx_ges"
+              },
+              "distance": 30.689,
+              "duration": 0.46033333333333337,
+              "instruction": {
+                "type": "depart"
+              }
+            },
+            {
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    2.35686,
+                    48.86008
+                  ],
+                  [
+                    2.35743,
+                    48.86058
+                  ],
+                  [
+                    2.35821,
+                    48.86123
+                  ],
+                  [
+                    2.35852,
+                    48.8615
+                  ]
+                ]
+              },
+              "attributes": {
+                "name": "r_essieu\": \"\", \"urbain\": \"t\", \"cleabs\": \"TRONROUT0000002498473942\", \"cpx_gestionnaire\": \"\", \"vitesse_moyenn"
+              },
+              "distance": 199.507,
+              "duration": 3.009266666666667,
+              "instruction": {
+                "type": "turn",
+                "modifier": "right"
+              }
+            },
+            {
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    2.35852,
+                    48.8615
+                  ],
+                  [
+                    2.35852,
+                    48.8615
+                  ]
+                ]
+              },
+              "attributes": {
+                "name": "r_essieu\": \"\", \"urbain\": \"t\", \"cleabs\": \"TRONROUT0000002498473942\", \"cpx_gestionnaire\": \"\", \"vitesse_moyenn"
+              },
+              "distance": 0,
+              "duration": 0,
+              "instruction": {
+                "type": "arrive",
+                "modifier": "right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "validation_note": "同一馆址使用IGN Valhalla步行引擎复核，沿Rue des Archives短路；并与OSM/FOSSGIS步行结果约234米交叉核对。旧OSRM结果约614米异常绕行，不作为街道封闭的依据。"
+  },
+  "cross_check": {
+    "attribution": "© OpenStreetMap contributors; FOSSGIS routing.openstreetmap.de",
+    "request_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.357272,48.859963;2.3587005,48.8614056?overview=full&geometries=geojson&steps=true",
+    "distance_m": 233.8
+  },
+  "order_comparison": [
+    {
+      "order": [
+        "carnavalet",
+        "picasso",
+        "archives",
+        "hunt",
+        "maraiswalk"
+      ],
+      "distance_m": 1625.9
+    },
+    {
+      "order": [
+        "carnavalet",
+        "archives",
+        "hunt",
+        "picasso",
+        "maraiswalk"
+      ],
+      "distance_m": 1681.5
+    },
+    {
+      "order": [
+        "carnavalet",
+        "picasso",
+        "hunt",
+        "archives",
+        "maraiswalk"
+      ],
+      "distance_m": 1726.7
+    },
+    {
+      "order": [
+        "carnavalet",
+        "archives",
+        "picasso",
+        "hunt",
+        "maraiswalk"
+      ],
+      "distance_m": 1944.0
+    },
+    {
+      "order": [
+        "carnavalet",
+        "hunt",
+        "archives",
+        "picasso",
+        "maraiswalk"
+      ],
+      "distance_m": 1967.6
+    },
+    {
+      "order": [
+        "carnavalet",
+        "hunt",
+        "picasso",
+        "archives",
+        "maraiswalk"
+      ],
+      "distance_m": 2330.9
+    }
+  ]
+}

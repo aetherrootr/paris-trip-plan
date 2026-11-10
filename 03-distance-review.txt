@@ -1,0 +1,235 @@
+巴黎15天｜距离核对 v2
+
+法国IGN步行路网；不是全程步行指令。直线／路网分列，场馆入口、等灯、安检和馆内步数另计。
+本版拟核对57段连接，历史缓存64段；只把状态ok的结果作为已查询。
+科学城至爱乐厅算法有园区绕行，凡尔赛园路需再核对入口。
+
+建筑与遗产之城 → 巴黎自由女神像：步行路网约1.83公里，模型约35分钟
+  坐标直线约1.55公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8627013%2C2.2886617&destination=48.850017%2C2.279696&travelmode=walking
+
+巴士底广场 → 孚日广场：步行路网约0.51公里，模型约10分钟
+  坐标直线约0.36公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8532379%2C2.3688654&destination=48.8556114%2C2.3655266&travelmode=walking
+
+卡纳瓦莱博物馆 → 毕加索博物馆：步行路网约0.44公里，模型约10分钟
+  坐标直线约0.32公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8570669%2C2.3628579&destination=48.8598775%2C2.362285&travelmode=walking
+
+香榭丽舍大街 → 凯旋门：步行路网约0.26公里，模型约5分钟
+  坐标直线约0.23公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.87296%2C2.297853&destination=48.873792%2C2.295028&travelmode=walking
+
+国立中世纪博物馆 → 居里博物馆：步行路网约0.86公里，模型约15分钟
+  坐标直线约0.70公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.850483%2C2.344081&destination=48.84424%2C2.34479&travelmode=walking
+
+国立中世纪博物馆 → 先贤祠：步行路网约0.68公里，模型约15分钟
+  坐标直线约0.50公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.850483%2C2.344081&destination=48.846222%2C2.346414&travelmode=walking
+
+巴黎古监狱 → 国立中世纪博物馆：步行路网约0.84公里，模型约15分钟
+  坐标直线约0.62公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.856011%2C2.345495&destination=48.850483%2C2.344081&travelmode=walking
+
+协和广场 → 凯旋门：步行路网约2.19公里，模型约40分钟
+  坐标直线约2.12公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8656331%2C2.3212357&destination=48.873792%2C2.295028&travelmode=walking
+
+协和广场 → 小皇宫：步行路网约0.70公里，模型约15分钟
+  坐标直线约0.49公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8656331%2C2.3212357&destination=48.86603%2C2.31454&travelmode=walking
+
+居里博物馆 → 自然历史博物馆／进化大展馆：步行路网约1.07公里，模型约20分钟
+  坐标直线约0.87公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.84424%2C2.34479&destination=48.841701%2C2.356017&travelmode=walking
+
+居里博物馆 → 先贤祠：步行路网约0.33公里，模型约10分钟
+  坐标直线约0.25公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.84424%2C2.34479&destination=48.846222%2C2.346414&travelmode=walking
+
+装饰艺术博物馆 → 海军府：步行路网约0.89公里，模型约20分钟
+  坐标直线约0.88公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.863115%2C2.333494&destination=48.8668354%2C2.3229144&travelmode=walking
+
+迪奥艺廊 → 夏乐宫观景平台：步行路网约1.65公里，模型约30分钟
+  坐标直线约1.43公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.866486%2C2.307063&destination=48.8618481%2C2.2888252&travelmode=walking
+
+加尼叶歌剧院〔新增近邻建议〕 → 巴黎皇家宫殿：步行路网约1.09公里，模型约20分钟
+  坐标直线约0.99公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.87194%2C2.33167&destination=48.863757%2C2.337126&travelmode=walking
+
+大皇宫 → 凯旋门：步行路网约1.56公里，模型约30分钟
+  坐标直线约1.53公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.866109%2C2.312454&destination=48.873792%2C2.295028&travelmode=walking
+
+大皇宫 → 香榭丽舍大街：步行路网约1.33公里，模型约25分钟
+  坐标直线约1.31公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.866109%2C2.312454&destination=48.87296%2C2.297853&travelmode=walking
+
+大特里亚农宫 → 小特里亚农宫：步行路网约0.72公里，模型约15分钟
+  坐标直线约0.39公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.814562%2C2.104719&destination=48.815647%2C2.109712&travelmode=walking
+
+人类博物馆 → 建筑与遗产之城：步行路网约0.21公里，模型约5分钟
+  坐标直线约0.10公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.86229%2C2.287476&destination=48.8627013%2C2.2886617&travelmode=walking
+
+狩猎自然博物馆 → 巴黎工艺博物馆：步行路网约0.74公里，模型约15分钟
+  坐标直线约0.56公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8614056%2C2.3587005&destination=48.86604%2C2.355615&travelmode=walking
+
+荣军院／军事博物馆 → 埃菲尔铁塔：步行路网约1.64公里，模型约30分钟
+  坐标直线约1.36公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8557933%2C2.3125934&destination=48.85837%2C2.294481&travelmode=walking
+
+荣军院／军事博物馆 → 巴黎下水道博物馆：步行路网约1.30公里，模型约25分钟
+  坐标直线约1.05公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8557933%2C2.3125934&destination=48.862538%2C2.3024832&travelmode=walking
+
+卢浮宫 → 巴黎皇家宫殿：步行路网约0.50公里，模型约10分钟
+  坐标直线约0.36公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.860569%2C2.337622&destination=48.863757%2C2.337126&travelmode=walking
+
+卢浮宫 → 凡尔赛宫：步行路网约19.39公里，模型约325分钟
+  坐标直线约17.07公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.860569%2C2.337622&destination=48.804865%2C2.120355&travelmode=walking
+
+海军府 → 协和广场：步行路网约0.23公里，模型约5分钟
+  坐标直线约0.18公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8668354%2C2.3229144&destination=48.8656331%2C2.3212357&travelmode=walking
+
+海军府 → 小皇宫：步行路网约0.86公里，模型约15分钟
+  坐标直线约0.62公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8668354%2C2.3229144&destination=48.86603%2C2.31454&travelmode=walking
+
+国家海军博物馆 → 人类博物馆：步行路网约0.23公里，模型约5分钟
+  坐标直线约0.05公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.86182%2C2.28734&destination=48.86229%2C2.287476&travelmode=walking
+
+国家海军博物馆 → 夏乐宫观景平台：步行路网约0.13公里，模型约5分钟
+  坐标直线约0.11公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.86182%2C2.28734&destination=48.8618481%2C2.2888252&travelmode=walking
+
+巴黎现代艺术博物馆 → 迪奥艺廊：步行路网约0.83公里，模型约15分钟
+  坐标直线约0.72公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.864342%2C2.297821&destination=48.866486%2C2.307063&travelmode=walking
+
+巴黎现代艺术博物馆 → 东京宫：步行路网约0.41公里，模型约10分钟
+  坐标直线约0.09公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.864342%2C2.297821&destination=48.864587%2C2.296675&travelmode=walking
+
+红磨坊〔外观〕 → 浪漫生活博物馆：步行路网约0.52公里，模型约10分钟
+  坐标直线约0.32公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.884123%2C2.332252&destination=48.8814198%2C2.3335672&travelmode=walking
+
+自然历史博物馆／进化大展馆 → 巴黎地下墓穴：步行路网约2.20公里，模型约40分钟
+  坐标直线约1.94公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.841701%2C2.356017&destination=48.833832%2C2.332422&travelmode=walking
+
+自然历史博物馆／进化大展馆 → 植物园：步行路网约0.28公里，模型约5分钟
+  坐标直线约0.16公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.841701%2C2.356017&destination=48.843%2C2.357&travelmode=walking
+
+自然历史博物馆／进化大展馆 → 科学与工业城：步行路网约7.57公里，模型约130分钟
+  坐标直线约6.43公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.841701%2C2.356017&destination=48.8955948%2C2.3878996&travelmode=walking
+
+巴黎圣母院 → 圣礼拜堂：步行路网约0.55公里，模型约10分钟
+  坐标直线约0.45公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.852968%2C2.349902&destination=48.855375%2C2.344961&travelmode=walking
+
+橘园美术馆 → 装饰艺术博物馆：步行路网约1.05公里，模型约20分钟
+  坐标直线约0.80公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8637884%2C2.3226724&destination=48.863115%2C2.333494&travelmode=walking
+
+橘园美术馆 → 海军府：步行路网约0.58公里，模型约15分钟
+  坐标直线约0.34公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8637884%2C2.3226724&destination=48.8668354%2C2.3229144&travelmode=walking
+
+奥赛博物馆 → 罗丹美术馆：步行路网约1.25公里，模型约25分钟
+  坐标直线约0.94公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.859961%2C2.326561&destination=48.855307%2C2.315835&travelmode=walking
+
+先贤祠 → 居里博物馆：步行路网约0.33公里，模型约10分钟
+  坐标直线约0.25公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.846222%2C2.346414&destination=48.84424%2C2.34479&travelmode=walking
+
+小皇宫 → 大皇宫：步行路网约0.34公里，模型约10分钟
+  坐标直线约0.15公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.86603%2C2.31454&destination=48.866109%2C2.312454&travelmode=walking
+
+小特里亚农宫 → 凡尔赛宫：步行路网约1.85公里，模型约35分钟
+  坐标直线约1.43公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.815647%2C2.109712&destination=48.804865%2C2.120355&travelmode=walking
+
+毕加索博物馆 → 狩猎自然博物馆：步行路网约0.44公里，模型约10分钟
+  坐标直线约0.31公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8598775%2C2.362285&destination=48.8614056%2C2.3587005&travelmode=walking
+
+皮诺美术馆 → 薇薇安拱廊〔新增顺路建议〕：步行路网约0.54公里，模型约10分钟
+  坐标直线约0.47公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.86288%2C2.342839&destination=48.8665%2C2.3394&travelmode=walking
+
+植物园 → 法国邮政博物馆：步行路网约3.44公里，模型约60分钟
+  坐标直线约2.92公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.843%2C2.357&destination=48.8414268%2C2.3172181&travelmode=walking
+
+法国邮政博物馆 → 巴黎地下墓穴：步行路网约1.62公里，模型约30分钟
+  坐标直线约1.40公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8414268%2C2.3172181&destination=48.833832%2C2.332422&travelmode=walking
+
+罗丹美术馆 → 荣军院／军事博物馆：步行路网约0.86公里，模型约15分钟
+  坐标直线约0.24公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.855307%2C2.315835&destination=48.8557933%2C2.3125934&travelmode=walking
+
+浪漫生活博物馆 → 红磨坊〔外观〕：步行路网约0.52公里，模型约10分钟
+  坐标直线约0.32公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8814198%2C2.3335672&destination=48.884123%2C2.332252&travelmode=walking
+
+巴黎皇家宫殿 → 皮诺美术馆：步行路网约0.46公里，模型约10分钟
+  坐标直线约0.43公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.863757%2C2.337126&destination=48.86288%2C2.342839&travelmode=walking
+
+圣心堂 → 科学与工业城：步行路网约4.04公里，模型约70分钟
+  坐标直线约3.42公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.886705%2C2.343104&destination=48.8955948%2C2.3878996&travelmode=walking
+
+圣心堂 → 艺术家广场：步行路网约0.09公里，模型约5分钟
+  坐标直线约0.06公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.886705%2C2.343104&destination=48.886193%2C2.34309&travelmode=walking
+
+圣礼拜堂 → 巴黎古监狱：步行路网约0.19公里，模型约5分钟
+  坐标直线约0.08公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.855375%2C2.344961&destination=48.856011%2C2.345495&travelmode=walking
+
+科学与工业城 → 巴黎爱乐厅：步行路网约1.88公里，模型约35分钟
+  坐标直线约0.67公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8955948%2C2.3878996&destination=48.8912963%2C2.394296&travelmode=walking
+
+巴黎下水道博物馆 → 国家海军博物馆：步行路网约1.38公里，模型约25分钟
+  坐标直线约1.11公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.862538%2C2.3024832&destination=48.86182%2C2.28734&travelmode=walking
+
+艺术家广场 → 浪漫生活博物馆：步行路网约1.23公里，模型约25分钟
+  坐标直线约0.88公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.886193%2C2.34309&destination=48.8814198%2C2.3335672&travelmode=walking
+
+东京宫 → 迪奥艺廊：步行路网约0.89公里，模型约20分钟
+  坐标直线约0.79公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.864587%2C2.296675&destination=48.866486%2C2.307063&travelmode=walking
+
+东京宫 → 夏乐宫观景平台：步行路网约0.79公里，模型约15分钟
+  坐标直线约0.65公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.864587%2C2.296675&destination=48.8618481%2C2.2888252&travelmode=walking
+
+凡尔赛宫 → 大特里亚农宫：步行路网约2.15公里，模型约40分钟
+  坐标直线约1.57公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.804865%2C2.120355&destination=48.814562%2C2.104719&travelmode=walking
+
+孚日广场 → 卡纳瓦莱博物馆：步行路网约0.39公里，模型约10分钟
+  坐标直线约0.25公里；查询状态 ok
+  人工导航核对：https://www.google.com/maps/dir/?api=1&origin=48.8556114%2C2.3655266&destination=48.8570669%2C2.3628579&travelmode=walking
+
+游船仍在Day6，因码头未定不画假位置，也不计算到未知码头的距离。

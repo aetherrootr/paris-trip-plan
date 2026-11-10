@@ -1,0 +1,903 @@
+{
+  "checked_date": "2026-11-09",
+  "points": {
+    "start": [
+      2.3587005,
+      48.8614056
+    ],
+    "etat": [
+      2.359784,
+      48.8626974
+    ],
+    "richard": [
+      2.3616287,
+      48.8632151
+    ],
+    "amorino": [
+      2.361748,
+      48.863161
+    ],
+    "hevin": [
+      2.3619382,
+      48.8630594
+    ],
+    "books": [
+      2.362098,
+      48.8629626
+    ],
+    "verot": [
+      2.3624383,
+      48.8630661
+    ]
+  },
+  "geocode": {
+    "url": "https://data.geopf.fr/geocodage/search?q=43+Rue+de+Bretagne+75003+Paris&index=address&limit=1",
+    "result": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.361748,
+              48.863161
+            ]
+          },
+          "properties": {
+            "label": "43 Rue de Bretagne 75003 Paris",
+            "score": 0.9693218181818182,
+            "housenumber": "43",
+            "id": "75103_1275_00043",
+            "banId": "7f8a203a-a4a6-4b93-9fdf-d1faf227c5d5",
+            "name": "43 Rue de Bretagne",
+            "postcode": "75003",
+            "citycode": "75103",
+            "x": 653175.47,
+            "y": 6862759.08,
+            "city": "Paris",
+            "district": "Paris 3e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.66254,
+            "depcode": "75",
+            "street": "Rue de Bretagne",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "43 Rue de Bretagne 75003 Paris"
+    }
+  },
+  "orders": {
+    "short": [
+      "start",
+      "etat",
+      "hevin",
+      "books"
+    ],
+    "full": [
+      "start",
+      "etat",
+      "richard",
+      "amorino",
+      "hevin",
+      "books",
+      "verot"
+    ],
+    "sunday": [
+      "start",
+      "amorino"
+    ]
+  },
+  "routes": {
+    "amorino__hevin": {
+      "a": "amorino",
+      "b": "hevin",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.361748%2C48.863161&end=2.3619382%2C48.8630594&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 32.191,
+      "duration_min": 0.48286666666666667,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.36182,
+            48.86323
+          ],
+          [
+            2.362,
+            48.86315
+          ],
+          [
+            2.36207,
+            48.86311
+          ],
+          [
+            2.36198,
+            48.86304
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-07",
+        "start": "2.361821,48.863228",
+        "end": "2.361985,48.863037",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.36182,
+              48.86323
+            ],
+            [
+              2.362,
+              48.86315
+            ],
+            [
+              2.36207,
+              48.86311
+            ],
+            [
+              2.36198,
+              48.86304
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.36182,
+          48.86304,
+          2.36207,
+          48.86323
+        ],
+        "distance": 32.191,
+        "duration": 0.48286666666666667,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.361821,48.863228",
+            "end": "2.361985,48.863037",
+            "distance": 32.191,
+            "duration": 0.48286666666666667,
+            "bbox": [
+              2.36182,
+              48.86304,
+              2.36207,
+              48.86323
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "books__verot": {
+      "a": "books",
+      "b": "verot",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.362098%2C48.8629626&end=2.3624383%2C48.8630661&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 37.15,
+      "duration_min": 0.55725,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.36197,
+            48.86302
+          ],
+          [
+            2.36207,
+            48.86311
+          ],
+          [
+            2.36235,
+            48.86298
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-08",
+        "start": "2.36197,48.863024",
+        "end": "2.362347,48.862982",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.36197,
+              48.86302
+            ],
+            [
+              2.36207,
+              48.86311
+            ],
+            [
+              2.36235,
+              48.86298
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.36197,
+          48.86298,
+          2.36235,
+          48.86311
+        ],
+        "distance": 37.15,
+        "duration": 0.55725,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.36197,48.863024",
+            "end": "2.362347,48.862982",
+            "distance": 37.15,
+            "duration": 0.55725,
+            "bbox": [
+              2.36197,
+              48.86298,
+              2.36235,
+              48.86311
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "etat__hevin": {
+      "a": "etat",
+      "b": "hevin",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.359784%2C48.8626974&end=2.3619382%2C48.8630594&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 247.942,
+      "duration_min": 3.719133333333333,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.35985,
+            48.86266
+          ],
+          [
+            2.35981,
+            48.86263
+          ],
+          [
+            2.35978,
+            48.86261
+          ],
+          [
+            2.36044,
+            48.86224
+          ],
+          [
+            2.36065,
+            48.86241
+          ],
+          [
+            2.36099,
+            48.86272
+          ],
+          [
+            2.36143,
+            48.8631
+          ],
+          [
+            2.36183,
+            48.86289
+          ],
+          [
+            2.36198,
+            48.86304
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-08",
+        "start": "2.359849,48.862663",
+        "end": "2.361985,48.863037",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.35985,
+              48.86266
+            ],
+            [
+              2.35981,
+              48.86263
+            ],
+            [
+              2.35978,
+              48.86261
+            ],
+            [
+              2.36044,
+              48.86224
+            ],
+            [
+              2.36065,
+              48.86241
+            ],
+            [
+              2.36099,
+              48.86272
+            ],
+            [
+              2.36143,
+              48.8631
+            ],
+            [
+              2.36183,
+              48.86289
+            ],
+            [
+              2.36198,
+              48.86304
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.35978,
+          48.86224,
+          2.36198,
+          48.8631
+        ],
+        "distance": 247.942,
+        "duration": 3.719133333333333,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.359849,48.862663",
+            "end": "2.361985,48.863037",
+            "distance": 247.942,
+            "duration": 3.719133333333333,
+            "bbox": [
+              2.35978,
+              48.86224,
+              2.36198,
+              48.8631
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "etat__richard": {
+      "a": "etat",
+      "b": "richard",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.359784%2C48.8626974&end=2.3616287%2C48.8632151&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 209.886,
+      "duration_min": 3.148283333333333,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.35985,
+            48.86266
+          ],
+          [
+            2.35981,
+            48.86263
+          ],
+          [
+            2.35978,
+            48.86261
+          ],
+          [
+            2.36044,
+            48.86224
+          ],
+          [
+            2.36065,
+            48.86241
+          ],
+          [
+            2.36099,
+            48.86272
+          ],
+          [
+            2.36143,
+            48.8631
+          ],
+          [
+            2.36158,
+            48.86324
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-08",
+        "start": "2.359849,48.862663",
+        "end": "2.361584,48.863237",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.35985,
+              48.86266
+            ],
+            [
+              2.35981,
+              48.86263
+            ],
+            [
+              2.35978,
+              48.86261
+            ],
+            [
+              2.36044,
+              48.86224
+            ],
+            [
+              2.36065,
+              48.86241
+            ],
+            [
+              2.36099,
+              48.86272
+            ],
+            [
+              2.36143,
+              48.8631
+            ],
+            [
+              2.36158,
+              48.86324
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.35978,
+          48.86224,
+          2.36158,
+          48.86324
+        ],
+        "distance": 209.886,
+        "duration": 3.148283333333333,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.359849,48.862663",
+            "end": "2.361584,48.863237",
+            "distance": 209.886,
+            "duration": 3.148283333333333,
+            "bbox": [
+              2.35978,
+              48.86224,
+              2.36158,
+              48.86324
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "hevin__books": {
+      "a": "hevin",
+      "b": "books",
+      "status": "ok",
+      "request_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.3619382,48.8630594;2.362098,48.8629626?overview=full&geometries=geojson&steps=false",
+      "distance_m": 15.7,
+      "duration_min": 0.26166666666666666,
+      "geometry": {
+        "coordinates": [
+          [
+            2.361972,
+            48.863088
+          ],
+          [
+            2.362023,
+            48.863062
+          ],
+          [
+            2.362143,
+            48.863003
+          ]
+        ],
+        "type": "LineString"
+      },
+      "resource": "osm-fossgis-foot",
+      "attribution": "© OpenStreetMap contributors / FOSSGIS",
+      "raw": {
+        "code": "Ok",
+        "routes": [
+          {
+            "legs": [
+              {
+                "steps": [],
+                "weight": 1.31,
+                "summary": "",
+                "duration": 12.5,
+                "distance": 15.7
+              }
+            ],
+            "weight_name": "routability",
+            "geometry": {
+              "coordinates": [
+                [
+                  2.361972,
+                  48.863088
+                ],
+                [
+                  2.362023,
+                  48.863062
+                ],
+                [
+                  2.362143,
+                  48.863003
+                ]
+              ],
+              "type": "LineString"
+            },
+            "weight": 1.31,
+            "duration": 12.5,
+            "distance": 15.7
+          }
+        ],
+        "waypoints": [
+          {
+            "hint": "8u3mmfPt5pknAAAAUAAAAAAAAAAAAAAAb02XQB5SGUEAAAAAAAAAACUAAABNAAAAAAAAAAAAAAB4AAAAdAokAHCX6QJSCiQAU5fpAgAAPxMAAAAA",
+            "location": [
+              2.361972,
+              48.863088
+            ],
+            "name": "",
+            "distance": 4.07689124
+          },
+          {
+            "hint": "7u3mmfHt5pmnAAAAXAAAAAAAAAAAAAAApWegQVWpL0EAAAAAAAAAAKAAAABYAAAAAAAAAAAAAAB4AAAAHwskABuX6QLyCiQA85bpAgAALxMAAAAA",
+            "location": [
+              2.362143,
+              48.863003
+            ],
+            "name": "",
+            "distance": 5.539283527
+          }
+        ]
+      },
+      "validation_note": "原IGN短段仅2米，低于两店标记间距；改用OSM步行复核，并按约60米/分钟估时。",
+      "previous_distance_m": 1.863
+    },
+    "richard__amorino": {
+      "a": "richard",
+      "b": "amorino",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3616287%2C48.8632151&end=2.361748%2C48.863161&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 23.416,
+      "duration_min": 0.35123333333333334,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.36158,
+            48.86324
+          ],
+          [
+            2.36166,
+            48.8633
+          ],
+          [
+            2.36182,
+            48.86323
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-07",
+        "start": "2.361584,48.863237",
+        "end": "2.361821,48.863228",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.36158,
+              48.86324
+            ],
+            [
+              2.36166,
+              48.8633
+            ],
+            [
+              2.36182,
+              48.86323
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.36158,
+          48.86323,
+          2.36182,
+          48.8633
+        ],
+        "distance": 23.416,
+        "duration": 0.35123333333333334,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.361584,48.863237",
+            "end": "2.361821,48.863228",
+            "distance": 23.416,
+            "duration": 0.35123333333333334,
+            "bbox": [
+              2.36158,
+              48.86323,
+              2.36182,
+              48.8633
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "start__amorino": {
+      "a": "start",
+      "b": "amorino",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3587005%2C48.8614056&end=2.361748%2C48.863161&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 378.578,
+      "duration_min": 5.678666666666667,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.35852,
+            48.8615
+          ],
+          [
+            2.35877,
+            48.86171
+          ],
+          [
+            2.35976,
+            48.86259
+          ],
+          [
+            2.35978,
+            48.86261
+          ],
+          [
+            2.36044,
+            48.86224
+          ],
+          [
+            2.36065,
+            48.86241
+          ],
+          [
+            2.36099,
+            48.86272
+          ],
+          [
+            2.36143,
+            48.8631
+          ],
+          [
+            2.36166,
+            48.8633
+          ],
+          [
+            2.36182,
+            48.86323
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-08",
+        "start": "2.358519,48.861498",
+        "end": "2.361821,48.863228",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.35852,
+              48.8615
+            ],
+            [
+              2.35877,
+              48.86171
+            ],
+            [
+              2.35976,
+              48.86259
+            ],
+            [
+              2.35978,
+              48.86261
+            ],
+            [
+              2.36044,
+              48.86224
+            ],
+            [
+              2.36065,
+              48.86241
+            ],
+            [
+              2.36099,
+              48.86272
+            ],
+            [
+              2.36143,
+              48.8631
+            ],
+            [
+              2.36166,
+              48.8633
+            ],
+            [
+              2.36182,
+              48.86323
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.35852,
+          48.8615,
+          2.36182,
+          48.8633
+        ],
+        "distance": 378.578,
+        "duration": 5.678666666666667,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.358519,48.861498",
+            "end": "2.361821,48.863228",
+            "distance": 378.578,
+            "duration": 5.678666666666667,
+            "bbox": [
+              2.35852,
+              48.8615,
+              2.36182,
+              48.8633
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    },
+    "start__etat": {
+      "a": "start",
+      "b": "etat",
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.3587005%2C48.8614056&end=2.359784%2C48.8626974&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "distance_m": 161.71,
+      "duration_min": 2.4423166666666662,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.35852,
+            48.8615
+          ],
+          [
+            2.35877,
+            48.86171
+          ],
+          [
+            2.35976,
+            48.86259
+          ],
+          [
+            2.35978,
+            48.86261
+          ],
+          [
+            2.35981,
+            48.86263
+          ],
+          [
+            2.35985,
+            48.86266
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-08",
+        "start": "2.358519,48.861498",
+        "end": "2.359849,48.862663",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.35852,
+              48.8615
+            ],
+            [
+              2.35877,
+              48.86171
+            ],
+            [
+              2.35976,
+              48.86259
+            ],
+            [
+              2.35978,
+              48.86261
+            ],
+            [
+              2.35981,
+              48.86263
+            ],
+            [
+              2.35985,
+              48.86266
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.35852,
+          48.8615,
+          2.35985,
+          48.86266
+        ],
+        "distance": 161.71,
+        "duration": 2.4423166666666662,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.358519,48.861498",
+            "end": "2.359849,48.862663",
+            "distance": 161.71,
+            "duration": 2.4423166666666662,
+            "bbox": [
+              2.35852,
+              48.8615,
+              2.35985,
+              48.86266
+            ],
+            "steps": []
+          }
+        ]
+      },
+      "status": "ok"
+    }
+  }
+}

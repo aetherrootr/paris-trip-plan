@@ -1,0 +1,11 @@
+{
+  "removed_directories": 38,
+  "removed_html_pages": 647,
+  "current_html_pages": 20,
+  "current_bytes": 11366979,
+  "archive": "/home/aether/work/paris-trip/archive/web-history-20261109-040257.tar.gz",
+  "archive_bytes": 15461150,
+  "archive_sha256": "17cd6806f1a028043b51f7a0002a8adb35c6113c3c62f978bcc77db0439471e8",
+  "fixed_entry": "/home/aether/work/paris-trip/web/current/index.html",
+  "verified_backup": true
+}

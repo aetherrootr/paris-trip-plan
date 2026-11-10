@@ -1,0 +1,506 @@
+[
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Panthéon 先贤祠",
+    "description": "上午参观 09:00–10:00；步行至 Cluny Museum",
+    "coordinates": [
+      2.346414,
+      48.846222
+    ]
+  },
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Musée de Cluny 国立中世纪博物馆",
+    "description": "10:30–11:30；步行至圣日耳曼德佩区午餐",
+    "coordinates": [
+      2.344081,
+      48.850483
+    ]
+  },
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Café de Flore 圣日耳曼咖啡馆",
+    "description": "12:00–13:00 午餐",
+    "coordinates": [
+      2.333328,
+      48.853798
+    ]
+  },
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Notre-Dame Cathedral 巴黎圣母院",
+    "description": "13:30–14:00 外观参观",
+    "coordinates": [
+      2.349902,
+      48.852968
+    ]
+  },
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Sainte-Chapelle 圣徒礼拜堂",
+    "description": "14:00–15:00 参观彩窗",
+    "coordinates": [
+      2.344961,
+      48.855375
+    ]
+  },
+  {
+    "layer": "Day 1 - Latin Quarter 拉丁区与西堤岛",
+    "name": "Conciergerie 巴黎古监狱",
+    "description": "15:15–16:00",
+    "coordinates": [
+      2.345495,
+      48.856011
+    ]
+  },
+  {
+    "layer": "Day 2 - Louvre Axis 卢浮宫",
+    "name": "Louvre Museum 卢浮宫",
+    "description": "09:00–12:00；提前预约",
+    "coordinates": [
+      2.337622,
+      48.860569
+    ]
+  },
+  {
+    "layer": "Day 2 - Louvre Axis 卢浮宫",
+    "name": "Palais Royal 巴黎皇家宫殿",
+    "description": "13:30–14:00；步行",
+    "coordinates": [
+      2.337126,
+      48.863757
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "Bourse de Commerce 皮诺私人美术馆",
+    "description": "14:30–15:30",
+    "coordinates": [
+      2.342839,
+      48.86288
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "Musée des Arts et Métiers 国立工艺博物馆",
+    "description": "16:00–17:00；地铁3号线",
+    "coordinates": [
+      2.355615,
+      48.86604
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "狩猎自然博物馆",
+    "description": "",
+    "coordinates": [
+      2.3587005,
+      48.8614056
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "卡纳瓦莱博物馆",
+    "description": "",
+    "coordinates": [
+      2.3628579,
+      48.8570669
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "巴士底广场",
+    "description": "",
+    "coordinates": [
+      2.3688654,
+      48.8532379
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "毕加索博物馆",
+    "description": "",
+    "coordinates": [
+      2.362285,
+      48.8598775
+    ]
+  },
+  {
+    "layer": "Day 3 - 卢浮宫周边→ 玛黑区",
+    "name": "孚日广场",
+    "description": "",
+    "coordinates": [
+      2.3655266,
+      48.8556114
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "Musée des Arts Décoratifs 装饰艺术博物馆",
+    "description": "12:15–13:15",
+    "coordinates": [
+      2.333494,
+      48.863115
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "Arc de Triomphe 凯旋门",
+    "description": "15:30–16:30",
+    "coordinates": [
+      2.295028,
+      48.873792
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "Champs-Élysées 香榭丽舍大街",
+    "description": "16:45–18:00",
+    "coordinates": [
+      2.297853,
+      48.87296
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "Grand Palais 大皇宫",
+    "description": "18:15 外观",
+    "coordinates": [
+      2.312454,
+      48.866109
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "橘园美术馆",
+    "description": "",
+    "coordinates": [
+      2.3226724,
+      48.8637884
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "协和广场",
+    "description": "",
+    "coordinates": [
+      2.3212357,
+      48.8656331
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "海军府",
+    "description": "",
+    "coordinates": [
+      2.3229144,
+      48.8668354
+    ]
+  },
+  {
+    "layer": "Day 4 - 凯旋门-香榭丽舍大街",
+    "name": "协和广场",
+    "description": "",
+    "coordinates": [
+      2.3212357,
+      48.8656331
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Dior Gallery 迪奥艺廊",
+    "description": "17:00–17:30",
+    "coordinates": [
+      2.307063,
+      48.866486
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Seine Cruise 塞纳河晚餐游船",
+    "description": "19:00–21:00 Pont de l’Alma 出发",
+    "coordinates": [
+      2.287476,
+      48.86229
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Palais de Tokyo 东京宫",
+    "description": "15:00–15:45",
+    "coordinates": [
+      2.296675,
+      48.864587
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Musée d’Art Moderne de Paris 现代艺术博物馆",
+    "description": "16:00–16:45",
+    "coordinates": [
+      2.297821,
+      48.864342
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Musée de l’Homme 人类博物馆",
+    "description": "11:15–12:00",
+    "coordinates": [
+      2.287476,
+      48.86229
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "建筑与遗产之城",
+    "description": "",
+    "coordinates": [
+      2.2886617,
+      48.8627013
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Esplanade Joseph-Wresinski",
+    "description": "",
+    "coordinates": [
+      2.2888252,
+      48.8618481
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Aquarium de Paris",
+    "description": "",
+    "coordinates": [
+      2.2909927,
+      48.8622162
+    ]
+  },
+  {
+    "layer": "Day 5 - ",
+    "name": "Statue de la Liberté 巴黎自由女神",
+    "description": "14:00–14:30 Grenelle 小岛",
+    "coordinates": [
+      2.279696,
+      48.850017
+    ]
+  },
+  {
+    "layer": "Day 6 - Eiffel Axis 铁塔线",
+    "name": "Musée d’Orsay 奥赛博物馆",
+    "description": "09:00–11:30",
+    "coordinates": [
+      2.326561,
+      48.859961
+    ]
+  },
+  {
+    "layer": "Day 6 - Eiffel Axis 铁塔线",
+    "name": "Musée Rodin 罗丹美术馆",
+    "description": "11:45–13:00",
+    "coordinates": [
+      2.315835,
+      48.855307
+    ]
+  },
+  {
+    "layer": "Day 6 - Eiffel Axis 铁塔线",
+    "name": "军事博物馆",
+    "description": "",
+    "coordinates": [
+      2.3125934,
+      48.8557933
+    ]
+  },
+  {
+    "layer": "Day 6 - Eiffel Axis 铁塔线",
+    "name": "巴黎下水道博物馆",
+    "description": "",
+    "coordinates": [
+      2.3024832,
+      48.862538
+    ]
+  },
+  {
+    "layer": "Day 6 - Eiffel Axis 铁塔线",
+    "name": "Eiffel Tower 埃菲尔铁塔",
+    "description": "09:00–11:00 登塔",
+    "coordinates": [
+      2.294481,
+      48.85837
+    ]
+  },
+  {
+    "layer": "Day 5 - Versailles 凡尔赛线",
+    "name": "Palace of Versailles 凡尔赛宫",
+    "description": "09:30–13:00 RER C",
+    "coordinates": [
+      2.120355,
+      48.804865
+    ]
+  },
+  {
+    "layer": "Day 5 - Versailles 凡尔赛线",
+    "name": "La Petite Venise 午餐",
+    "description": "13:00–14:00 园区餐厅",
+    "coordinates": [
+      2.117,
+      48.804
+    ]
+  },
+  {
+    "layer": "Day 5 - Versailles 凡尔赛线",
+    "name": "Grand Trianon 大特里亚农宫",
+    "description": "14:00–15:30",
+    "coordinates": [
+      2.104719,
+      48.814562
+    ]
+  },
+  {
+    "layer": "Day 5 - Versailles 凡尔赛线",
+    "name": "Petit Trianon 小特里亚农宫",
+    "description": "15:45–16:45",
+    "coordinates": [
+      2.105,
+      48.811
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "Datadog",
+    "description": "",
+    "coordinates": [
+      2.3385585,
+      48.8758847
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "Sacré-Cœur 圣心堂",
+    "description": "09:30–10:30",
+    "coordinates": [
+      2.343104,
+      48.886705
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "Place du Tertre 艺术家广场",
+    "description": "10:45–11:15",
+    "coordinates": [
+      2.34309,
+      48.886193
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "Moulin Rouge 红磨坊",
+    "description": "17:00–17:30",
+    "coordinates": [
+      2.332252,
+      48.884123
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "巴黎爱乐厅",
+    "description": "",
+    "coordinates": [
+      2.394296,
+      48.8912963
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "科学与工业城",
+    "description": "",
+    "coordinates": [
+      2.3878996,
+      48.8955948
+    ]
+  },
+  {
+    "layer": "Day 6 - Montmartre 蒙马特艺术区",
+    "name": "浪漫生活博物馆",
+    "description": "",
+    "coordinates": [
+      2.3335672,
+      48.8814198
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "Catacombes de Paris 地下墓穴",
+    "description": "09:00–10:30",
+    "coordinates": [
+      2.332422,
+      48.833832
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "Muséum National d’Histoire Naturelle 自然历史博物馆",
+    "description": "11:00–12:30",
+    "coordinates": [
+      2.356017,
+      48.841701
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "Lunch Jardin des Plantes 花园午餐",
+    "description": "12:30–13:30",
+    "coordinates": [
+      2.357,
+      48.843
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "Cité des Sciences 科学与工业城",
+    "description": "14:30–17:00",
+    "coordinates": [
+      2.3879,
+      48.895595
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "法国邮政博物馆",
+    "description": "",
+    "coordinates": [
+      2.3172181,
+      48.8414268
+    ]
+  },
+  {
+    "layer": "Day 7 - Science 理性与探索",
+    "name": "巴黎天文台",
+    "description": "",
+    "coordinates": [
+      2.3366319,
+      48.8364867
+    ]
+  },
+  {
+    "layer": "Day 10 - Mont Saint-Michel 圣米歇尔山",
+    "name": "Mont Saint-Michel 圣米歇尔山",
+    "description": "09:00–13:00",
+    "coordinates": [
+      -1.511115,
+      48.636017
+    ]
+  },
+  {
+    "layer": "Day 10 - Mont Saint-Michel 圣米歇尔山",
+    "name": "La Mère Poulard 午餐",
+    "description": "12:30–13:30",
+    "coordinates": [
+      -1.511,
+      48.636
+    ]
+  }
+]

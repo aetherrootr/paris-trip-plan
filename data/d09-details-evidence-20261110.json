@@ -1,0 +1,1007 @@
+{
+  "geocodes": {
+    "montmartremuseum": {
+      "url": "https://data.geopf.fr/geocodage/search?q=12+Rue+Cortot+75018+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.340626,
+                48.887704
+              ]
+            },
+            "properties": {
+              "label": "12 Rue Cortot 75018 Paris",
+              "score": 0.9727954545454546,
+              "housenumber": "12",
+              "id": "75118_2351_00012",
+              "banId": "294591d6-4096-4cc3-92b6-a40b635abea6",
+              "name": "12 Rue Cortot",
+              "postcode": "75018",
+              "citycode": "75118",
+              "x": 651648.71,
+              "y": 6865500.83,
+              "city": "Paris",
+              "district": "Paris 18e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "housenumber",
+              "importance": 0.70075,
+              "depcode": "75",
+              "street": "Rue Cortot",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "12 Rue Cortot 75018 Paris"
+      }
+    },
+    "tertre": {
+      "url": "https://data.geopf.fr/geocodage/search?q=Place+du+Tertre+75018+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.340671,
+                48.886518
+              ]
+            },
+            "properties": {
+              "label": "Place du Tertre 75018 Paris",
+              "score": 0.9720572727272727,
+              "id": "75118_9217",
+              "banId": "03dbe057-7321-4d54-a82a-acc80327ac3e",
+              "name": "Place du Tertre",
+              "postcode": "75018",
+              "citycode": "75118",
+              "x": 651650.9,
+              "y": 6865368.92,
+              "city": "Paris",
+              "district": "Paris 18e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "street",
+              "importance": 0.69263,
+              "depcode": "75",
+              "street": "Place du Tertre",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "Place du Tertre 75018 Paris"
+      }
+    }
+  },
+  "routes": {
+    "sacre__montmartremuseum": {
+      "a": "sacre",
+      "b": "montmartremuseum",
+      "checked_date": "2026-11-10",
+      "straight_m": 213,
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.343104%2C48.886705&end=2.340626%2C48.887704&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "status": "ok",
+      "distance_m": 251.574,
+      "duration_min": 3.773616666666667,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.34257,
+            48.88668
+          ],
+          [
+            2.34253,
+            48.88702
+          ],
+          [
+            2.34241,
+            48.88701
+          ],
+          [
+            2.3423,
+            48.88701
+          ],
+          [
+            2.34219,
+            48.88702
+          ],
+          [
+            2.34204,
+            48.88706
+          ],
+          [
+            2.34188,
+            48.88708
+          ],
+          [
+            2.34139,
+            48.88715
+          ],
+          [
+            2.3416,
+            48.88763
+          ],
+          [
+            2.34116,
+            48.88762
+          ],
+          [
+            2.3409,
+            48.88762
+          ],
+          [
+            2.34061,
+            48.88766
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "resourceVersion": "2026-11-09",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.342574,48.886677",
+        "end": "2.340612,48.88766",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.34257,
+              48.88668
+            ],
+            [
+              2.34253,
+              48.88702
+            ],
+            [
+              2.34241,
+              48.88701
+            ],
+            [
+              2.3423,
+              48.88701
+            ],
+            [
+              2.34219,
+              48.88702
+            ],
+            [
+              2.34204,
+              48.88706
+            ],
+            [
+              2.34188,
+              48.88708
+            ],
+            [
+              2.34139,
+              48.88715
+            ],
+            [
+              2.3416,
+              48.88763
+            ],
+            [
+              2.34116,
+              48.88762
+            ],
+            [
+              2.3409,
+              48.88762
+            ],
+            [
+              2.34061,
+              48.88766
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.34061,
+          48.88668,
+          2.34257,
+          48.88766
+        ],
+        "distance": 251.574,
+        "duration": 3.773616666666667,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.342574,48.886677",
+            "end": "2.340612,48.88766",
+            "distance": 251.574,
+            "duration": 3.773616666666667,
+            "bbox": [
+              2.34061,
+              48.88668,
+              2.34257,
+              48.88766
+            ],
+            "steps": []
+          }
+        ]
+      }
+    },
+    "montmartremuseum__tertre": {
+      "a": "montmartremuseum",
+      "b": "tertre",
+      "checked_date": "2026-11-10",
+      "straight_m": 132,
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.340626%2C48.887704&end=2.340671%2C48.886518&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "status": "ok",
+      "distance_m": 249.599,
+      "duration_min": 3.7439833333333334,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.34061,
+            48.88766
+          ],
+          [
+            2.34024,
+            48.88771
+          ],
+          [
+            2.33976,
+            48.88778
+          ],
+          [
+            2.33974,
+            48.88749
+          ],
+          [
+            2.3397,
+            48.88711
+          ],
+          [
+            2.3397,
+            48.88702
+          ],
+          [
+            2.33992,
+            48.887
+          ],
+          [
+            2.33993,
+            48.88699
+          ],
+          [
+            2.34012,
+            48.88696
+          ],
+          [
+            2.34022,
+            48.88694
+          ],
+          [
+            2.34036,
+            48.8869
+          ],
+          [
+            2.34047,
+            48.88685
+          ],
+          [
+            2.34066,
+            48.88673
+          ],
+          [
+            2.34059,
+            48.88653
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "resourceVersion": "2026-11-09",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.340612,48.88766",
+        "end": "2.340587,48.886532",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.34061,
+              48.88766
+            ],
+            [
+              2.34024,
+              48.88771
+            ],
+            [
+              2.33976,
+              48.88778
+            ],
+            [
+              2.33974,
+              48.88749
+            ],
+            [
+              2.3397,
+              48.88711
+            ],
+            [
+              2.3397,
+              48.88702
+            ],
+            [
+              2.33992,
+              48.887
+            ],
+            [
+              2.33993,
+              48.88699
+            ],
+            [
+              2.34012,
+              48.88696
+            ],
+            [
+              2.34022,
+              48.88694
+            ],
+            [
+              2.34036,
+              48.8869
+            ],
+            [
+              2.34047,
+              48.88685
+            ],
+            [
+              2.34066,
+              48.88673
+            ],
+            [
+              2.34059,
+              48.88653
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.3397,
+          48.88653,
+          2.34066,
+          48.88778
+        ],
+        "distance": 249.599,
+        "duration": 3.7439833333333334,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.340612,48.88766",
+            "end": "2.340587,48.886532",
+            "distance": 249.599,
+            "duration": 3.7439833333333334,
+            "bbox": [
+              2.3397,
+              48.88653,
+              2.34066,
+              48.88778
+            ],
+            "steps": []
+          }
+        ]
+      }
+    },
+    "tertre__moulin": {
+      "a": "tertre",
+      "b": "moulin",
+      "checked_date": "2026-11-10",
+      "straight_m": 671,
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.340671%2C48.886518&end=2.332252%2C48.884123&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "status": "ok",
+      "distance_m": 924.576,
+      "duration_min": 13.935316666666667,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.34059,
+            48.88653
+          ],
+          [
+            2.34066,
+            48.88673
+          ],
+          [
+            2.34047,
+            48.88685
+          ],
+          [
+            2.34036,
+            48.8869
+          ],
+          [
+            2.34022,
+            48.88694
+          ],
+          [
+            2.34012,
+            48.88696
+          ],
+          [
+            2.33993,
+            48.88699
+          ],
+          [
+            2.33992,
+            48.887
+          ],
+          [
+            2.3397,
+            48.88702
+          ],
+          [
+            2.33957,
+            48.88703
+          ],
+          [
+            2.33938,
+            48.88703
+          ],
+          [
+            2.33926,
+            48.88708
+          ],
+          [
+            2.33901,
+            48.88714
+          ],
+          [
+            2.33886,
+            48.8872
+          ],
+          [
+            2.33871,
+            48.88725
+          ],
+          [
+            2.33862,
+            48.88728
+          ],
+          [
+            2.3381,
+            48.88745
+          ],
+          [
+            2.33801,
+            48.88747
+          ],
+          [
+            2.33747,
+            48.88762
+          ],
+          [
+            2.33748,
+            48.88759
+          ],
+          [
+            2.33728,
+            48.88731
+          ],
+          [
+            2.33721,
+            48.88727
+          ],
+          [
+            2.33652,
+            48.88733
+          ],
+          [
+            2.33639,
+            48.88734
+          ],
+          [
+            2.33615,
+            48.88736
+          ],
+          [
+            2.33607,
+            48.88724
+          ],
+          [
+            2.3356,
+            48.88659
+          ],
+          [
+            2.33499,
+            48.88577
+          ],
+          [
+            2.33477,
+            48.88583
+          ],
+          [
+            2.33431,
+            48.88539
+          ],
+          [
+            2.33403,
+            48.88513
+          ],
+          [
+            2.33399,
+            48.88509
+          ],
+          [
+            2.33371,
+            48.88481
+          ],
+          [
+            2.3336,
+            48.88469
+          ],
+          [
+            2.33357,
+            48.88466
+          ],
+          [
+            2.33284,
+            48.88395
+          ],
+          [
+            2.33284,
+            48.88394
+          ],
+          [
+            2.33281,
+            48.88388
+          ],
+          [
+            2.33238,
+            48.884
+          ],
+          [
+            2.33224,
+            48.88403
+          ],
+          [
+            2.33221,
+            48.88404
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "resourceVersion": "2026-11-09",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.340587,48.886532",
+        "end": "2.332206,48.884038",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.34059,
+              48.88653
+            ],
+            [
+              2.34066,
+              48.88673
+            ],
+            [
+              2.34047,
+              48.88685
+            ],
+            [
+              2.34036,
+              48.8869
+            ],
+            [
+              2.34022,
+              48.88694
+            ],
+            [
+              2.34012,
+              48.88696
+            ],
+            [
+              2.33993,
+              48.88699
+            ],
+            [
+              2.33992,
+              48.887
+            ],
+            [
+              2.3397,
+              48.88702
+            ],
+            [
+              2.33957,
+              48.88703
+            ],
+            [
+              2.33938,
+              48.88703
+            ],
+            [
+              2.33926,
+              48.88708
+            ],
+            [
+              2.33901,
+              48.88714
+            ],
+            [
+              2.33886,
+              48.8872
+            ],
+            [
+              2.33871,
+              48.88725
+            ],
+            [
+              2.33862,
+              48.88728
+            ],
+            [
+              2.3381,
+              48.88745
+            ],
+            [
+              2.33801,
+              48.88747
+            ],
+            [
+              2.33747,
+              48.88762
+            ],
+            [
+              2.33748,
+              48.88759
+            ],
+            [
+              2.33728,
+              48.88731
+            ],
+            [
+              2.33721,
+              48.88727
+            ],
+            [
+              2.33652,
+              48.88733
+            ],
+            [
+              2.33639,
+              48.88734
+            ],
+            [
+              2.33615,
+              48.88736
+            ],
+            [
+              2.33607,
+              48.88724
+            ],
+            [
+              2.3356,
+              48.88659
+            ],
+            [
+              2.33499,
+              48.88577
+            ],
+            [
+              2.33477,
+              48.88583
+            ],
+            [
+              2.33431,
+              48.88539
+            ],
+            [
+              2.33403,
+              48.88513
+            ],
+            [
+              2.33399,
+              48.88509
+            ],
+            [
+              2.33371,
+              48.88481
+            ],
+            [
+              2.3336,
+              48.88469
+            ],
+            [
+              2.33357,
+              48.88466
+            ],
+            [
+              2.33284,
+              48.88395
+            ],
+            [
+              2.33284,
+              48.88394
+            ],
+            [
+              2.33281,
+              48.88388
+            ],
+            [
+              2.33238,
+              48.884
+            ],
+            [
+              2.33224,
+              48.88403
+            ],
+            [
+              2.33221,
+              48.88404
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.33221,
+          48.88388,
+          2.34066,
+          48.88762
+        ],
+        "distance": 924.576,
+        "duration": 13.935316666666667,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.340587,48.886532",
+            "end": "2.332206,48.884038",
+            "distance": 924.576,
+            "duration": 13.935316666666667,
+            "bbox": [
+              2.33221,
+              48.88388,
+              2.34066,
+              48.88762
+            ],
+            "steps": []
+          }
+        ]
+      }
+    },
+    "moulin__romantic": {
+      "a": "moulin",
+      "b": "romantic",
+      "checked_date": "2026-11-10",
+      "straight_m": 316,
+      "request_url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.332252%2C48.884123&end=2.3335672%2C48.8814198&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "status": "ok",
+      "distance_m": 514.379,
+      "duration_min": 7.749016666666666,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.33221,
+            48.88404
+          ],
+          [
+            2.33224,
+            48.88403
+          ],
+          [
+            2.33238,
+            48.884
+          ],
+          [
+            2.33235,
+            48.88397
+          ],
+          [
+            2.33233,
+            48.88393
+          ],
+          [
+            2.3323,
+            48.88387
+          ],
+          [
+            2.33226,
+            48.88379
+          ],
+          [
+            2.33225,
+            48.88376
+          ],
+          [
+            2.33233,
+            48.88371
+          ],
+          [
+            2.33245,
+            48.88367
+          ],
+          [
+            2.33238,
+            48.88349
+          ],
+          [
+            2.33207,
+            48.88279
+          ],
+          [
+            2.33191,
+            48.88243
+          ],
+          [
+            2.3318,
+            48.88214
+          ],
+          [
+            2.3317,
+            48.88186
+          ],
+          [
+            2.33163,
+            48.88151
+          ],
+          [
+            2.33157,
+            48.8812
+          ],
+          [
+            2.33288,
+            48.88091
+          ],
+          [
+            2.33325,
+            48.88083
+          ],
+          [
+            2.33344,
+            48.8812
+          ]
+        ]
+      },
+      "resource": "bdtopo-valhalla",
+      "resourceVersion": "2026-11-09",
+      "raw": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.332206,48.884038",
+        "end": "2.333439,48.881197",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.33221,
+              48.88404
+            ],
+            [
+              2.33224,
+              48.88403
+            ],
+            [
+              2.33238,
+              48.884
+            ],
+            [
+              2.33235,
+              48.88397
+            ],
+            [
+              2.33233,
+              48.88393
+            ],
+            [
+              2.3323,
+              48.88387
+            ],
+            [
+              2.33226,
+              48.88379
+            ],
+            [
+              2.33225,
+              48.88376
+            ],
+            [
+              2.33233,
+              48.88371
+            ],
+            [
+              2.33245,
+              48.88367
+            ],
+            [
+              2.33238,
+              48.88349
+            ],
+            [
+              2.33207,
+              48.88279
+            ],
+            [
+              2.33191,
+              48.88243
+            ],
+            [
+              2.3318,
+              48.88214
+            ],
+            [
+              2.3317,
+              48.88186
+            ],
+            [
+              2.33163,
+              48.88151
+            ],
+            [
+              2.33157,
+              48.8812
+            ],
+            [
+              2.33288,
+              48.88091
+            ],
+            [
+              2.33325,
+              48.88083
+            ],
+            [
+              2.33344,
+              48.8812
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.33157,
+          48.88083,
+          2.33344,
+          48.88404
+        ],
+        "distance": 514.379,
+        "duration": 7.749016666666666,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.332206,48.884038",
+            "end": "2.333439,48.881197",
+            "distance": 514.379,
+            "duration": 7.749016666666666,
+            "bbox": [
+              2.33157,
+              48.88083,
+              2.33344,
+              48.88404
+            ],
+            "steps": []
+          }
+        ]
+      }
+    }
+  }
+}

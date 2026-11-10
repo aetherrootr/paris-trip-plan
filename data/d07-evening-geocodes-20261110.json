@@ -1,0 +1,496 @@
+{
+  "odessa": {
+    "query": "Rue d Odessa 75014 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=Rue+d+Odessa+75014+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.324527,
+              48.842405
+            ]
+          },
+          "properties": {
+            "label": "Rue d'Odessa 75014 Paris",
+            "score": 0.9728227272727272,
+            "id": "75114_6875",
+            "banId": "63c3a988-47d2-43b2-9bae-9aad4c19e203",
+            "name": "Rue d'Odessa",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650425.12,
+            "y": 6860473.93,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.70105,
+            "depcode": "75",
+            "street": "Rue d'Odessa",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "Rue d Odessa 75014 Paris"
+    }
+  },
+  "montparnasse-street": {
+    "query": "56 rue du Montparnasse 75014 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=56+rue+du+Montparnasse+75014+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.325401,
+              48.842018
+            ]
+          },
+          "properties": {
+            "label": "56 Rue du Montparnasse 75014 Paris",
+            "score": 0.9733018181818182,
+            "housenumber": "56",
+            "id": "75114_6523_00056",
+            "banId": "47898e36-1876-47bb-99c0-f31be896b380",
+            "name": "56 Rue du Montparnasse",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650488.9,
+            "y": 6860430.35,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.70632,
+            "depcode": "75",
+            "street": "Rue du Montparnasse",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.330568,
+              48.841471
+            ]
+          },
+          "properties": {
+            "label": "Boulevard du Montparnasse 75014 Paris",
+            "score": 0.5934103896103896,
+            "id": "75114_6522",
+            "banId": "21c24ac9-0374-4f46-b65e-372644382816",
+            "name": "Boulevard du Montparnasse",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650867.6,
+            "y": 6860366.3,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.7418,
+            "depcode": "75",
+            "street": "Boulevard du Montparnasse",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "56 rue du Montparnasse 75014 Paris"
+    }
+  },
+  "edgar-quinet": {
+    "query": "Boulevard Edgar Quinet 75014 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=Boulevard+Edgar+Quinet+75014+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.326029,
+              48.840814
+            ]
+          },
+          "properties": {
+            "label": "Boulevard Edgar Quinet 75014 Paris",
+            "score": 0.9762190909090909,
+            "id": "75114_3116",
+            "banId": "9e310f00-c8b9-4e56-8ce8-2980e39176cc",
+            "name": "Boulevard Edgar Quinet",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650533.84,
+            "y": 6860296.08,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.73841,
+            "depcode": "75",
+            "street": "Boulevard Edgar Quinet",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "Boulevard Edgar Quinet 75014 Paris"
+    }
+  },
+  "gaite": {
+    "query": "Rue de la Gaite 75014 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=Rue+de+la+Gaite+75014+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.323634,
+              48.839723
+            ]
+          },
+          "properties": {
+            "label": "Rue de la Gaîté 75014 Paris",
+            "score": 0.9753427272727273,
+            "id": "75114_3919",
+            "banId": "d17b04be-2522-4d7a-a0c5-5cf31df9b808",
+            "name": "Rue de la Gaîté",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650357.03,
+            "y": 6860176.28,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.72877,
+            "depcode": "75",
+            "street": "Rue de la Gaîté",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.324878,
+              48.840435
+            ]
+          },
+          "properties": {
+            "label": "Impasse de la Gaîté 75014 Paris",
+            "score": 0.6723745454545454,
+            "id": "75114_3918",
+            "banId": "d64032ca-7c3e-4e56-806f-c1214d9fa03f",
+            "name": "Impasse de la Gaîté",
+            "postcode": "75014",
+            "citycode": "75114",
+            "x": 650449.01,
+            "y": 6860254.66,
+            "city": "Paris",
+            "district": "Paris 14e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.64612,
+            "depcode": "75",
+            "street": "Impasse de la Gaîté",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "Rue de la Gaite 75014 Paris"
+    }
+  },
+  "atlantique": {
+    "query": "1 place des 5 Martyrs du Lycee Buffon 75015 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=1+place+des+5+Martyrs+du+Lycee+Buffon+75015+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.316959,
+              48.83895
+            ]
+          },
+          "properties": {
+            "label": "1 Place des Cinq Martyrs du Lycée Buffon 75015 Paris",
+            "score": 0.7732337049742709,
+            "housenumber": "1",
+            "id": "75115_2048_00001",
+            "banId": "3e047158-eb6c-44ae-b31f-53ead6ef8da8",
+            "name": "1 Place des Cinq Martyrs du Lycée Buffon",
+            "postcode": "75015",
+            "citycode": "75115",
+            "x": 649866.37,
+            "y": 6860094.55,
+            "city": "Paris",
+            "district": "Paris 15e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.69425,
+            "depcode": "75",
+            "street": "Place des Cinq Martyrs du Lycée Buffon",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "1 place des 5 Martyrs du Lycee Buffon 75015 Paris"
+    }
+  },
+  "cherche-midi": {
+    "query": "Rue du Cherche Midi 75006 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=Rue+du+Cherche+Midi+75006+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.324544,
+              48.848602
+            ]
+          },
+          "properties": {
+            "label": "Rue du Cherche-Midi 75006 Paris",
+            "score": 0.9746045454545454,
+            "id": "75106_1978",
+            "banId": "2c128da6-44a1-4a02-95e9-616d7744581a",
+            "name": "Rue du Cherche-Midi",
+            "postcode": "75006",
+            "citycode": "75106",
+            "x": 650432.26,
+            "y": 6861162.96,
+            "city": "Paris",
+            "district": "Paris 6e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "street",
+            "importance": 0.72065,
+            "depcode": "75",
+            "street": "Rue du Cherche-Midi",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "Rue du Cherche Midi 75006 Paris"
+    }
+  },
+  "bon-marche": {
+    "query": "24 rue de Sevres 75007 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=24+rue+de+Sevres+75007+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.32442,
+              48.850479
+            ]
+          },
+          "properties": {
+            "label": "24 Rue de Sèvres 75007 Paris",
+            "score": 0.9707845454545454,
+            "housenumber": "24",
+            "id": "75107_8955_00024",
+            "banId": "29926aa3-ea1f-4cf1-a0d3-a28750d1aa88",
+            "name": "24 Rue de Sèvres",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650424.95,
+            "y": 6861371.74,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.67863,
+            "depcode": "75",
+            "street": "Rue de Sèvres",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.325059,
+              48.853757
+            ]
+          },
+          "properties": {
+            "label": "24 Rue de Varenne 75007 Paris",
+            "score": 0.5700021390374331,
+            "housenumber": "24",
+            "id": "75107_9597_00024",
+            "banId": "e2425ac9-fefb-4d75-8169-805379626536",
+            "name": "24 Rue de Varenne",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650474.95,
+            "y": 6861735.82,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.7112,
+            "depcode": "75",
+            "street": "Rue de Varenne",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.331034,
+              48.858189
+            ]
+          },
+          "properties": {
+            "label": "24 Rue de Lille 75007 Paris",
+            "score": 0.5611950413223141,
+            "housenumber": "24",
+            "id": "75107_5686_00024",
+            "banId": "ed62e377-c02d-4f70-97df-404e8eb53c51",
+            "name": "24 Rue de Lille",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650917.54,
+            "y": 6862224.89,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.7186,
+            "depcode": "75",
+            "street": "Rue de Lille",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "24 rue de Sevres 75007 Paris"
+    }
+  },
+  "epicerie": {
+    "query": "38 rue de Sevres 75007 Paris",
+    "url": "https://data.geopf.fr/geocodage/search?q=38+rue+de+Sevres+75007+Paris&limit=3",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.323297,
+              48.849983
+            ]
+          },
+          "properties": {
+            "label": "38 Rue de Sèvres 75007 Paris",
+            "score": 0.9707845454545454,
+            "housenumber": "38",
+            "id": "75107_8955_00038",
+            "banId": "2196518b-f6d4-4d40-9fd5-44f786f6961d",
+            "name": "38 Rue de Sèvres",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650342.07,
+            "y": 6861317.3,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.67863,
+            "depcode": "75",
+            "street": "Rue de Sèvres",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.323306,
+              48.854189
+            ]
+          },
+          "properties": {
+            "label": "38 Rue de Varenne 75007 Paris",
+            "score": 0.5700021390374331,
+            "housenumber": "38",
+            "id": "75107_9597_00038",
+            "banId": "435bb4a6-b238-4ea5-a0f4-0ca745b34262",
+            "name": "38 Rue de Varenne",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650346.74,
+            "y": 6861784.96,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.7112,
+            "depcode": "75",
+            "street": "Rue de Varenne",
+            "_type": "address"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              2.329991,
+              48.858496
+            ]
+          },
+          "properties": {
+            "label": "38 Rue de Lille 75007 Paris",
+            "score": 0.5611950413223141,
+            "housenumber": "38",
+            "id": "75107_5686_00038",
+            "banId": "5b070b0d-9f2d-48ae-bc9a-d062036ccd37",
+            "name": "38 Rue de Lille",
+            "postcode": "75007",
+            "citycode": "75107",
+            "x": 650841.31,
+            "y": 6862259.68,
+            "city": "Paris",
+            "district": "Paris 7e Arrondissement",
+            "context": "75, Paris, Île-de-France",
+            "type": "housenumber",
+            "importance": 0.7186,
+            "depcode": "75",
+            "street": "Rue de Lille",
+            "_type": "address"
+          }
+        }
+      ],
+      "query": "38 rue de Sevres 75007 Paris"
+    }
+  }
+}

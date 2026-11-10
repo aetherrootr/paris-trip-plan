@@ -1,0 +1,30 @@
+巴黎行程v3.1｜D02与D11街区调整
+
+按你的批注制作可审阅方案。未修改Google Doc或原KMZ，其他日期不变。
+
+D02 西岱岛、钱币博物馆与巴黎古街区
+巴黎圣母院 → 圣礼拜堂 → 巴黎古监狱 → 巴黎钱币博物馆（Monnaie de Paris／11 Conti）→ 比西街—圣安德烈商业街散步 → 国立中世纪博物馆
+五处入内参观，另留45–60分钟古街散步；全天约8.5–10小时，属于规划预算。
+馆间步行路网：旧版约2.8公里，新版约2.4公里（古街绕行另计）。缩短约0.3公里，主要收益是区域集中，而不是显著减少总步数。
+钱币博物馆目前周二至周日11–18点、周三至21点；中世纪馆目前18:15闭馆、购票窗口更早结束。散步可以拆开，以入馆时间为先。
+按你的批注移除花神咖啡馆，不再作为餐饮候选。
+
+D11 自然历史、居里与巴黎地下空间
+进化大展馆 → 植物园 → 先贤祠 → 居里博物馆 → 法国邮政博物馆 → 巴黎地下墓穴
+天文台外观仍是原稿可选。未删任何原有项目。
+馆间步行路网合计约5.7公里；居里至邮政馆约2.5公里，建议用公共交通衔接，具体班次下一阶段确定。
+全天约10–12小时，强度比旧D11高。上午植物园区域、午后先贤祠及居里、再去蒙帕纳斯，地下墓穴用较晚预约时段承接。
+居里目前周三至周六13–17点开放；先贤祠2–3月目前18点闭馆、最后入场17:15。邮政馆目前18点闭馆，需保留1–1.5小时；地下墓穴目前20:30闭馆、最后入场19:30。上述均须在2027实际日期与预约发布后复核。
+这套组合有条件可排，不能仅凭地图顺路认为已完成小时级可行性验证。优先检查居里—邮政—地下墓穴的窗口，如发生真实冲突再讨论平移项目。
+
+核对来源
+https://www.monnaiedeparis.fr/fr/le-lieu-culturel/preparer-sa-visite/horaires-acces
+https://billetterie.musee-moyenage.fr/en/node/24
+https://curiotheque.musee.curie.fr/s/fr/page/reglement-interieur
+https://www.paris-pantheon.fr/visiter/informations-pratiques
+https://www.mnhn.fr/fr/grande-galerie-de-l-evolution
+https://www.museepostal.fr/fr
+https://catacombes.paris.fr/visiter/informations-pratiques
+距离：法国IGN BD TOPO步行路网，缓存位于data/routes.json。
+
+01–04文字稿与KML仍保留上一版作为参考。本次当前数据以按日网页和data/plan.json为准。

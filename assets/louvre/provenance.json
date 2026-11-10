@@ -1,0 +1,13 @@
+{
+  "checked_date": "2026-11-09",
+  "official_map_page": "https://collections.louvre.fr/plan",
+  "floor_assets": {
+    "-1": "https://collections.louvre.fr/assets/svg/niveau-1.svg",
+    "0": "https://collections.louvre.fr/assets/svg/niveau0.svg",
+    "1": "https://collections.louvre.fr/assets/svg/niveau1.svg",
+    "2": "https://collections.louvre.fr/assets/svg/niveau2.svg"
+  },
+  "pdf": "https://api-www.louvre.fr/sites/default/files/2026-05/2026-05_Plan_Louvre_EN.pdf",
+  "original_screenshots": "https://docs.google.com/document/d/1hr9SfHkTNf0C3pzJcuCzOzFhn72AtTBt7MxH8j8GXWw/edit?tab=t.10hlukhapwon",
+  "credit": "楼层底图与官方馆图 © Musée du Louvre；原路线截图来自用户Google文档。叠加标记与连线为本地审阅示意。"
+}

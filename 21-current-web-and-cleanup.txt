@@ -1,0 +1,14 @@
+网页固定入口与旧版清理｜2026-11-09
+
+固定总览：/home/aether/work/paris-trip/web/current/index.html
+固定D06：/home/aether/work/paris-trip/web/current/day-06.html
+根目录index.html、itinerary.html、map-review.html、map-template.html均跳转固定入口。以后构建更新web/current，刷新同一个页面即可；原daily-v3版本网址已退役。
+
+清理38个生成目录、647个旧HTML页面；保留当前20个HTML页面及其全部本地素材。包含一份未完成的旧构建。未改行程、展览、时间表、路网或原稿。
+
+旧网页及原入口／构建器已先打包到：/home/aether/work/paris-trip/archive/web-history-20261109-040257.tar.gz
+全部文件按SHA-256验证，重复内容在标准tar包中用硬链接去重；可用标准tar恢复原目录树。备份SHA-256：17cd6806f1a028043b51f7a0002a8adb35c6113c3c62f978bcc77db0439471e8。
+
+构建器改为先在web/.build-*完整输出，再替换web/current；失败时保留／恢复原当前目录，成功后清理临时目录。已连续构建验证固定入口不变，清理后web仅保留current。data/web-current.json仍记录数据标识、构建标识与生成时间。
+
+浏览器限制：当前会话的浏览器工具曾拒绝file://协议，并明确禁止改用其他方式绕过。因此没有通过HTTP、其他浏览器或其他工具绕过限制，仍只做源文件、链接、素材与结构验证，不能声称看到实际浏览器画面。用户可通过固定文件链接打开当前页面。

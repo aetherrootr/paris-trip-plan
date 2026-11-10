@@ -1,0 +1,555 @@
+{
+  "geocodes": {
+    "exit": {
+      "url": "https://data.geopf.fr/geocodage/search?q=21+bis+Avenue+Ren%C3%A9+Coty+75014+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.334431,
+                48.829515
+              ]
+            },
+            "properties": {
+              "label": "21B Avenue René Coty 75014 Paris",
+              "score": 0.7278163636363637,
+              "housenumber": "21B",
+              "id": "75114_8144_00021_b",
+              "banId": "2075cd60-6edf-468b-95b1-f1f36cd64360",
+              "name": "21B Avenue René Coty",
+              "postcode": "75014",
+              "citycode": "75114",
+              "x": 651139.9,
+              "y": 6859034.53,
+              "city": "Paris",
+              "district": "Paris 14e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "housenumber",
+              "importance": 0.75598,
+              "depcode": "75",
+              "street": "Avenue René Coty",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "21 bis Avenue René Coty 75014 Paris"
+      }
+    },
+    "daguerre": {
+      "url": "https://data.geopf.fr/geocodage/search?q=10+Rue+Daguerre+75014+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.330479,
+                48.833706
+              ]
+            },
+            "properties": {
+              "label": "10 Rue Daguerre 75014 Paris",
+              "score": 0.9787281818181817,
+              "housenumber": "10",
+              "id": "75114_2513_00010",
+              "banId": "523a2407-e491-4622-9dcb-40dc178c9c69",
+              "name": "10 Rue Daguerre",
+              "postcode": "75014",
+              "citycode": "75114",
+              "x": 650853.74,
+              "y": 6859502.97,
+              "city": "Paris",
+              "district": "Paris 14e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "housenumber",
+              "importance": 0.76601,
+              "depcode": "75",
+              "street": "Rue Daguerre",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "10 Rue Daguerre 75014 Paris"
+      }
+    },
+    "monoprix": {
+      "url": "https://data.geopf.fr/geocodage/search?q=8+Avenue+du+G%C3%A9n%C3%A9ral+Leclerc+75014+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.331194,
+                48.833172
+              ]
+            },
+            "properties": {
+              "label": "8 Avenue du Général Leclerc 75014 Paris",
+              "score": 0.9805872727272726,
+              "housenumber": "8",
+              "id": "75114_4063_00008",
+              "banId": "142771f5-1b20-4f3b-90ab-9659ee0d35b7",
+              "name": "8 Avenue du Général Leclerc",
+              "postcode": "75014",
+              "citycode": "75114",
+              "x": 650905.72,
+              "y": 6859443.15,
+              "city": "Paris",
+              "district": "Paris 14e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "housenumber",
+              "importance": 0.78646,
+              "depcode": "75",
+              "street": "Avenue du Général Leclerc",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "8 Avenue du Général Leclerc 75014 Paris"
+      }
+    },
+    "cinema": {
+      "url": "https://data.geopf.fr/geocodage/search?q=73+Avenue+du+G%C3%A9n%C3%A9ral+Leclerc+75014+Paris&limit=1",
+      "response": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                2.327482,
+                48.828212
+              ]
+            },
+            "properties": {
+              "label": "73 Avenue du Général Leclerc 75014 Paris",
+              "score": 0.9805872727272726,
+              "housenumber": "73",
+              "id": "75114_4063_00073",
+              "banId": "2dba0aa7-a89c-4c66-823d-2b82ac56db5e",
+              "name": "73 Avenue du Général Leclerc",
+              "postcode": "75014",
+              "citycode": "75114",
+              "x": 650628.55,
+              "y": 6858893.97,
+              "city": "Paris",
+              "district": "Paris 14e Arrondissement",
+              "context": "75, Paris, Île-de-France",
+              "type": "housenumber",
+              "importance": 0.78646,
+              "depcode": "75",
+              "street": "Avenue du Général Leclerc",
+              "_type": "address"
+            }
+          }
+        ],
+        "query": "73 Avenue du Général Leclerc 75014 Paris"
+      }
+    }
+  },
+  "routes": {
+    "daguerre": {
+      "url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.334431%2C48.829515&end=2.330479%2C48.833706&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "response": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.334327,48.829501",
+        "end": "2.330436,48.833656",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.33433,
+              48.8295
+            ],
+            [
+              2.3343,
+              48.82957
+            ],
+            [
+              2.33419,
+              48.82991
+            ],
+            [
+              2.33405,
+              48.83027
+            ],
+            [
+              2.33402,
+              48.83035
+            ],
+            [
+              2.33387,
+              48.83074
+            ],
+            [
+              2.33361,
+              48.83073
+            ],
+            [
+              2.33342,
+              48.83126
+            ],
+            [
+              2.33333,
+              48.83148
+            ],
+            [
+              2.33302,
+              48.8323
+            ],
+            [
+              2.33288,
+              48.83269
+            ],
+            [
+              2.33273,
+              48.83308
+            ],
+            [
+              2.33268,
+              48.83321
+            ],
+            [
+              2.33267,
+              48.83328
+            ],
+            [
+              2.33269,
+              48.8334
+            ],
+            [
+              2.33256,
+              48.83345
+            ],
+            [
+              2.33216,
+              48.8336
+            ],
+            [
+              2.33192,
+              48.8337
+            ],
+            [
+              2.33154,
+              48.83324
+            ],
+            [
+              2.33101,
+              48.83344
+            ],
+            [
+              2.33055,
+              48.83362
+            ],
+            [
+              2.33044,
+              48.83366
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.33044,
+          48.8295,
+          2.33433,
+          48.8337
+        ],
+        "distance": 683.948,
+        "duration": 10.29255,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.334327,48.829501",
+            "end": "2.330436,48.833656",
+            "distance": 683.948,
+            "duration": 10.29255,
+            "bbox": [
+              2.33044,
+              48.8295,
+              2.33433,
+              48.8337
+            ],
+            "steps": []
+          }
+        ]
+      }
+    },
+    "monoprix": {
+      "url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.334431%2C48.829515&end=2.331194%2C48.833172&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "response": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.334327,48.829501",
+        "end": "2.331323,48.833319",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.33433,
+              48.8295
+            ],
+            [
+              2.3343,
+              48.82957
+            ],
+            [
+              2.33419,
+              48.82991
+            ],
+            [
+              2.33405,
+              48.83027
+            ],
+            [
+              2.33402,
+              48.83035
+            ],
+            [
+              2.33387,
+              48.83074
+            ],
+            [
+              2.33361,
+              48.83073
+            ],
+            [
+              2.33342,
+              48.83126
+            ],
+            [
+              2.33333,
+              48.83148
+            ],
+            [
+              2.33302,
+              48.8323
+            ],
+            [
+              2.33288,
+              48.83269
+            ],
+            [
+              2.33273,
+              48.83308
+            ],
+            [
+              2.33268,
+              48.83321
+            ],
+            [
+              2.33267,
+              48.83328
+            ],
+            [
+              2.33269,
+              48.8334
+            ],
+            [
+              2.33256,
+              48.83345
+            ],
+            [
+              2.33216,
+              48.8336
+            ],
+            [
+              2.33192,
+              48.8337
+            ],
+            [
+              2.33154,
+              48.83324
+            ],
+            [
+              2.33132,
+              48.83332
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.33132,
+          48.8295,
+          2.33433,
+          48.8337
+        ],
+        "distance": 609.18,
+        "duration": 9.171033333333332,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.334327,48.829501",
+            "end": "2.331323,48.833319",
+            "distance": 609.18,
+            "duration": 9.171033333333332,
+            "bbox": [
+              2.33132,
+              48.8295,
+              2.33433,
+              48.8337
+            ],
+            "steps": []
+          }
+        ]
+      }
+    },
+    "cinema": {
+      "url": "https://data.geopf.fr/navigation/itineraire?resource=bdtopo-valhalla&start=2.334431%2C48.829515&end=2.327482%2C48.828212&profile=pedestrian&optimization=shortest&geometryFormat=geojson&getSteps=false&distanceUnit=meter&timeUnit=minute&crs=EPSG%3A4326",
+      "response": {
+        "resource": "bdtopo-valhalla",
+        "resourceVersion": "2026-11-09",
+        "start": "2.334327,48.829501",
+        "end": "2.327273,48.828303",
+        "profile": "pedestrian",
+        "optimization": "shortest",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              2.33433,
+              48.8295
+            ],
+            [
+              2.3343,
+              48.82957
+            ],
+            [
+              2.33419,
+              48.82991
+            ],
+            [
+              2.33396,
+              48.8298
+            ],
+            [
+              2.33385,
+              48.82978
+            ],
+            [
+              2.33369,
+              48.82977
+            ],
+            [
+              2.33294,
+              48.82976
+            ],
+            [
+              2.33265,
+              48.82975
+            ],
+            [
+              2.33222,
+              48.82974
+            ],
+            [
+              2.33171,
+              48.82972
+            ],
+            [
+              2.33105,
+              48.82969
+            ],
+            [
+              2.33081,
+              48.82968
+            ],
+            [
+              2.32987,
+              48.82965
+            ],
+            [
+              2.32945,
+              48.82963
+            ],
+            [
+              2.32901,
+              48.82961
+            ],
+            [
+              2.32868,
+              48.8296
+            ],
+            [
+              2.32856,
+              48.82959
+            ],
+            [
+              2.32841,
+              48.82959
+            ],
+            [
+              2.32803,
+              48.82916
+            ],
+            [
+              2.32769,
+              48.82878
+            ],
+            [
+              2.32753,
+              48.82858
+            ],
+            [
+              2.32751,
+              48.82856
+            ],
+            [
+              2.32735,
+              48.82838
+            ],
+            [
+              2.32727,
+              48.8283
+            ]
+          ]
+        },
+        "crs": "EPSG:4326",
+        "distanceUnit": "meter",
+        "timeUnit": "minute",
+        "bbox": [
+          2.32727,
+          48.8283,
+          2.33433,
+          48.82991
+        ],
+        "distance": 639.936,
+        "duration": 9.682366666666667,
+        "constraints": [],
+        "portions": [
+          {
+            "start": "2.334327,48.829501",
+            "end": "2.327273,48.828303",
+            "distance": 639.936,
+            "duration": 9.682366666666667,
+            "bbox": [
+              2.32727,
+              48.8283,
+              2.33433,
+              48.82991
+            ],
+            "steps": []
+          }
+        ]
+      }
+    }
+  }
+}

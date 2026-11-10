@@ -1,0 +1,766 @@
+{
+  "checked_date": "2026-11-09",
+  "target_window": "17:45–18:20",
+  "route": "hunt__maraiswalk",
+  "scope": "当前417米连接线及39 rue de Bretagne代表点周围40米；这不是整条档案街、布列塔尼街所有门店的普查。",
+  "source_map_url": "https://api.openstreetmap.org/api/0.6/map?bbox=2.3578,48.8612,2.3652,48.8641",
+  "attribution": "© OpenStreetMap contributors",
+  "raw_shop_poi_count": 27,
+  "raw_shop_poi_with_opening_hours": 10,
+  "food_drink_amenity_count": 20,
+  "limitations": [
+    "27为地图POI条目，含可能同店多点、馆内商店和服务类，不等于27家独立街面零售店。",
+    "没有营业标签不能记为关门；没有覆盖指定星期也不等于实际确定关闭。",
+    "12个可评估样本为10个有营业标签的记录加2个官网补查，不是随机样本；不能将比例推广到整条街。",
+    "4条由商家官网交叉确认，其余为地图规则，均非2027实时营业保证。",
+    "咖啡馆、餐厅、酒吧另列，不用其晚间营业来抬高零售店开门比例。"
+  ],
+  "reviewed_samples": [
+    {
+      "name": "Comme un Roman",
+      "osm_id": "1430808026",
+      "coordinates": [
+        2.362098,
+        48.8629626
+      ],
+      "distance_to_route_m": 12.3,
+      "opening_hours_osm": "Tu-Sa 10:00-19:45; Su 10:00-13:30",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/1430808026",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "地图标示周二至周六10:00–19:45、周日10:00–13:30；书店官网未能读取，周日时段不能计入。"
+    },
+    {
+      "name": "Le Repaire de Bacchus",
+      "osm_id": "2431491789",
+      "coordinates": [
+        2.3622966,
+        48.8631338
+      ],
+      "distance_to_route_m": 11.7,
+      "opening_hours_osm": "Mo 16:00-21:00; Tu-Sa 10:30-21:00; Su 10:00-20:00",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/2431491789",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": true
+      },
+      "details": "地图标示周二至周六10:30–21:00、周日10:00–20:00。"
+    },
+    {
+      "name": "Scoop me a Cookie",
+      "osm_id": "2926458773",
+      "coordinates": [
+        2.3625023,
+        48.8630399
+      ],
+      "distance_to_route_m": 19.3,
+      "opening_hours_osm": "Mo-Su 10:00-20:00",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/2926458773",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": true
+      },
+      "details": "地图标示每天10:00–20:00。"
+    },
+    {
+      "name": "Jean-Paul Hévin",
+      "osm_id": "3204545981",
+      "coordinates": [
+        2.3619382,
+        48.8630594
+      ],
+      "distance_to_route_m": 10.3,
+      "opening_hours_osm": "Tu-Sa 10:00-19:30; PH,Su,Mo off",
+      "source_kind": "商家官网",
+      "source_url": "https://www.jeanpaulhevin.com/fr/nos-boutiques?boutique=MARAIS&ville=paris",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "41 rue de Bretagne：官网周二至周六10:00–19:30，周日、周一和节假日关闭；火灾后另有街面店正常营业公告。"
+    },
+    {
+      "name": "BiBoViNo",
+      "osm_id": "3226121580",
+      "coordinates": [
+        2.3622624,
+        48.8627174
+      ],
+      "distance_to_route_m": 35.0,
+      "opening_hours_osm": "Tu-Th 11:00-14:30, 16:00-20:00; Fr-Sa 11:00-20:00; Su 10:30-18:30",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/3226121580",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": true
+      },
+      "details": "地图标示周二至周四11:00–14:30、16:00–20:00，周五六11:00–20:00，周日10:30–18:30。"
+    },
+    {
+      "name": "Franprix",
+      "osm_id": "3226216061",
+      "coordinates": [
+        2.3612452,
+        48.8634302
+      ],
+      "distance_to_route_m": 32.7,
+      "opening_hours_osm": "Mo-Sa 07:30-21:00; Su 08:30-12:50",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/3226216061",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "地图标示周一至周六07:30–21:00、周日08:30–12:50。"
+    },
+    {
+      "name": "Comptoirs Richard",
+      "osm_id": "3361195557",
+      "coordinates": [
+        2.3616287,
+        48.8632151
+      ],
+      "distance_to_route_m": 4.1,
+      "opening_hours_osm": "Tu-Sa 09:30-19:00; Su, Mo, PH closed",
+      "source_kind": "商家官网",
+      "source_url": "https://www.comptoirsrichard.fr/content/75-nos-boutiques",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "45 rue de Bretagne：官网周二至周六09:30–19:00；未列周日营业，不计入周日覆盖。"
+    },
+    {
+      "name": "Maison Lesaint et Lê",
+      "osm_id": "3396907065",
+      "coordinates": [
+        2.3598639,
+        48.862754
+      ],
+      "distance_to_route_m": 17.6,
+      "opening_hours_osm": "Mo-Fr 07:00-19:30",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/3396907065",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": false,
+        "Su": false
+      },
+      "details": "地图仅列周一至周五07:00–19:30；周末未列，不计覆盖，不能据此断言实际一定闭店。"
+    },
+    {
+      "name": "Supérette des Archives",
+      "osm_id": "3396907067",
+      "coordinates": [
+        2.3599632,
+        48.8628498
+      ],
+      "distance_to_route_m": 30.3,
+      "opening_hours_osm": "Mo-Su 08:30-00:30",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/3396907067",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": true
+      },
+      "details": "地图标示每天08:30–次日00:30。"
+    },
+    {
+      "name": "Ewa Lipinska",
+      "osm_id": "3680774432",
+      "coordinates": [
+        2.3596046,
+        48.8627806
+      ],
+      "distance_to_route_m": 23.2,
+      "opening_hours_osm": "Mo-Sa 11:00-19:30",
+      "source_kind": "OSM营业标签，非逐店实时确认",
+      "source_url": "https://www.openstreetmap.org/node/3680774432",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "地图标示周一至周六11:00–19:30，周日未列，不计覆盖。"
+    },
+    {
+      "name": "Maison Vérot",
+      "osm_id": "8256992394",
+      "coordinates": [
+        2.3624383,
+        48.8630661
+      ],
+      "distance_to_route_m": 15.1,
+      "opening_hours_osm": null,
+      "source_kind": "商家官网",
+      "source_url": "https://www.maisonverot.fr/pages/boutiques",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "38 rue de Bretagne：官网周二至周五09:30–20:00、周六09:30–19:30、周日10:00–13:30。"
+    },
+    {
+      "name": "État Libre d’Orange",
+      "osm_id": "5324631718",
+      "coordinates": [
+        2.359784,
+        48.8626974
+      ],
+      "distance_to_route_m": 10.2,
+      "opening_hours_osm": null,
+      "source_kind": "商家官网",
+      "source_url": "https://www.etatlibredorange.com/pages/location",
+      "checked_date": "2026-11-09",
+      "covers_entire_1745_1820": {
+        "We": true,
+        "Th": true,
+        "Fr": true,
+        "Sa": true,
+        "Su": false
+      },
+      "details": "69 rue des Archives：官网周一至周六11:00–14:30及15:30–19:00；未列周日营业，不计覆盖。"
+    }
+  ],
+  "full_window_coverage_counts": {
+    "We": 12,
+    "Th": 12,
+    "Fr": 12,
+    "Sa": 11,
+    "Su": 4
+  },
+  "excluded_future_assumption": {
+    "name": "Gaâla",
+    "source_url": "https://gaala.com/fr/pages/gaala-boutique-paris",
+    "reason": "官网为2026限定日期快闪安排，2027未确认，不能算固定营业店。"
+  },
+  "market_advisory": {
+    "source_url": "https://www.paris.fr/pages/incendie-du-marche-des-enfants-rouges-les-recommandations-de-l-agence-regionale-de-sante-36826",
+    "fire_source_url": "https://www.terre.defense.gouv.fr/pompiers-paris/actualites/violent-incendie-au-marche-enfants-rouges-paris-3e",
+    "summary": "2026-10-12市场火灾，市政府称屋顶、木构与摊位受损，街面商铺保留下来；核验来源未给出2027市场恢复开放承诺。市场内部和临时摊位不按旧常规营业时间计入。"
+  },
+  "retail_pois": [
+    {
+      "type": "node",
+      "id": "713882555",
+      "tags": {
+        "check_date": "2026-07-10",
+        "name": "Jouannault - Cheese Shop",
+        "name:en": "Jouannault - cheese shop",
+        "name:fr": "Jouannault - Cheese Shop",
+        "shop": "cheese",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      },
+      "coordinates": [
+        2.3621533,
+        48.8629397
+      ],
+      "timestamp": "2026-07-10T16:35:04Z",
+      "distance_to_route_m": 12.0
+    },
+    {
+      "type": "node",
+      "id": "1430808026",
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "39",
+        "addr:postcode": "75003",
+        "addr:street": "Rue de Bretagne",
+        "check_date": "2026-07-10",
+        "description": "Librairie indépendante",
+        "name": "Comme un Roman",
+        "opening_hours": "Tu-Sa 10:00-19:45; Su 10:00-13:30",
+        "phone": "+33 1 42 77 56 20",
+        "shop": "books",
+        "toilets": "no",
+        "website": "https://www.comme-un-roman.com/",
+        "wheelchair": "no"
+      },
+      "coordinates": [
+        2.362098,
+        48.8629626
+      ],
+      "timestamp": "2026-07-10T16:35:04Z",
+      "distance_to_route_m": 12.3
+    },
+    {
+      "type": "node",
+      "id": "2431491789",
+      "tags": {
+        "alcohol": "wine",
+        "name": "Le Repaire de Bacchus",
+        "opening_hours": "Mo 16:00-21:00; Tu-Sa 10:30-21:00; Su 10:00-20:00",
+        "phone": "+331 72 63 68 45",
+        "shop": "alcohol",
+        "website": "https://www.lerepairedebacchus.com/"
+      },
+      "coordinates": [
+        2.3622966,
+        48.8631338
+      ],
+      "timestamp": "2019-03-10T19:50:58Z",
+      "distance_to_route_m": 11.7
+    },
+    {
+      "type": "node",
+      "id": "2432407606",
+      "tags": {
+        "name": "Jouannault",
+        "shop": "cheese"
+      },
+      "coordinates": [
+        2.3623707,
+        48.8628236
+      ],
+      "timestamp": "2023-07-29T22:44:35Z",
+      "distance_to_route_m": 25.1
+    },
+    {
+      "type": "node",
+      "id": "2926458773",
+      "tags": {
+        "contact:email": "encore@scoopmeacookie.com",
+        "contact:facebook": "ScoopMeaCookie",
+        "contact:instagram": "scoopmeacookie",
+        "delivery": "yes",
+        "email": "encore@scoopmeacookie.com",
+        "level": "0",
+        "name": "Scoop me a Cookie",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "phone": "+33 1 40 33 26 97",
+        "shop": "confectionery",
+        "source": "survey",
+        "website": "https://www.scoopmeacookie.com/",
+        "wheelchair": "yes"
+      },
+      "coordinates": [
+        2.3625023,
+        48.8630399
+      ],
+      "timestamp": "2025-11-06T07:20:46Z",
+      "distance_to_route_m": 19.3
+    },
+    {
+      "type": "node",
+      "id": "3204545981",
+      "tags": {
+        "check_date": "2026-10-02",
+        "name": "Jean-Paul Hévin",
+        "opening_hours": "Tu-Sa 10:00-19:30; PH,Su,Mo off",
+        "shop": "chocolate"
+      },
+      "coordinates": [
+        2.3619382,
+        48.8630594
+      ],
+      "timestamp": "2026-10-02T11:39:32Z",
+      "distance_to_route_m": 10.3
+    },
+    {
+      "type": "node",
+      "id": "3226121580",
+      "tags": {
+        "alcohol": "wine",
+        "contact:facebook": "https://www.facebook.com/BibovinoEnfantsRouges/",
+        "name": "BiBoViNo",
+        "opening_hours": "Tu-Th 11:00-14:30, 16:00-20:00; Fr-Sa 11:00-20:00; Su 10:30-18:30",
+        "phone": "+33 1 42 71 14 08",
+        "shop": "alcohol",
+        "website": "https://www.bibovino.fr/content/29-bibovino-charlot"
+      },
+      "coordinates": [
+        2.3622624,
+        48.8627174
+      ],
+      "timestamp": "2023-07-29T22:44:35Z",
+      "distance_to_route_m": 35.0
+    },
+    {
+      "type": "node",
+      "id": "3226135958",
+      "tags": {
+        "check_date": "2026-10-02",
+        "name": "Le Jardin des Délices",
+        "shop": "greengrocer",
+        "wheelchair": "yes"
+      },
+      "coordinates": [
+        2.3618556,
+        48.8630984
+      ],
+      "timestamp": "2026-10-02T11:39:32Z",
+      "distance_to_route_m": 10.3
+    },
+    {
+      "type": "node",
+      "id": "3226216061",
+      "tags": {
+        "brand": "Franprix",
+        "brand:wikidata": "Q2420096",
+        "brand:wikipedia": "fr:Franprix",
+        "check_date": "2026-10-02",
+        "check_date:opening_hours": "2026-08-30",
+        "name": "Franprix",
+        "opening_hours": "Mo-Sa 07:30-21:00; Su 08:30-12:50",
+        "operator": "Groupe Casino",
+        "shop": "convenience",
+        "website": "https://www.franprix.fr/magasins/6213",
+        "wheelchair": "yes"
+      },
+      "coordinates": [
+        2.3612452,
+        48.8634302
+      ],
+      "timestamp": "2026-10-02T11:39:32Z",
+      "distance_to_route_m": 32.7
+    },
+    {
+      "type": "node",
+      "id": "3361195557",
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "45",
+        "addr:postcode": "75003",
+        "addr:street": "Rue de Bretagne",
+        "check_date": "2026-10-02",
+        "description": "Vente de thé et chocolat",
+        "name": "Comptoirs Richard",
+        "opening_hours": "Tu-Sa 09:30-19:00; Su, Mo, PH closed",
+        "operator": "Comptoirs Richard",
+        "phone": "+33 1 48 04 93 70",
+        "shop": "coffee",
+        "website": "https://www.comptoirsrichard.fr/",
+        "wheelchair": "yes",
+        "wikidata": "Q131203294",
+        "wikipedia": "fr:Groupe Richard"
+      },
+      "coordinates": [
+        2.3616287,
+        48.8632151
+      ],
+      "timestamp": "2026-10-02T11:39:32Z",
+      "distance_to_route_m": 4.1
+    },
+    {
+      "type": "node",
+      "id": "3396907065",
+      "tags": {
+        "check_date": "2025-06-12",
+        "name": "Maison Lesaint et Lê",
+        "opening_hours": "Mo-Fr 07:00-19:30",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "bakery"
+      },
+      "coordinates": [
+        2.3598639,
+        48.862754
+      ],
+      "timestamp": "2025-06-12T11:53:59Z",
+      "distance_to_route_m": 17.6
+    },
+    {
+      "type": "node",
+      "id": "3396907067",
+      "tags": {
+        "check_date": "2026-06-16",
+        "name": "Supérette des Archives",
+        "opening_hours": "Mo-Su 08:30-00:30",
+        "shop": "convenience"
+      },
+      "coordinates": [
+        2.3599632,
+        48.8628498
+      ],
+      "timestamp": "2026-06-16T11:55:16Z",
+      "distance_to_route_m": 30.3
+    },
+    {
+      "type": "node",
+      "id": "3661408804",
+      "tags": {
+        "check_date": "2026-07-10",
+        "name": "Maison Barthouil",
+        "ref:FR:SIRET": "52454425100019",
+        "shop": "deli"
+      },
+      "coordinates": [
+        2.3626799,
+        48.8630658
+      ],
+      "timestamp": "2026-07-10T16:35:04Z",
+      "distance_to_route_m": 32.5
+    },
+    {
+      "type": "node",
+      "id": "3680774432",
+      "tags": {
+        "name": "Ewa Lipinska",
+        "opening_hours": "Mo-Sa 11:00-19:30",
+        "phone": "+33142786372",
+        "shop": "clothes",
+        "wheelchair": "no"
+      },
+      "coordinates": [
+        2.3596046,
+        48.8627806
+      ],
+      "timestamp": "2025-12-17T00:19:01Z",
+      "distance_to_route_m": 23.2
+    },
+    {
+      "type": "node",
+      "id": "4800815222",
+      "tags": {
+        "addr:housenumber": "39",
+        "addr:street": "Rue de Bretagne",
+        "name": "Cave D'affinage Paroles De Fromagers",
+        "name:en": "Voice of Cheesemaker Cheese and Wine Tasting",
+        "name:fr": "Cave d'Affinage Paroles de Fromagers",
+        "shop": "supermarket",
+        "website": "https://parolesdefromagers.com/en/"
+      },
+      "coordinates": [
+        2.3622026,
+        48.8629135
+      ],
+      "timestamp": "2019-11-08T11:28:43Z",
+      "distance_to_route_m": 13.4
+    },
+    {
+      "type": "node",
+      "id": "5324631718",
+      "tags": {
+        "check_date": "2025-06-12",
+        "name": "État Libre d’Orange",
+        "shop": "perfumery",
+        "website": "https://www.etatlibredorange.com"
+      },
+      "coordinates": [
+        2.359784,
+        48.8626974
+      ],
+      "timestamp": "2025-12-17T00:19:01Z",
+      "distance_to_route_m": 10.2
+    },
+    {
+      "type": "node",
+      "id": "7078311742",
+      "tags": {
+        "level": "0",
+        "name": "Vintage Photographie",
+        "shop": "photo",
+        "wheelchair": "limited"
+      },
+      "coordinates": [
+        2.362292,
+        48.8627487
+      ],
+      "timestamp": "2023-07-29T22:44:35Z",
+      "distance_to_route_m": 31.7
+    },
+    {
+      "type": "node",
+      "id": "7537901213",
+      "tags": {
+        "contact:phone": "+33 629672118",
+        "name": "Les Quatre Saisons",
+        "shop": "greengrocer"
+      },
+      "coordinates": [
+        2.3621555,
+        48.8629543
+      ],
+      "timestamp": "2025-09-22T19:59:48Z",
+      "distance_to_route_m": 10.6
+    },
+    {
+      "type": "node",
+      "id": "8256992394",
+      "tags": {
+        "name": "Maison Vérot",
+        "shop": "butcher",
+        "wheelchair": "yes"
+      },
+      "coordinates": [
+        2.3624383,
+        48.8630661
+      ],
+      "timestamp": "2024-06-26T12:27:40Z",
+      "distance_to_route_m": 15.1
+    },
+    {
+      "type": "node",
+      "id": "8950382694",
+      "tags": {
+        "check_date": "2025-06-12",
+        "name": "Seefan",
+        "shop": "clothes"
+      },
+      "coordinates": [
+        2.3606556,
+        48.8620271
+      ],
+      "timestamp": "2025-12-17T00:19:01Z",
+      "distance_to_route_m": 28.7
+    },
+    {
+      "type": "node",
+      "id": "10313025741",
+      "tags": {
+        "level": "0",
+        "name": "Hair Dresser Studio",
+        "shop": "hairdresser"
+      },
+      "coordinates": [
+        2.3586378,
+        48.8620067
+      ],
+      "timestamp": "2023-01-07T14:19:28Z",
+      "distance_to_route_m": 27.3
+    },
+    {
+      "type": "node",
+      "id": "11197420838",
+      "tags": {
+        "name": "musée de la chasse et de la nature",
+        "shop": "books"
+      },
+      "coordinates": [
+        2.3585907,
+        48.8613676
+      ],
+      "timestamp": "2026-11-06T15:24:16Z",
+      "distance_to_route_m": 15.5
+    },
+    {
+      "type": "node",
+      "id": "11444143238",
+      "tags": {
+        "brand": "Paul Smith",
+        "brand:wikidata": "Q56356277",
+        "check_date": "2026-09-02",
+        "name": "Paul Smith",
+        "ref:FR:SIRET": "49149878800109",
+        "shop": "clothes",
+        "wheelchair": "limited"
+      },
+      "coordinates": [
+        2.3594683,
+        48.8628452
+      ],
+      "timestamp": "2026-09-02T07:04:11Z",
+      "distance_to_route_m": 35.0
+    },
+    {
+      "type": "node",
+      "id": "11444143239",
+      "tags": {
+        "check_date": "2024-08-10",
+        "name": "Comptoir horloger du Marais",
+        "shop": "clock"
+      },
+      "coordinates": [
+        2.3595149,
+        48.8628213
+      ],
+      "timestamp": "2025-12-17T00:19:01Z",
+      "distance_to_route_m": 30.8
+    },
+    {
+      "type": "node",
+      "id": "12909355596",
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:street": "Rue Pastourelle",
+        "check_date": "2025-06-12",
+        "name": "Gaâla",
+        "shop": "clothes",
+        "website": "https://gaala.com/fr/pages/gaala-boutique-paris"
+      },
+      "coordinates": [
+        2.3604362,
+        48.8623192
+      ],
+      "timestamp": "2026-02-11T21:43:26Z",
+      "distance_to_route_m": 5.7
+    },
+    {
+      "type": "node",
+      "id": "13154007675",
+      "tags": {
+        "check_date": "2026-06-16",
+        "name": "Senteurs de fée",
+        "shop": "cosmetics",
+        "website": "https://maisonsenteursdefee.com/"
+      },
+      "coordinates": [
+        2.3581559,
+        48.8613679
+      ],
+      "timestamp": "2026-06-16T11:48:29Z",
+      "distance_to_route_m": 30.3
+    },
+    {
+      "type": "node",
+      "id": "13382390303",
+      "tags": {
+        "name": "Michèle B.",
+        "shop": "optician"
+      },
+      "coordinates": [
+        2.3607248,
+        48.8619943
+      ],
+      "timestamp": "2025-12-17T00:19:01Z",
+      "distance_to_route_m": 34.5
+    }
+  ]
+}

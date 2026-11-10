@@ -1,0 +1,48 @@
+巴黎15天｜D04玛黑区与D13中心区重排 v3.7
+2026-11-09核对；2027年2月或3月出发，日期未定，均未预约。
+
+编号
+原文Paris Day 3对应当前网页D04玛黑区。D03卢浮宫三翼与馆内地图原样保留，仅将皇家宫殿去向说明改为D13。
+
+分日
+D04：巴士底广场 → 孚日广场 → 卡纳瓦莱2小时 → 毕加索1小时45分钟 → 狩猎自然1.5小时 → 档案街／布列塔尼街步行。三馆保留原稿，原工艺馆与皮诺移D13。9:15–18:00左右，午餐12:15–13:15，晚餐18:15起；餐厅待选。
+D05：橘园 → 海军府 → 协和广场 → 小皇宫 → 大皇宫外观 → 香榭丽舍 → 凯旋门。装饰艺术、皇家宫殿移D13。
+D13：工艺10:00–12:30 → 午餐12:30–13:15 → 转场至装饰艺术13:15–14:00 → 装饰艺术14:00–16:00 → 皇家宫殿16:10–16:55 → 皮诺17:15–18:45 → 19:00起晚餐。
+
+物理距离（IGN步行路网，不含酒店、馆内、队列或街巷绕行）
+D04主线2.19公里，原为2.51公里；新增街区代表点也计入新主线。离开玛黑去工艺馆的连接取消；步行节省不等于公交票价的确定节省。
+D05主线5.55 → 3.44公里，减少2.11公里（约38%）；橘园到海军府约579米。
+D13主线2.76公里、模型约46分钟；工艺到装饰艺术1.91公里为最长一段，留45分钟含到达入场；装饰艺术到皇家宫殿390米；皇家宫殿到皮诺465米。
+原D13的歌剧院、薇薇安已改为待安置候选，未计入四处主线。因包含项目变化，本报告不将三个日程的里程相加，声称完成同点位条件下的全旅程最短路优化。
+
+原稿博物馆核对
+核对当前Google文档Paris Day 3与原KMZ：卡纳瓦莱、毕加索、狩猎自然三馆全保留；工艺与皮诺迁入D13。没有发现未安置的原稿玛黑馆。下面三处是新增近邻候选，不是原稿漏项，均未计入时间表：
+1. 科涅克-贾伊：卡纳瓦莱至此271米，再至毕加索245米，比原直连只多约75米；另留45–60分钟参观。
+2. 雨果故居：孚日广场至入口122米，接回卡纳瓦莱比主线多约170米；另留45–60分钟，会影响上午入场安排。
+3. 国家档案馆／苏比斯府邸：狩猎自然馆到官方60号入口614米；周二闭馆，周末14点才开，常规17:30结束。选定后需提前安排45–60分钟，不能在17点离开狩猎馆后默认完整参观。
+
+开放与日期约束
+三馆主线不依赖夜场：工艺10–18（周五至21），装饰艺术11–18（周四夜场只开放临展），皮诺11–19（周五至21）。D13主线避开周一、周二。
+更顺的西向东顺序“装饰艺术 → 皇家宫殿 → 皮诺 → 工艺”路网约1.97公里，但需要工艺周五夜场。若当前D13直接锁成周五，D03会落在周二闭馆，必须联合对调完整主题日。实际日期排定时，也要一起核对凡尔赛等闭馆日；当前15天编号并非已通过整趟排历。
+发现宫是原文提过、仍有开放依赖的项目：2月常规科学馆不排；3月依实际重开日期、内容与库存确认后，才利用D05腾出的窗口安排。临时Étincelles在2026-12-31关闭，不作为2027替代场馆。
+
+原文未列的蓬皮杜等没有擅自加入。本轮完成的是玛黑相关原稿的覆盖核对及新增近邻评估，并非承诺整个旅程每馆在未定日期都已可入场。
+
+来源
+原Google Doc：https://docs.google.com/document/d/1hr9SfHkTNf0C3pzJcuCzOzFhn72AtTBt7MxH8j8GXWw/edit
+卡纳瓦莱：https://www.carnavalet.paris.fr/
+毕加索：https://www.museepicassoparis.fr/fr/visiter/
+狩猎自然：https://www.chassenature.org/acces-horaires
+工艺：https://www.arts-et-metiers.net/musee/horaires-et-acces
+装饰艺术官方2026节目册：https://madparis.fr/IMG/pdf/programmation-expositions-fr-mad-2026.pdf
+装饰艺术馆方商店访客页（常设清场与夜场范围）：https://boutique.madparis.fr/fr/article/79-informations-pratiques.html
+皇家宫殿：https://www.domaine-palais-royal.fr/visiter/informations-pratiques
+皮诺：https://www.pinaultcollection.com/fr/boursedecommerce/infos-pratiques
+雨果：https://www.maisonsvictorhugo.paris.fr/paris/votre-visite/informations-pratiques
+科涅克-贾伊：https://www.paris.fr/lieux/musee-cognacq-jay-1519
+国家档案馆：https://www.archives-nationales.culture.gouv.fr/le-musee-des-archives-nationales-lhotel-de-soubise-informations-pratiques
+发现宫：https://www.palais-decouverte.fr/informations-pratiques/venir-au-palais-de-la-decouverte
+临时场馆：https://billetterie.palais-decouverte.fr/
+位置：新增候选按官方地址经IGN地址地理编码核对；记录保存在data/plan.json的geocode_url；路网请求与geometry保存在data/routes.json。
+
+日程、地图、候选与待办以data/plan.json及当前网页为准。Google Doc和原KMZ未修改。
