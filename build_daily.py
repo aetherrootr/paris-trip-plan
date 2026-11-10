@@ -7,7 +7,6 @@ import hashlib, html, json, math, shutil
 from louvre_indoor import render_indoor
 from marais_shops import render_shop_page
 from exhibition_review import render_exhibition_review
-from portable_bundle import build_portable_bundle
 
 ROOT=Path(__file__).resolve().parent
 PREPARATION_PAGES=(
@@ -39,11 +38,7 @@ def build():
         if asset.is_file():indoor_hash.update(asset.name.encode());indoor_hash.update(asset.read_bytes())
     indoor_code=(ROOT/'louvre_indoor.py').read_text()+(ROOT/'templates/louvre-indoor.js').read_text()
     build_id=digest(data_id+css+js+todo_js+overview_js+shop_js+shop_code+exhibition_js+exhibition_code+indoor_code+indoor_hash.hexdigest()+Path(__file__).read_text(encoding='utf-8'))
-    portable_code=(ROOT/'portable_bundle.py').read_text(encoding='utf-8')
-    portable_hash=hashlib.sha256()
-    for resource in sorted((ROOT/'vendor/leaflet-1.9.4').rglob('*')):
-        if resource.is_file():portable_hash.update(resource.read_bytes())
-    build_id=digest(build_id+portable_code+portable_hash.hexdigest()+site_ui+''.join(preparation.values()))
+    build_id=digest(build_id+site_ui+''.join(preparation.values()))
     live=ROOT/'web/current'
     previous=ROOT/'web/.previous-current'
     out=ROOT/'web'/('.build-'+build_id)
@@ -132,7 +127,7 @@ def build():
         if values is None:return '<section class="walking-summary"><h2>本日步行</h2><p>'+esc(w['assumptions'])+'</p></section>'
         return '<section class="walking-summary" aria-label="本日步行估算"><h2>本日预计步行</h2><div class="walking-facts"><div><small>全天距离粗估 · 含馆内</small><strong>'+esc(values['distance'])+'</strong></div><div><small>累计移动 · 不含驻足</small><strong>'+esc(values['time'])+'</strong></div><div><small>估算步数</small><strong>'+esc(values['steps'])+'</strong></div></div><p>'+esc(w['assumptions'])+'</p><details><summary>室外路网与估算口径</summary><p>室外步行规划约'+esc(range_text(w['outdoor_km'],'公里'))+'；地图中馆间路网合计'+esc(w['route_reference_km'])+'公里／模型'+esc(w['route_reference_min'])+'分钟，包含公共交通段的步行替代路网，不能直接当作实际必走距离。</p><p>'+esc(w['method'])+'</p></details></section>'
     def companion_content():
-        info=plan['companion_review'];body='<section class="companion-review"><p class="eyebrow">同行审阅</p><h1>'+esc(info['title'])+'</h1><p>'+esc(info['intro'])+'</p><div class="guide-actions"><a href="paris-companion-plan.html" download>下载完整HTML（含每日详情）</a><a href="'+esc(info['text_filename'])+'" download>下载简表文本</a><button type="button" onclick="window.print()">打印／保存PDF</button><a href="index.html">地图与每日详情</a></div><p class="muted">步行栏为含馆内、园内的全天粗估；累计移动不含观展驻足、吃饭与乘车，不是在参观时长外另外加的一段时间。酒店往返另计，凡尔赛车站段已计入。</p>'
+        info=plan['companion_review'];body='<section class="companion-review"><p class="eyebrow">同行审阅</p><h1>'+esc(info['title'])+'</h1><p>'+esc(info['intro'])+'</p><div class="guide-actions"><a href="'+esc(info['text_filename'])+'" download>下载简表文本</a><button type="button" onclick="window.print()">打印／保存PDF</button><a href="index.html">地图与每日详情</a></div><p class="muted">步行栏为含馆内、园内的全天粗估；累计移动不含观展驻足、吃饭与乘车，不是在参观时长外另外加的一段时间。酒店往返另计，凡尔赛车站段已计入。</p>'
         lines=[info['title'],info['intro'],''];previous=None
         for row in info['rows']:
             day=next(d for d in days if d['day']==row['day']);values=walking_numbers(day)
@@ -215,7 +210,7 @@ def build():
         payload=json.dumps(dict(days=mapped),ensure_ascii=False).replace('<',chr(92)+'u003c')
         return section,'<script id="overview-data" type="application/json">'+payload+'</script><script>'+overview_js+'</script>'
     overview_section,overview_body_js=overview_map()
-    overview='<section class="review-entry"><h2>同行计划总表</h2><p>按片区查看每天的上午、下午、晚上、参观强度和步行负担。</p><div class="guide-actions"><a href="review-plan.html">打开计划总表 →</a><a href="paris-companion-plan.html" download>下载完整HTML（含每日详情）</a><a href="review-plan.txt" download>下载文本</a></div></section><p class="eyebrow">按日审阅</p><h1>先确定每天去哪里，再讨论怎么调整</h1><p>点击任意一天查看独立页面。景点序号、当天地图与区间距离一一对应；讨论时可直接使用“D02-04”这样的编号。</p><div class="policy">以原稿密度保留已安排项目。D01抵达巴黎、D14离开巴黎仍是航班待定时的计算假设；当前只审阅巴黎游览与离境安排。D04集中玛黑区，D09给奥赛留4小时，D11下水道后先看展、片区连午餐共3–4小时，D10荣军院／罗丹后参观从D03移来的邮政馆，D03取消蒙帕纳斯绕行并留白天卢森堡公园休息，D07大小皇宫、Bourse午餐、拱廊与歌剧院街区，D12上午登顶铁塔、下午夏乐宫两馆及必选自由女神像；D06三翼与D05中央片区保留。所有时段仍须按实际日期及预约确认。</div>'+overview_section+'<h2>每日行程</h2><div class="day-grid">'
+    overview='<section class="review-entry"><h2>同行计划总表</h2><p>按片区查看每天的上午、下午、晚上、参观强度和步行负担。</p><div class="guide-actions"><a href="review-plan.html">打开计划总表 →</a><a href="review-plan.txt" download>下载文本</a></div></section><p class="eyebrow">按日审阅</p><h1>先确定每天去哪里，再讨论怎么调整</h1><p>点击任意一天查看独立页面。景点序号、当天地图与区间距离一一对应；讨论时可直接使用“D02-04”这样的编号。</p><div class="policy">以原稿密度保留已安排项目。D01抵达巴黎、D14离开巴黎仍是航班待定时的计算假设；当前只审阅巴黎游览与离境安排。D04集中玛黑区，D09给奥赛留4小时，D11下水道后先看展、片区连午餐共3–4小时，D10荣军院／罗丹后参观从D03移来的邮政馆，D03取消蒙帕纳斯绕行并留白天卢森堡公园休息，D07大小皇宫、Bourse午餐、拱廊与歌剧院街区，D12上午登顶铁塔、下午夏乐宫两馆及必选自由女神像；D06三翼与D05中央片区保留。所有时段仍须按实际日期及预约确认。</div>'+overview_section+'<h2>每日行程</h2><div class="day-grid">'
     for d in days:
         names=' → '.join(places[k]['name'] for k in d['core']) or d['intro']
         counts=f'{len(d["core"])}处拟安排'+(f' · {len(d["optional"])}项可选／待review' if d['optional'] else '') if d['core'] else '交通日'
@@ -423,7 +418,6 @@ def build():
         review=plan['companion_review']
         (out/review['filename']).write_text(page(review['title'],review['filename'],review_html),encoding='utf-8')
         (out/review['text_filename']).write_text(review_text,encoding='utf-8')
-        build_portable_bundle(out,ROOT/'vendor/leaflet-1.9.4')
     manifest=dict(page_version=3,output_mode='current',plan_version=plan['version'],data_id=data_id,build_id=build_id,generated_at=made,entry=str(live/'index.html'),days=[str(live/f'day-{d["day"]:02d}.html') for d in days])
     (out/'revision.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     (out/'plan.snapshot.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf-8')

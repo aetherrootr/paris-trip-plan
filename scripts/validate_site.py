@@ -1,12 +1,10 @@
-"""Validate Pages subpath links, assets, portable navigation and inline JavaScript."""
+"""Validate Pages subpath links, assets and inline JavaScript."""
 from __future__ import annotations
 
 import argparse
-import base64
 from html.parser import HTMLParser
 import json
 from pathlib import Path
-import re
 import shutil
 import subprocess
 import tempfile
@@ -93,9 +91,10 @@ def validate_site(directory: Path, check_js: bool = False) -> dict:
         if path.is_symlink():
             raise SiteError(f"Pages artifacts must not contain symbolic links: {path}")
     names = {p.relative_to(root).as_posix(): p for p in root.rglob("*.html")}
-    portable_name = "paris-companion-plan.html"
+    if "paris-companion-plan.html" in names:
+        raise SiteError("The retired single-file edition must not be published.")
     sources = {name: path.read_text(encoding="utf-8") for name, path in names.items()}
-    documents = {name: Document(text) for name, text in sources.items() if name != portable_name}
+    documents = {name: Document(text) for name, text in sources.items()}
     checked = 0
     for name, doc in documents.items():
         for reference in doc.references:
@@ -110,53 +109,9 @@ def validate_site(directory: Path, check_js: bool = False) -> dict:
                 raise SiteError(f"Missing anchor in {name}: {reference}")
             checked += 1
 
-    bundled_pages = bundled_assets = 0
-    script_documents = list(documents.values())
-    if portable_name in sources:
-        outer = Document(sources[portable_name])
-        payloads = [text for attrs, text in outer.scripts if attrs.get("id") == "portable-data"]
-        if len(payloads) != 1:
-            raise SiteError("The portable HTML must contain exactly one embedded site payload.")
-        bundle = json.loads(payloads[0])
-        embedded = {name: Document(source) for name, source in bundle["pages"].items()}
-        if set(embedded) != set(documents):
-            raise SiteError("The portable HTML does not contain all published pages.")
-        for name, doc in embedded.items():
-            for reference in doc.references:
-                if reference.startswith("portable-resource:"):
-                    if reference.split(":", 1)[1] not in bundle["assets"]:
-                        raise SiteError(f"Missing portable resource: {reference}")
-                    continue
-                target = _local_target(reference, name)
-                if target is None:
-                    continue
-                file, anchor = target
-                if file == portable_name:
-                    continue
-                if file not in embedded or (anchor and anchor not in embedded[file].ids):
-                    raise SiteError(f"Broken portable navigation in {name}: {reference}")
-        for asset in bundle["assets"].values():
-            if not base64.b64decode(asset["data"], validate=True):
-                raise SiteError("An embedded portable asset is empty.")
-        library = bundle["leaflet"]
-        if "url(images/" in library["css"]:
-            raise SiteError("The portable map stylesheet still references external local images.")
-        for name, source in bundle["pages"].items():
-            if "<!--portable-map-library-->" in source:
-                if "unpkg.com/leaflet" in source or "createElement('script')" in source:
-                    raise SiteError(f"The portable map script is not inline: {name}")
-                source = source.replace(
-                    "<!--portable-map-library-->",
-                    "<style>" + library["css"] + "</style><script>" + library["js"] + "</script>",
-                )
-            script_documents.append(Document(source))
-        script_documents.extend([outer, Document("<script>" + bundle["bridge"].replace("__PAGE__", '"index.html"') + "</script>")])
-        bundled_pages, bundled_assets = len(embedded), len(bundle["assets"])
-
-    scripts = _check_scripts(script_documents, check_js)
+    scripts = _check_scripts(list(documents.values()), check_js)
     return {
         "html_pages": len(names), "local_links": checked,
-        "portable_pages": bundled_pages, "portable_assets": bundled_assets,
         "inline_scripts": scripts, "javascript_checked": check_js,
     }
 

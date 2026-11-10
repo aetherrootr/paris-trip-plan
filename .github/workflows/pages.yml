@@ -43,14 +43,6 @@ jobs:
           path: dist
           retention-days: 30
           if-no-files-found: error
-      - name: Save single-file edition
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v4
-        with:
-          name: paris-trip-offline
-          path: dist/paris-companion-plan.html
-          retention-days: 30
-          if-no-files-found: error
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && vars.PAGES_DEPLOY_ENABLED == 'true'
         uses: actions/upload-pages-artifact@v4

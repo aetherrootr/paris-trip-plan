@@ -1,6 +1,6 @@
 # 巴黎与凡尔赛旅行计划
 
-按日查看行程、地图、交通、景点介绍和参观专题。保留现有 14 天安排，同时提供可分发的完整单文件 HTML。
+按日查看行程、地图、交通、景点介绍和参观专题。保留现有 14 天安排，仅维护 GitHub Pages 网站和本地多页面预览。
 
 ## 平时怎样更新
 
@@ -18,14 +18,21 @@
 python scripts/build_pages.py
 ```
 
-生成两个入口：
+生成本地预览与发布目录：
 
 | 位置 | 用途 |
 | --- | --- |
 | `web/current/index.html` | 原有本地入口，继续保留 |
-| `dist/index.html` | 静态站点入口，后续可交给带访问控制的托管服务 |
+| `dist/index.html` | GitHub Pages 静态站点入口 |
 | `dist/review-plan.html` | 同行计划总表 |
-| `dist/paris-companion-plan.html` | 完整单文件，可下载转发，包含每日详情和专题 |
+
+本地可直接打开 `web/current/index.html`，或启动预览服务：
+
+```sh
+python -m http.server 8000 --bind 127.0.0.1 --directory web/current
+```
+
+然后访问 `http://127.0.0.1:8000/`。本地预览与 GitHub Pages 使用同一套页面生成器。
 
 完整检查：
 
@@ -37,7 +44,7 @@ python scripts/validate_site.py dist --check-js
 
 `--check-js` 需要 Node.js 20 或更新版本，用于检查内嵌脚本语法；不运行这个选项时无需 Node.js。GitHub 托管的 Ubuntu runner 已提供 Node.js。
 
-检查涵盖页面、景点锚点、本地资源、仓库子路径、完整单文件的内部导航、手机导航展开收起，以及先前地图组件加载问题的回归检查。链接和脚本检查不能代替浏览器中的交互实测。
+检查涵盖页面、景点锚点、本地资源、仓库子路径、手机导航展开收起，并防止已停用的单文件版被误发。链接和脚本检查不能代替浏览器中的交互实测。
 
 地图街道底图和外部官网需要联网；每日点位、路线、卢浮宫馆图和文字说明包含在构建结果中。待办勾选状态保存在各自浏览器中，不会同步到仓库或其他同行者。
 
@@ -58,14 +65,11 @@ python scripts/validate_site.py dist --check-js
 
 发布开关未启用时，构建与下载产物照常生成，部署任务跳过。不需要手工提交生成的 HTML，也不需要 `gh-pages` 分支。
 
-### 获取自动更新的下载版本
+### 构建产物与历史存档
 
-1. 修改推送或合并到 `master`，或在 **Actions** 手动运行 **Build and deploy GitHub Pages**。
-2. 在成功的工作流运行页面下方找到 **Artifacts**。
-3. 下载 `paris-trip-offline`：解压后用浏览器打开完整单文件 HTML。
-4. 需要全部独立页面时，下载 `paris-trip-site`。
+Actions 仅保留网站构建产物 `paris-trip-site`（30 天），用于检查和发布追溯，不再生成单文件版或 `paris-trip-offline` 产物。
 
-产物保留 30 天，GitHub 的产物下载需要登录并拥有仓库读取权限；也可以直接从公开网站下载完整单文件并转发。
+既有单文件导出保留在 `exports/`，停用的生成器及专用地图库保存在 `archive/retired-single-file-20261111/`，均不再更新或发布。
 
 网站兼容 `https://用户名.github.io/仓库名/` 这类项目路径，所有站内页面及资源均使用相对链接；不需要为仓库名修改页面地址。
 
@@ -89,7 +93,7 @@ python scripts/validate_site.py dist --check-js
 
 窄屏下总表按天变为纵向卡片，保留上午、下午、晚上、步行与强度等标签；桌面仍使用原表格。行程导航在手机上默认折叠，点击展开，选中日程后收起，避免每次打开页面先经过很长的目录。
 
-导航、馆图控制和主要操作按钮提供至少 44px 的触控高度；保留 Leaflet 地图缩放及拖动、卢浮宫路线交互、专题和待办。使用移动浏览器打开下载文件即可使用内嵌导航，网络底图仍需联网。
+导航、馆图控制和主要操作按钮提供至少 44px 的触控高度；保留 Leaflet 地图缩放及拖动、卢浮宫路线交互、专题和待办。手机可直接访问 GitHub Pages，网络底图仍需联网。
 
 ### 可选：自行绑定 goparis.z2f.dev
 
@@ -118,9 +122,7 @@ DNS、Cloudflare 和自定义域名绑定由用户操作；自动构建不会修
 data/                    当前行程、路线缓存、核对资料
 assets/                  卢浮宫官方馆图、原稿图片与 PDF
 templates/               版式、地图、待办和馆内交互
-vendor/                  已保存的固定版本地图组件
 build_daily.py           当前网站生成器
-portable_bundle.py       完整单文件生成器
 louvre_indoor.py         卢浮宫馆内路线
 marais_shops.py          玛黑区商铺介绍
 exhibition_review.py     展览讨论内容
@@ -130,7 +132,7 @@ tests/                   发布检查的回归测试
 docs/history/            早期讨论稿与原更新日志
 review/                  已保存的页面核对截图
 archive/                 本地备份（不提交）
-exports/                 本地分发副本（不提交）
+exports/                 历史导出存档，不再更新（不提交）
 web/current/             本地生成网站（不提交）
 dist/                    GitHub Pages 发布产物（不提交）
 ```

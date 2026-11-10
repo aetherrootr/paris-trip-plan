@@ -1,1 +1,0 @@
-Leaflet 1.9.4, copied from https://unpkg.com/leaflet@1.9.4/dist/ on 2026-11-10. Used only to bundle the existing map component for offline page navigation. Original license notices retained in leaflet.js. Map tiles remain online and the existing offline coordinate maps remain available.

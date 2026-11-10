@@ -50,6 +50,12 @@ class PublicationChecks(unittest.TestCase):
         with self.assertRaisesRegex(SiteError, "symbolic"):
             validate_site(self.root)
 
+    def test_retired_single_file_is_not_published(self):
+        self.write("index.html", "<h1>Trip</h1>")
+        self.write("paris-companion-plan.html", "<h1>Retired edition</h1>")
+        with self.assertRaisesRegex(SiteError, "retired single-file"):
+            validate_site(self.root)
+
 
 if __name__ == "__main__":
     unittest.main()
