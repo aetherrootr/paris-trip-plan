@@ -26,6 +26,7 @@ def build():
     shop_code=(ROOT/'marais_shops.py').read_text(encoding='utf-8')
     exhibition_js=(ROOT/'templates/exhibition-review.js').read_text(encoding='utf-8')
     exhibition_code=(ROOT/'exhibition_review.py').read_text(encoding='utf-8')
+    site_ui=(ROOT/'templates/site-ui.js').read_text(encoding='utf-8')
     data_id=digest(serial({'plan':plan,'routes':routes}))
     indoor_hash=hashlib.sha256()
     for asset in sorted((ROOT/'assets/louvre').iterdir()):
@@ -36,7 +37,7 @@ def build():
     portable_hash=hashlib.sha256()
     for resource in sorted((ROOT/'vendor/leaflet-1.9.4').rglob('*')):
         if resource.is_file():portable_hash.update(resource.read_bytes())
-    build_id=digest(build_id+portable_code+portable_hash.hexdigest())
+    build_id=digest(build_id+portable_code+portable_hash.hexdigest()+site_ui)
     live=ROOT/'web/current'
     previous=ROOT/'web/.previous-current'
     out=ROOT/'web'/('.build-'+build_id)
@@ -109,7 +110,7 @@ def build():
             topic=plan['liberty_topic']
             topic_links.append('<a href="'+esc(topic['filename'])+'"'+(' aria-current="page"' if current==topic['filename'] else '')+'>'+esc(topic['nav_title'])+'</a><p>本次版本、所在日期与参观条件</p>')
         if topic_links:links.append('<section class="side-topics" aria-labelledby="side-topic-heading"><h2 id="side-topic-heading">专题与决议</h2>'+''.join(topic_links)+'</section>')
-        return '<nav class="side" aria-label="按日查看与专题">'+''.join(links)+'</nav>'
+        return '<nav class="side" aria-label="按日查看与专题" data-site-nav><button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav-links" aria-expanded="true" hidden>行程导航</button><div class="side-links" id="site-nav-links" data-nav-links>'+''.join(links)+'</div></nav>'
     def range_text(values,suffix=''):
         return f'{values[0]:g}–{values[1]:g}'+suffix
     def walking_numbers(day):
@@ -133,7 +134,7 @@ def build():
                 body+='<h2>'+esc(row['area'])+'</h2><div class="table-wrap"><table class="review-table"><thead><tr><th>日程</th><th>上午</th><th>下午</th><th>晚上</th><th>步行与强度</th><th>一起确认</th></tr></thead><tbody>'
                 previous=row['area'];lines+=['',row['area']]
             walk=values['distance']+' · '+values['time']+' · '+values['steps'] if values else '随航班与住宿确定'
-            body+='<tr><td><a href="day-'+f'{day["day"]:02d}'+'.html"><strong>D'+f'{day["day"]:02d}'+'</strong><br>'+esc(day['title'])+'</a></td><td>'+esc(row['morning'])+'</td><td>'+esc(row['afternoon'])+'</td><td>'+esc(row['evening'])+'</td><td><strong>'+esc(row['intensity'])+'</strong><p>'+esc(walk)+'</p></td><td>'+esc(row['focus'])+'</td></tr>'
+            body+='<tr><td data-label="日程"><a href="day-'+f'{day["day"]:02d}'+'.html"><strong>D'+f'{day["day"]:02d}'+'</strong><br>'+esc(day['title'])+'</a></td><td data-label="上午">'+esc(row['morning'])+'</td><td data-label="下午">'+esc(row['afternoon'])+'</td><td data-label="晚上">'+esc(row['evening'])+'</td><td data-label="步行与强度"><strong>'+esc(row['intensity'])+'</strong><p>'+esc(walk)+'</p></td><td data-label="一起确认">'+esc(row['focus'])+'</td></tr>'
             lines += [f'D{day["day"]:02d} '+day['title'],'上午：'+row['morning'],'下午：'+row['afternoon'],'晚上：'+row['evening'],'步行：'+walk+'；强度：'+row['intensity'],'一起确认：'+row['focus'],'']
         body+='</tbody></table></div><h2>希望大家反馈的内容</h2><ul>'+''.join('<li>'+esc(x)+'</li>' for x in info['feedback'])+'</ul><p class="muted">'+esc(info['note'])+'</p><p><a href="index.html">查看地图与逐日安排 →</a></p></section>'
         lines+=['希望大家反馈：']+info['feedback']+['',info['note'],'步行是未实测的宽区间：步长按0.60–0.75米、移动速度按3–4公里／小时折算；不含观展驻足。室外路线、公共交通和馆内假设详见每日页。']
@@ -143,7 +144,7 @@ def build():
         if isinstance(current,int) and current>0:
             day=next(d for d in days if d['day']==current)
             content=content.replace('</h1>','</h1>'+walking_panel(day),1)
-        return '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache"><title>'+esc(title)+'｜巴黎行程</title><style>'+css+'</style></head><body><div class="shell"><header class="top"><div><a class="brand" href="index.html">巴黎与凡尔赛 · 行程</a><p class="muted">2027年2–3月，日期待定 · 北京往返 · 原稿旅行密度</p></div><div class="version">行程 '+plan_label+' · 按日页面 v3<br>数据 '+data_id+'<br>'+esc(made)+'</div></header><div class="layout">'+nav(current)+'<main>'+content+'<footer class="foot">讨论依据：行程 '+plan_label+'／数据 '+data_id+'。页面景点、顺序和路线均来自同一份日程数据。<br>时刻与预约尚未确定；原Google Doc与在线地图未修改。<br>步行路网：'+esc(road_credit)+'；底图 © IGN – Plan IGN。距离不含酒店往返、馆内步行、排队或现场入口差异。</footer></main></div></div>'+body_js+'</body></html>'
+        return '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache"><title>'+esc(title)+'｜巴黎行程</title><style>'+css+'</style></head><body><div class="shell"><header class="top"><div><a class="brand" href="index.html">巴黎与凡尔赛 · 行程</a><p class="muted">2027年2–3月，日期待定 · 北京往返 · 原稿旅行密度</p></div><div class="version">行程 '+plan_label+' · 按日页面 v3<br>数据 '+data_id+'<br>'+esc(made)+'</div></header><div class="layout">'+nav(current)+'<main>'+content+'<footer class="foot">讨论依据：行程 '+plan_label+'／数据 '+data_id+'。页面景点、顺序和路线均来自同一份日程数据。<br>时刻与预约尚未确定；原Google Doc与在线地图未修改。<br>步行路网：'+esc(road_credit)+'；底图 © IGN – Plan IGN。距离不含酒店往返、馆内步行、排队或现场入口差异。</footer></main></div></div><script>'+site_ui+'</script>'+body_js+'</body></html>'
     def market_section(day=None):
         choices=[(d,m,False) for d in ([day] if day else days) for m in d.get('market_suggestions',[]) if day is None or not m.get('meal_id')]
         if day is None:choices += [(d,m,True) for d in days for m in d.get('planned_markets',[])]
