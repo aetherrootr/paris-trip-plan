@@ -29,3 +29,17 @@
 .layout>main{min-width:0}.nav-toggle[hidden],.side-links[hidden]{display:none}.nav-toggle{width:100%;text-align:left;font-weight:650;min-height:44px;margin-bottom:8px}.nav-toggle:after{content:'▾';float:right}.nav-toggle[aria-expanded=true]:after{content:'▴'}
 @media screen and (max-width:1000px){.companion-review .review-table{min-width:0;display:block}.review-table thead{position:absolute;clip-path:inset(100%);width:1px;height:1px;overflow:hidden}.review-table tbody,.review-table tr,.review-table td{display:block;width:100%}.review-table tr{border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:14px;margin:0 0 14px}.review-table td{border:0;padding:7px 0;font-size:15px;overflow-wrap:anywhere}.review-table td:before{content:attr(data-label);display:block;font-size:12px;font-weight:650;color:var(--muted);margin-bottom:3px}.review-table td:first-child{font-size:17px;font-weight:600;padding-top:0;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:5px}.review-table td:first-child:before{display:none}.companion-review .table-wrap{overflow:visible}}
 @media(max-width:760px){.side{display:block}.side-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.side-links>.overview,.side-links>.side-area,.side-links>.side-topics{grid-column:1/-1}.side a{min-height:44px;display:flex;align-items:center;justify-content:center}.side .side-area{margin:12px 4px 0}.side-topics a{justify-content:flex-start}.map-controls button,.map-controls label,.guide-actions a,.guide-toc a,.map-directions,.pager a,summary{min-height:44px}.map-directions,.guide-actions a,.guide-toc a{display:inline-flex;align-items:center}.guide-link{width:44px;height:44px}.group-heading{flex-wrap:wrap}.group-guide{white-space:normal;min-height:44px;display:inline-flex;align-items:center}.visit-details,.stop p,.meal-card p{font-size:15px}.source-links a{font-size:13px;line-height:1.8}select,textarea{font-size:16px;max-width:100%}button{min-height:44px}.map-controls{gap:8px}.map-controls label{flex:1;min-width:155px}body .leaflet-touch .leaflet-control-zoom a{width:44px;height:44px;line-height:44px}.louvre-toolbar,.louvre-tools{flex-wrap:wrap}.louvre-floor-buttons{flex-wrap:wrap}.overview-presets button{min-height:44px}}
+
+@media(max-width:760px){
+  .stop .map-directions{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:8px 12px;
+    border-radius:6px;
+    background:var(--soft);
+    font-size:14px;
+    line-height:1.35;
+  }
+}
