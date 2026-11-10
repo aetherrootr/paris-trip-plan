@@ -12,6 +12,8 @@ venv/
 
 # Generated pages and build metadata (python build_daily.py)
 /web/
+/dist/
+/.pages-build-*/
 /index.html
 /itinerary.html
 /map-review.html
