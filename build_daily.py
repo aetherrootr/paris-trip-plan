@@ -10,6 +10,11 @@ from exhibition_review import render_exhibition_review
 from portable_bundle import build_portable_bundle
 
 ROOT=Path(__file__).resolve().parent
+PREPARATION_PAGES=(
+    ('visa.html','签证','办理流程与材料清单','travel-visa.html'),
+    ('museum-pass.html','巴黎博物馆通票','TODO · 待比较与确认','travel-museum-pass.html'),
+    ('travel-guide.html','法国旅行指南','电源、eSIM、支付与实用信息','travel-guide.html'),
+)
 def esc(value):return html.escape(str(value),quote=True)
 def serial(value):return json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':'))
 def digest(value):return hashlib.sha256(value.encode()).hexdigest()[:10]
@@ -27,6 +32,7 @@ def build():
     exhibition_js=(ROOT/'templates/exhibition-review.js').read_text(encoding='utf-8')
     exhibition_code=(ROOT/'exhibition_review.py').read_text(encoding='utf-8')
     site_ui=(ROOT/'templates/site-ui.js').read_text(encoding='utf-8')
+    preparation={name:(ROOT/'templates'/template).read_text(encoding='utf-8') for name,title,description,template in PREPARATION_PAGES}
     data_id=digest(serial({'plan':plan,'routes':routes}))
     indoor_hash=hashlib.sha256()
     for asset in sorted((ROOT/'assets/louvre').iterdir()):
@@ -37,7 +43,7 @@ def build():
     portable_hash=hashlib.sha256()
     for resource in sorted((ROOT/'vendor/leaflet-1.9.4').rglob('*')):
         if resource.is_file():portable_hash.update(resource.read_bytes())
-    build_id=digest(build_id+portable_code+portable_hash.hexdigest()+site_ui)
+    build_id=digest(build_id+portable_code+portable_hash.hexdigest()+site_ui+''.join(preparation.values()))
     live=ROOT/'web/current'
     previous=ROOT/'web/.previous-current'
     out=ROOT/'web'/('.build-'+build_id)
@@ -95,6 +101,7 @@ def build():
     def nav(current):
         links=['<a class="overview" href="index.html"'+(' aria-current="page"' if current==0 else '')+'>行程总览</a>']
         links.insert(0,'<a class="overview" href="review-plan.html"'+(' aria-current="page"' if current=='review-plan.html' else '')+'>同行计划总表</a>')
+        links.append('<section class="side-topics side-preparation" aria-labelledby="side-preparation-heading"><h2 id="side-preparation-heading">出行准备</h2>'+''.join('<a href="'+name+'"'+(' aria-current="page"' if current==name else '')+'>'+esc(title)+'</a>' for name,title,description,template in PREPARATION_PAGES)+'</section>')
         previous_area=None
         for d in days:
             if d.get('area_group')!=previous_area:
@@ -353,6 +360,8 @@ def build():
             group_link='<a class="group-guide" href="'+esc(d.get('guide_meta',{}).get('href',f'day-{n:02d}-guide.html'))+'" aria-label="打开本日指南">'+esc(d.get('guide_meta',{}).get('label','景点介绍'))+' ↗</a>' if d.get('guide') else ''
             content=head+pager+'<div class="review-layout"><section class="stops"><div class="group-heading"><h2>参观顺序</h2>'+group_link+'</div>'+''.join(cards)+'</section>'+map_section+'</div>'+indoor_html
         else:content=head+pager+'<section class="flight"><h2>交通与入住</h2><p>'+esc(d['review'])+'</p><p class="muted">机场、航班与住宿未定，本页暂不绘制位置或虚构路线。</p></section>'
+        if n==1:
+            content+='<section class="place-guide"><h2>出发前准备</h2><div class="highlight-grid">'+''.join('<article><h3><a href="'+name+'">'+esc(title)+' →</a></h3><p>'+esc(description)+'</p></article>' for name,title,description,template in PREPARATION_PAGES)+'</div></section>'
         content+='<details><summary>本日讨论提纲（可复制）</summary><textarea readonly aria-label="本日讨论提纲">'+esc('\n'.join(discussion)+'\n\n我希望调整：')+'</textarea></details>'+pager
         safe=json.dumps(dict(day=n,points=points,legs=legs),ensure_ascii=False).replace('<','\\u003c')
         body_js='<script id="day-data" type="application/json">'+safe+'</script><script>'+js+'</script>' if points else ''
@@ -407,6 +416,8 @@ def build():
             content+='<section class="place-guide"><h3>'+esc(item['title'])+'</h3><p><strong>'+esc(item['status'])+'</strong></p><p>'+esc(item['text'])+'</p><div class="source-links">'+''.join('<a target="_blank" rel="noopener" href="'+esc(s['url'])+'">'+esc(s['title'])+' ↗</a>' for s in item['sources'])+'</div></section>'
         content+='<h2>出发前逐项落实</h2><ul>'+''.join('<li>'+esc(item)+'</li>' for item in topic['todos'])+'</ul><details><summary>原文与核对口径</summary><p>'+esc(topic['reference_note'])+'</p><a target="_blank" rel="noopener" href="'+esc(topic['reference']['url'])+'">'+esc(topic['reference']['title'])+' ↗</a></details><p><a href="index.html">← 返回行程总览</a></p>'
         (out/topic['filename']).write_text(page(topic['title'],topic['filename'],content),encoding='utf-8')
+    for name,title,description,template in PREPARATION_PAGES:
+        (out/name).write_text(page(title,name,preparation[name]),encoding='utf-8')
     if plan.get('companion_review'):
         review_html,review_text=companion_content()
         review=plan['companion_review']

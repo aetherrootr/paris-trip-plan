@@ -43,3 +43,20 @@
     line-height:1.35;
   }
 }
+/* Preparation tables become labelled cards on phones. */
+.side-preparation{margin:8px 0 16px;padding:10px 0;border-bottom:1px solid var(--line);border-top:0}
+.preparation-page{overflow-wrap:anywhere}
+.preparation-page .place-guide>h2{margin-top:0}
+.preparation-table th[scope=row]{font-weight:600;min-width:7em}
+.preparation-page li{margin:8px 0}
+@media(max-width:760px){
+  .preparation-table,.preparation-table tbody,.preparation-table tr,.preparation-table td,.preparation-table th[scope=row]{display:block;width:100%}
+  .preparation-table thead{position:absolute;clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+  .preparation-table tr{border:1px solid var(--line);border-radius:7px;padding:12px;margin-bottom:10px}
+  .preparation-table td,.preparation-table th[scope=row]{border:0;padding:5px 0;font-size:15px}
+  .preparation-table td:before{content:attr(data-label);display:block;color:var(--muted);font-size:12px;margin-bottom:3px}
+  .preparation-page .table-wrap{overflow:visible}
+  .preparation-page .source-links{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+  .preparation-page .source-links a{min-height:44px;display:flex;align-items:center}
+  .side .side-preparation{display:grid;grid-template-columns:1fr;margin-bottom:6px}
+}
