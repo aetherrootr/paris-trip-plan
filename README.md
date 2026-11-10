@@ -43,31 +43,29 @@ python scripts/validate_site.py dist --check-js
 
 ## 原生 GitHub Pages
 
-远程仓库：[aetherrootr/paris-trip-plan](https://github.com/aetherrootr/paris-trip-plan)，保持私有。用户已选择**公开网站、私有源码**，不启用 Cloudflare Access 登录。票券、二维码、密码和其他私有凭证在其他地方管理，不加入 `data/`、`assets/` 或页面内容。
+远程仓库：[aetherrootr/paris-trip-plan](https://github.com/aetherrootr/paris-trip-plan)。**源码和网站均为公开**，使用原生 GitHub Pages，不启用 Cloudflare Access 登录。票券、二维码、密码和其他私有凭证在其他地方管理，不提交到仓库，也不加入 `data/`、`assets/` 或页面内容。
 
-默认站点地址为 `https://aetherrootr.github.io/paris-trip-plan/`，首次部署成功后可用。
+默认站点地址为 [aetherrootr.github.io/paris-trip-plan](https://aetherrootr.github.io/paris-trip-plan/)。
 
 ### 首次启用
 
-GitHub 于 2026-11-11 返回 HTTP 422：当前套餐不支持此私有仓库使用 Pages。用户将自行升级到支持私有仓库 Pages 的套餐，仓库不改为公开。
-
-升级完成后：
+公开仓库可以使用 GitHub Free 的 Pages，不需要为此升级套餐。首次设置：
 
 1. 在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
 2. 在 **Settings → Secrets and variables → Actions → Variables** 添加 `PAGES_DEPLOY_ENABLED`，值为 `true`。
 3. 在 **Actions** 手动运行 **Build and deploy GitHub Pages**，或向 `master` 推送修改。
 4. 部署成功后，之后每次更新 `master` 都会自动发布。
 
-发布开关未启用时，构建与私有下载产物照常生成，部署任务跳过。这样在套餐尚未升级时，不会因 Pages 限制导致每次更新都报部署失败。不需要手工提交生成的 HTML，也不需要 `gh-pages` 分支。
+发布开关未启用时，构建与下载产物照常生成，部署任务跳过。不需要手工提交生成的 HTML，也不需要 `gh-pages` 分支。
 
-### 获取自动更新的私有版本
+### 获取自动更新的下载版本
 
 1. 修改推送或合并到 `master`，或在 **Actions** 手动运行 **Build and deploy GitHub Pages**。
 2. 在成功的工作流运行页面下方找到 **Artifacts**。
 3. 下载 `paris-trip-offline`：解压后用浏览器打开完整单文件 HTML。
 4. 需要全部独立页面时，下载 `paris-trip-site`。
 
-产物保留 30 天，下载需要登录并拥有此仓库的读取权限。只想转发行程时也可自行分发已下载的单文件；该文件本身没有额外的登录保护。
+产物保留 30 天，GitHub 的产物下载需要登录并拥有仓库读取权限；也可以直接从公开网站下载完整单文件并转发。
 
 网站兼容 `https://用户名.github.io/仓库名/` 这类项目路径，所有站内页面及资源均使用相对链接；不需要为仓库名修改页面地址。
 

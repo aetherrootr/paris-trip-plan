@@ -35,7 +35,7 @@ jobs:
         run: python scripts/build_pages.py
       - name: Validate pages, links and JavaScript
         run: python scripts/validate_site.py dist --check-js
-      - name: Save private website artifact
+      - name: Save website artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v4
         with:
@@ -43,7 +43,7 @@ jobs:
           path: dist
           retention-days: 30
           if-no-files-found: error
-      - name: Save private single-file edition
+      - name: Save single-file edition
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v4
         with:
